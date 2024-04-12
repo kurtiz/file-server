@@ -38,8 +38,6 @@ app.use(
     /**
      * Enables CORS with credential support, allowing cross-origin requests
      * to access cookies and other credentials.
-     *
-     * @type {cor}
      */
     cors({
         credentials: true,
