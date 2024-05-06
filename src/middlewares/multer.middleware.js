@@ -1,7 +1,7 @@
 import multer from "multer";
 import {generateRandomFileName} from "../utils/randomFileName.js";
 
-export const multerAWSUpload = multer({ storage: multer.memoryStorage()});
+const multerAWSUpload = multer({storage: multer.memoryStorage()});
 
 
 // export const multerLocalUpload = multer({ dest: "assets/uploads/"});
@@ -15,4 +15,7 @@ const storage = multer.diskStorage({
         callback(null, newFileName);
     }
 });
-export const multerLocalUpload = multer({storage});
+const multerLocalUpload = multer({storage});
+
+
+export {multerAWSUpload, multerLocalUpload}

@@ -9,7 +9,7 @@ import {fileURLToPath} from 'url';
 import fs from 'fs';
 
 
-export const awsFileUpload = async (request, response) => {
+const awsFileUpload = async (request, response) => {
     try {
         const file = request.file;
         const fileContent = file.buffer;
@@ -68,7 +68,7 @@ export const awsFileUpload = async (request, response) => {
 }
 
 
-export const localFileUpload = async (request, response) => {
+const localFileUpload = async (request, response) => {
     try {
         const file = request.file;
 
@@ -106,7 +106,7 @@ export const localFileUpload = async (request, response) => {
         console.error("local upload error:", error);
 
         if (error.errorResponse.code === 11000) {
-            await localFileDelete(request.newFileName);
+            await _localFileDelete(request.newFileName);
             response.status(409).json({
                 error: `The ${Object.keys(error.errorResponse.keyValue)} already exist(s)`
             });
@@ -117,7 +117,7 @@ export const localFileUpload = async (request, response) => {
 }
 
 
-const localFileDelete = async (filename) => {
+const _localFileDelete = async (filename) => {
     const __dirname = dirname(fileURLToPath(import.meta.url));
     const filePath = join(__dirname, '../../../assets/uploads', filename);
 
@@ -130,3 +130,5 @@ const localFileDelete = async (filename) => {
         }
     });
 }
+
+export {awsFileUpload, localFileUpload}

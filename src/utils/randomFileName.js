@@ -1,6 +1,6 @@
 import crypto from "crypto";
 
-export const generateRandomFileName = (name) => {
+const generateRandomFileName = (name) => {
     // Ensure name is a string and not empty
     if (typeof name !== 'string' || name.trim() === '') {
         throw new Error('Invalid filename: must be a non-empty string');
@@ -16,3 +16,6 @@ export const generateRandomFileName = (name) => {
     // Combine the elements for the filename.
     return `${randomString}${extension}`;
 }
+
+
+export default generateRandomFileName

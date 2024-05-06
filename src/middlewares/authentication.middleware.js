@@ -1,6 +1,6 @@
 import {getAdminBySessionToken} from "../models/admins.js";
 
-export const isAuthenticatedAsAdmin = async (request, response, next) => {
+const isAuthenticatedAsAdmin = async (request, response, next) => {
     const authHeader = request.headers.authorization;
     if (!authHeader) {
         return response.status(401).send('Unauthorized');
@@ -20,3 +20,5 @@ export const isAuthenticatedAsAdmin = async (request, response, next) => {
         return response.status(401).send('Unauthorized');
     }
 }
+
+export {isAuthenticatedAsAdmin}
