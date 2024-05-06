@@ -1,5 +1,5 @@
 import {Router} from "express";
-import {generateOTP, login, otpVerification, register} from "../controllers/user.authentication.controller.js";
+import {generateOTP, login, otpVerification, register} from "../controllers/user/authentication.controller.js";
 
 /**
  * Router for User

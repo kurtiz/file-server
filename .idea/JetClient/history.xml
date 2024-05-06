@@ -4,1191 +4,6 @@
     <option name="requestHistoryStates">
       <list>
         <requestHistoryState>
-          <option name="dateTime" value="1712912275958" />
-          <option name="id" value="4e245b21-2d14-4ab6-bef0-38aed2b33077" />
-          <option name="request">
-            <requestState>
-              <option name="body">
-                <bodyState>
-                  <option name="raw" value="{&#10;  &quot;fullname&quot;: &quot;John Cole&quot;,&#10;  &quot;email&quot;: &quot;joecole@coll.com&quot;,&#10;  &quot;password&quot;: &quot;12345&quot;&#10;}" />
-                  <option name="type" value="JSON" />
-                </bodyState>
-              </option>
-              <option name="headers">
-                <list>
-                  <headerState>
-                    <option name="key" value="Content-Type" />
-                    <option name="value" value="application/json" />
-                  </headerState>
-                </list>
-              </option>
-              <option name="id" value="075d5d0e-707e-47eb-9a3a-019f26554529" />
-              <option name="method" value="POST" />
-              <option name="name" value="/user/register" />
-              <option name="url" value="{{base_url}}/user/register" />
-            </requestState>
-          </option>
-          <option name="response">
-            <responseState>
-              <option name="bodyBytesBase64" value="eyJlcnJvciI6InVuZGVmaW5lZCBhbHJlYWR5IGV4aXN0cyJ9" />
-              <option name="bodyString" value="{&#10;  &quot;error&quot; : &quot;undefined already exists&quot;&#10;}" />
-              <option name="code" value="409" />
-              <option name="contentType" value="application/json; charset=utf-8" />
-              <option name="headers">
-                <list>
-                  <headerState>
-                    <option name="key" value="X-Powered-By" />
-                    <option name="value" value="Express" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Access-Control-Allow-Origin" />
-                    <option name="value" value="*" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Access-Control-Allow-Credentials" />
-                    <option name="value" value="true" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Access-Control-Expose-Headers" />
-                    <option name="value" value="Content-Type,Authorization" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Content-Type" />
-                    <option name="value" value="application/json; charset=utf-8" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Content-Length" />
-                    <option name="value" value="36" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="ETag" />
-                    <option name="value" value="W/&quot;24-imezC5dt/qknWcN2pXjbRZUFyjg&quot;" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Vary" />
-                    <option name="value" value="Accept-Encoding" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Set-Cookie" />
-                    <option name="value" value="connect.sid=s%3ANO3XXS6ggBvpE1IdXHv9KxHyNizoT2R0.C0wWC1cvCew5t7G2v%2FuK9eUlN1fl%2FyQ49X7MAqYWvgg; Path=/; HttpOnly" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Date" />
-                    <option name="value" value="Fri, 12 Apr 2024 08:57:55 GMT" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Connection" />
-                    <option name="value" value="keep-alive" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Keep-Alive" />
-                    <option name="value" value="timeout=5" />
-                  </headerState>
-                </list>
-              </option>
-              <option name="id" value="4e245b21-2d14-4ab6-bef0-38aed2b33077" />
-              <option name="message" value="Conflict" />
-              <option name="prettyResponseType" value="JSON" />
-              <option name="rawBodyString" value="{&quot;error&quot;:&quot;undefined already exists&quot;}" />
-              <option name="size" value="36" />
-              <option name="time" value="373" />
-            </responseState>
-          </option>
-        </requestHistoryState>
-        <requestHistoryState>
-          <option name="dateTime" value="1712912304261" />
-          <option name="id" value="315a5836-c5aa-439c-9ea7-14bc63d0960d" />
-          <option name="request">
-            <requestState>
-              <option name="body">
-                <bodyState>
-                  <option name="raw" value="{&#10;  &quot;fullname&quot;: &quot;John Cole&quot;,&#10;  &quot;email&quot;: &quot;joecole@coll.com&quot;,&#10;  &quot;password&quot;: &quot;12345&quot;&#10;}" />
-                  <option name="type" value="JSON" />
-                </bodyState>
-              </option>
-              <option name="headers">
-                <list>
-                  <headerState>
-                    <option name="key" value="Content-Type" />
-                    <option name="value" value="application/json" />
-                  </headerState>
-                </list>
-              </option>
-              <option name="id" value="075d5d0e-707e-47eb-9a3a-019f26554529" />
-              <option name="method" value="POST" />
-              <option name="name" value="/user/register" />
-              <option name="url" value="{{base_url}}/user/register" />
-            </requestState>
-          </option>
-          <option name="response">
-            <responseState>
-              <option name="bodyBytesBase64" value="eyJlcnJvciI6IltvYmplY3QgT2JqZWN0XSBhbHJlYWR5IGV4aXN0cyJ9" />
-              <option name="bodyString" value="{&#10;  &quot;error&quot; : &quot;[object Object] already exists&quot;&#10;}" />
-              <option name="code" value="409" />
-              <option name="contentType" value="application/json; charset=utf-8" />
-              <option name="headers">
-                <list>
-                  <headerState>
-                    <option name="key" value="X-Powered-By" />
-                    <option name="value" value="Express" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Access-Control-Allow-Origin" />
-                    <option name="value" value="*" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Access-Control-Allow-Credentials" />
-                    <option name="value" value="true" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Access-Control-Expose-Headers" />
-                    <option name="value" value="Content-Type,Authorization" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Content-Type" />
-                    <option name="value" value="application/json; charset=utf-8" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Content-Length" />
-                    <option name="value" value="42" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="ETag" />
-                    <option name="value" value="W/&quot;2a-74A8KWrGpWq4WZdmnojrhNTq+RI&quot;" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Vary" />
-                    <option name="value" value="Accept-Encoding" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Set-Cookie" />
-                    <option name="value" value="connect.sid=s%3AxRDXI5QdjCmaLUVHmX8xncq8Ep28EA_b.V9iLGrLZDTL4D7fKqtRyuRNiwbh9NhQiRZNCBRYp1PU; Path=/; HttpOnly" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Date" />
-                    <option name="value" value="Fri, 12 Apr 2024 08:58:24 GMT" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Connection" />
-                    <option name="value" value="keep-alive" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Keep-Alive" />
-                    <option name="value" value="timeout=5" />
-                  </headerState>
-                </list>
-              </option>
-              <option name="id" value="315a5836-c5aa-439c-9ea7-14bc63d0960d" />
-              <option name="message" value="Conflict" />
-              <option name="prettyResponseType" value="JSON" />
-              <option name="rawBodyString" value="{&quot;error&quot;:&quot;[object Object] already exists&quot;}" />
-              <option name="size" value="42" />
-              <option name="time" value="377" />
-            </responseState>
-          </option>
-        </requestHistoryState>
-        <requestHistoryState>
-          <option name="dateTime" value="1712912477508" />
-          <option name="id" value="53cdaad9-ff8c-4949-8d68-75cfa814eedf" />
-          <option name="request">
-            <requestState>
-              <option name="body">
-                <bodyState>
-                  <option name="raw" value="{&#10;  &quot;fullname&quot;: &quot;John Cole&quot;,&#10;  &quot;email&quot;: &quot;joecole@coll.com&quot;,&#10;  &quot;password&quot;: &quot;12345&quot;&#10;}" />
-                  <option name="type" value="JSON" />
-                </bodyState>
-              </option>
-              <option name="headers">
-                <list>
-                  <headerState>
-                    <option name="key" value="Content-Type" />
-                    <option name="value" value="application/json" />
-                  </headerState>
-                </list>
-              </option>
-              <option name="id" value="075d5d0e-707e-47eb-9a3a-019f26554529" />
-              <option name="method" value="POST" />
-              <option name="name" value="/user/register" />
-              <option name="url" value="{{base_url}}/user/register" />
-            </requestState>
-          </option>
-          <option name="response">
-            <responseState>
-              <option name="bodyBytesBase64" value="eyJlcnJvciI6InVuZGVmaW5lZCBhbHJlYWR5IGV4aXN0In0=" />
-              <option name="bodyString" value="{&#10;  &quot;error&quot; : &quot;undefined already exist&quot;&#10;}" />
-              <option name="code" value="409" />
-              <option name="contentType" value="application/json; charset=utf-8" />
-              <option name="headers">
-                <list>
-                  <headerState>
-                    <option name="key" value="X-Powered-By" />
-                    <option name="value" value="Express" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Access-Control-Allow-Origin" />
-                    <option name="value" value="*" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Access-Control-Allow-Credentials" />
-                    <option name="value" value="true" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Access-Control-Expose-Headers" />
-                    <option name="value" value="Content-Type,Authorization" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Content-Type" />
-                    <option name="value" value="application/json; charset=utf-8" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Content-Length" />
-                    <option name="value" value="35" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="ETag" />
-                    <option name="value" value="W/&quot;23-w39+R0fSlM0CkqZbdfHrWWljyBA&quot;" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Vary" />
-                    <option name="value" value="Accept-Encoding" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Set-Cookie" />
-                    <option name="value" value="connect.sid=s%3ASgHuBskmdv5zr-FyYtgivPgZk0D_d1_G.FN0i2UOd7ELXS0b9MZOLgR6UuISE9%2FtHzsTjLuPXnkI; Path=/; HttpOnly" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Date" />
-                    <option name="value" value="Fri, 12 Apr 2024 09:01:17 GMT" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Connection" />
-                    <option name="value" value="keep-alive" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Keep-Alive" />
-                    <option name="value" value="timeout=5" />
-                  </headerState>
-                </list>
-              </option>
-              <option name="id" value="53cdaad9-ff8c-4949-8d68-75cfa814eedf" />
-              <option name="message" value="Conflict" />
-              <option name="prettyResponseType" value="JSON" />
-              <option name="rawBodyString" value="{&quot;error&quot;:&quot;undefined already exist&quot;}" />
-              <option name="size" value="35" />
-              <option name="time" value="350" />
-            </responseState>
-          </option>
-        </requestHistoryState>
-        <requestHistoryState>
-          <option name="dateTime" value="1712912515424" />
-          <option name="id" value="cab9cff5-d40c-4795-8b08-8d070e4887e5" />
-          <option name="request">
-            <requestState>
-              <option name="body">
-                <bodyState>
-                  <option name="raw" value="{&#10;  &quot;fullname&quot;: &quot;John Cole&quot;,&#10;  &quot;email&quot;: &quot;joecole@coll.com&quot;,&#10;  &quot;password&quot;: &quot;12345&quot;&#10;}" />
-                  <option name="type" value="JSON" />
-                </bodyState>
-              </option>
-              <option name="headers">
-                <list>
-                  <headerState>
-                    <option name="key" value="Content-Type" />
-                    <option name="value" value="application/json" />
-                  </headerState>
-                </list>
-              </option>
-              <option name="id" value="075d5d0e-707e-47eb-9a3a-019f26554529" />
-              <option name="method" value="POST" />
-              <option name="name" value="/user/register" />
-              <option name="url" value="{{base_url}}/user/register" />
-            </requestState>
-          </option>
-          <option name="response">
-            <responseState>
-              <option name="bodyBytesBase64" value="eyJlcnJvciI6ImVtYWlsIGFscmVhZHkgZXhpc3QifQ==" />
-              <option name="bodyString" value="{&#10;  &quot;error&quot; : &quot;email already exist&quot;&#10;}" />
-              <option name="code" value="409" />
-              <option name="contentType" value="application/json; charset=utf-8" />
-              <option name="headers">
-                <list>
-                  <headerState>
-                    <option name="key" value="X-Powered-By" />
-                    <option name="value" value="Express" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Access-Control-Allow-Origin" />
-                    <option name="value" value="*" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Access-Control-Allow-Credentials" />
-                    <option name="value" value="true" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Access-Control-Expose-Headers" />
-                    <option name="value" value="Content-Type,Authorization" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Content-Type" />
-                    <option name="value" value="application/json; charset=utf-8" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Content-Length" />
-                    <option name="value" value="31" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="ETag" />
-                    <option name="value" value="W/&quot;1f-M7GeMFBtc/rp0YObqJL7E/9wzn8&quot;" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Vary" />
-                    <option name="value" value="Accept-Encoding" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Set-Cookie" />
-                    <option name="value" value="connect.sid=s%3A5VuisNQBkLNO-K9439I5y8M2ajSV8c6T.52epDZDHOm966CcTn63H3YglMwRedoVzMkRtEAq8qUY; Path=/; HttpOnly" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Date" />
-                    <option name="value" value="Fri, 12 Apr 2024 09:01:55 GMT" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Connection" />
-                    <option name="value" value="keep-alive" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Keep-Alive" />
-                    <option name="value" value="timeout=5" />
-                  </headerState>
-                </list>
-              </option>
-              <option name="id" value="cab9cff5-d40c-4795-8b08-8d070e4887e5" />
-              <option name="message" value="Conflict" />
-              <option name="prettyResponseType" value="JSON" />
-              <option name="rawBodyString" value="{&quot;error&quot;:&quot;email already exist&quot;}" />
-              <option name="size" value="31" />
-              <option name="time" value="474" />
-            </responseState>
-          </option>
-        </requestHistoryState>
-        <requestHistoryState>
-          <option name="dateTime" value="1712912578694" />
-          <option name="id" value="3e4b5629-9565-419a-b88e-4aab9b9d5548" />
-          <option name="request">
-            <requestState>
-              <option name="body">
-                <bodyState>
-                  <option name="raw" value="{&#10;  &quot;fullname&quot;: &quot;John Cole&quot;,&#10;  &quot;email&quot;: &quot;joecole@coll.com&quot;,&#10;  &quot;password&quot;: &quot;12345&quot;&#10;}" />
-                  <option name="type" value="JSON" />
-                </bodyState>
-              </option>
-              <option name="headers">
-                <list>
-                  <headerState>
-                    <option name="key" value="Content-Type" />
-                    <option name="value" value="application/json" />
-                  </headerState>
-                </list>
-              </option>
-              <option name="id" value="075d5d0e-707e-47eb-9a3a-019f26554529" />
-              <option name="method" value="POST" />
-              <option name="name" value="/user/register" />
-              <option name="url" value="{{base_url}}/user/register" />
-            </requestState>
-          </option>
-          <option name="response">
-            <responseState>
-              <option name="bodyBytesBase64" value="eyJlcnJvciI6WyJlbWFpbCIsImRvb3IiLCJwYXNzd29yZCJdfQ==" />
-              <option name="bodyString" value="{&#10;  &quot;error&quot; : [&#10;    &quot;email&quot;,&#10;    &quot;door&quot;,&#10;    &quot;password&quot;&#10;  ]&#10;}" />
-              <option name="code" value="409" />
-              <option name="contentType" value="application/json; charset=utf-8" />
-              <option name="headers">
-                <list>
-                  <headerState>
-                    <option name="key" value="X-Powered-By" />
-                    <option name="value" value="Express" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Access-Control-Allow-Origin" />
-                    <option name="value" value="*" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Access-Control-Allow-Credentials" />
-                    <option name="value" value="true" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Access-Control-Expose-Headers" />
-                    <option name="value" value="Content-Type,Authorization" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Content-Type" />
-                    <option name="value" value="application/json; charset=utf-8" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Content-Length" />
-                    <option name="value" value="37" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="ETag" />
-                    <option name="value" value="W/&quot;25-zQUqBe/aAR2VLdnZeQirqSuaj6s&quot;" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Vary" />
-                    <option name="value" value="Accept-Encoding" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Set-Cookie" />
-                    <option name="value" value="connect.sid=s%3A9lJ_wOHOLjJCkzg0awzugcr7z_2udIyf.dtrxmo6dB5j26ORICxgE7ouHWIR2mdb%2BDst4iT6UdeM; Path=/; HttpOnly" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Date" />
-                    <option name="value" value="Fri, 12 Apr 2024 09:02:58 GMT" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Connection" />
-                    <option name="value" value="keep-alive" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Keep-Alive" />
-                    <option name="value" value="timeout=5" />
-                  </headerState>
-                </list>
-              </option>
-              <option name="id" value="3e4b5629-9565-419a-b88e-4aab9b9d5548" />
-              <option name="message" value="Conflict" />
-              <option name="prettyResponseType" value="JSON" />
-              <option name="rawBodyString" value="{&quot;error&quot;:[&quot;email&quot;,&quot;door&quot;,&quot;password&quot;]}" />
-              <option name="size" value="37" />
-              <option name="time" value="349" />
-            </responseState>
-          </option>
-        </requestHistoryState>
-        <requestHistoryState>
-          <option name="dateTime" value="1712912613311" />
-          <option name="id" value="4c86694f-0f62-4fc2-9322-3679e6f86f9a" />
-          <option name="request">
-            <requestState>
-              <option name="body">
-                <bodyState>
-                  <option name="raw" value="{&#10;  &quot;fullname&quot;: &quot;John Cole&quot;,&#10;  &quot;email&quot;: &quot;joecole@coll.com&quot;,&#10;  &quot;password&quot;: &quot;12345&quot;&#10;}" />
-                  <option name="type" value="JSON" />
-                </bodyState>
-              </option>
-              <option name="headers">
-                <list>
-                  <headerState>
-                    <option name="key" value="Content-Type" />
-                    <option name="value" value="application/json" />
-                  </headerState>
-                </list>
-              </option>
-              <option name="id" value="075d5d0e-707e-47eb-9a3a-019f26554529" />
-              <option name="method" value="POST" />
-              <option name="name" value="/user/register" />
-              <option name="url" value="{{base_url}}/user/register" />
-            </requestState>
-          </option>
-          <option name="response">
-            <responseState>
-              <option name="bodyBytesBase64" value="eyJlcnJvciI6ImVtYWlsLGRvb3IscGFzc3dvcmQgYWxyZWFkeSBleGlzdCJ9" />
-              <option name="bodyString" value="{&#10;  &quot;error&quot; : &quot;email,door,password already exist&quot;&#10;}" />
-              <option name="code" value="409" />
-              <option name="contentType" value="application/json; charset=utf-8" />
-              <option name="headers">
-                <list>
-                  <headerState>
-                    <option name="key" value="X-Powered-By" />
-                    <option name="value" value="Express" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Access-Control-Allow-Origin" />
-                    <option name="value" value="*" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Access-Control-Allow-Credentials" />
-                    <option name="value" value="true" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Access-Control-Expose-Headers" />
-                    <option name="value" value="Content-Type,Authorization" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Content-Type" />
-                    <option name="value" value="application/json; charset=utf-8" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Content-Length" />
-                    <option name="value" value="45" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="ETag" />
-                    <option name="value" value="W/&quot;2d-cpOaqTYMqtRwgGVihvHFaOWMQh8&quot;" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Vary" />
-                    <option name="value" value="Accept-Encoding" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Set-Cookie" />
-                    <option name="value" value="connect.sid=s%3Ay_rZuGF4I4wEksyTxj-1qe0TazyMm6Hk.WmwYUoIFZS2%2Fputpp0qREXoA30%2FFZJAEN8HwrOocCMM; Path=/; HttpOnly" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Date" />
-                    <option name="value" value="Fri, 12 Apr 2024 09:03:33 GMT" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Connection" />
-                    <option name="value" value="keep-alive" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Keep-Alive" />
-                    <option name="value" value="timeout=5" />
-                  </headerState>
-                </list>
-              </option>
-              <option name="id" value="4c86694f-0f62-4fc2-9322-3679e6f86f9a" />
-              <option name="message" value="Conflict" />
-              <option name="prettyResponseType" value="JSON" />
-              <option name="rawBodyString" value="{&quot;error&quot;:&quot;email,door,password already exist&quot;}" />
-              <option name="size" value="45" />
-              <option name="time" value="326" />
-            </responseState>
-          </option>
-        </requestHistoryState>
-        <requestHistoryState>
-          <option name="dateTime" value="1712912691828" />
-          <option name="id" value="10ef3c97-1b06-4b22-a471-da32f53c8722" />
-          <option name="request">
-            <requestState>
-              <option name="body">
-                <bodyState>
-                  <option name="raw" value="{&#10;  &quot;fullname&quot;: &quot;John Cole&quot;,&#10;  &quot;email&quot;: &quot;joecole@coll.com&quot;,&#10;  &quot;password&quot;: &quot;12345&quot;&#10;}" />
-                  <option name="type" value="JSON" />
-                </bodyState>
-              </option>
-              <option name="headers">
-                <list>
-                  <headerState>
-                    <option name="key" value="Content-Type" />
-                    <option name="value" value="application/json" />
-                  </headerState>
-                </list>
-              </option>
-              <option name="id" value="075d5d0e-707e-47eb-9a3a-019f26554529" />
-              <option name="method" value="POST" />
-              <option name="name" value="/user/register" />
-              <option name="url" value="{{base_url}}/user/register" />
-            </requestState>
-          </option>
-          <option name="response">
-            <responseState>
-              <option name="bodyBytesBase64" value="eyJlcnJvciI6IlRoZSBlbWFpbCxkb29yLHBhc3N3b3JkICsgYWxyZWFkeSBleGlzdCJ9" />
-              <option name="bodyString" value="{&#10;  &quot;error&quot; : &quot;The email,door,password + already exist&quot;&#10;}" />
-              <option name="code" value="409" />
-              <option name="contentType" value="application/json; charset=utf-8" />
-              <option name="headers">
-                <list>
-                  <headerState>
-                    <option name="key" value="X-Powered-By" />
-                    <option name="value" value="Express" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Access-Control-Allow-Origin" />
-                    <option name="value" value="*" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Access-Control-Allow-Credentials" />
-                    <option name="value" value="true" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Access-Control-Expose-Headers" />
-                    <option name="value" value="Content-Type,Authorization" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Content-Type" />
-                    <option name="value" value="application/json; charset=utf-8" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Content-Length" />
-                    <option name="value" value="51" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="ETag" />
-                    <option name="value" value="W/&quot;33-Q2XQ5Yh3sRa25AgXqqZI8rZcFW4&quot;" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Vary" />
-                    <option name="value" value="Accept-Encoding" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Set-Cookie" />
-                    <option name="value" value="connect.sid=s%3AL14aeZSJGum7hTDF5lhAHeC8hN4fmBTT.7bqjm9f3WFR9Vg1h9xM0WCmbox2OmYVn106s4gPra7s; Path=/; HttpOnly" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Date" />
-                    <option name="value" value="Fri, 12 Apr 2024 09:04:51 GMT" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Connection" />
-                    <option name="value" value="keep-alive" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Keep-Alive" />
-                    <option name="value" value="timeout=5" />
-                  </headerState>
-                </list>
-              </option>
-              <option name="id" value="10ef3c97-1b06-4b22-a471-da32f53c8722" />
-              <option name="message" value="Conflict" />
-              <option name="prettyResponseType" value="JSON" />
-              <option name="rawBodyString" value="{&quot;error&quot;:&quot;The email,door,password + already exist&quot;}" />
-              <option name="size" value="51" />
-              <option name="time" value="353" />
-            </responseState>
-          </option>
-        </requestHistoryState>
-        <requestHistoryState>
-          <option name="dateTime" value="1712912774055" />
-          <option name="id" value="2f92bfe0-b7c4-4c4a-8729-bf1a8afc4753" />
-          <option name="request">
-            <requestState>
-              <option name="body">
-                <bodyState>
-                  <option name="raw" value="{&#10;  &quot;fullname&quot;: &quot;John Cole&quot;,&#10;  &quot;email&quot;: &quot;joecole@coll.com&quot;,&#10;  &quot;password&quot;: &quot;12345&quot;&#10;}" />
-                  <option name="type" value="JSON" />
-                </bodyState>
-              </option>
-              <option name="headers">
-                <list>
-                  <headerState>
-                    <option name="key" value="Content-Type" />
-                    <option name="value" value="application/json" />
-                  </headerState>
-                </list>
-              </option>
-              <option name="id" value="075d5d0e-707e-47eb-9a3a-019f26554529" />
-              <option name="method" value="POST" />
-              <option name="name" value="/user/register" />
-              <option name="url" value="{{base_url}}/user/register" />
-            </requestState>
-          </option>
-          <option name="response">
-            <responseState>
-              <option name="bodyBytesBase64" value="eyJlcnJvciI6IlRoZSBlbWFpbCBhbHJlYWR5IGV4aXN0KHMpIn0=" />
-              <option name="bodyString" value="{&#10;  &quot;error&quot; : &quot;The email already exist(s)&quot;&#10;}" />
-              <option name="code" value="409" />
-              <option name="contentType" value="application/json; charset=utf-8" />
-              <option name="headers">
-                <list>
-                  <headerState>
-                    <option name="key" value="X-Powered-By" />
-                    <option name="value" value="Express" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Access-Control-Allow-Origin" />
-                    <option name="value" value="*" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Access-Control-Allow-Credentials" />
-                    <option name="value" value="true" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Access-Control-Expose-Headers" />
-                    <option name="value" value="Content-Type,Authorization" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Content-Type" />
-                    <option name="value" value="application/json; charset=utf-8" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Content-Length" />
-                    <option name="value" value="38" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="ETag" />
-                    <option name="value" value="W/&quot;26-hXxfXz8TCiOBM2Ta0gTpwinUOOU&quot;" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Vary" />
-                    <option name="value" value="Accept-Encoding" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Set-Cookie" />
-                    <option name="value" value="connect.sid=s%3AbuSmHJlUMuU3r-gd0YptgIZr8HVpUj28.J7JtKntJTpPVKkq8J7LK0kguNYFGq71u5obKl1XogP0; Path=/; HttpOnly" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Date" />
-                    <option name="value" value="Fri, 12 Apr 2024 09:06:14 GMT" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Connection" />
-                    <option name="value" value="keep-alive" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Keep-Alive" />
-                    <option name="value" value="timeout=5" />
-                  </headerState>
-                </list>
-              </option>
-              <option name="id" value="2f92bfe0-b7c4-4c4a-8729-bf1a8afc4753" />
-              <option name="message" value="Conflict" />
-              <option name="prettyResponseType" value="JSON" />
-              <option name="rawBodyString" value="{&quot;error&quot;:&quot;The email already exist(s)&quot;}" />
-              <option name="size" value="38" />
-              <option name="time" value="347" />
-            </responseState>
-          </option>
-        </requestHistoryState>
-        <requestHistoryState>
-          <option name="dateTime" value="1712920470602" />
-          <option name="id" value="9b4fa2d7-4470-4188-9df1-40a24ca60ab4" />
-          <option name="request">
-            <requestState>
-              <option name="body">
-                <bodyState>
-                  <option name="raw" value="{&#10;  &quot;fullname&quot;: &quot;John Cole&quot;,&#10;  &quot;email&quot;: &quot;joecole@coll.com&quot;,&#10;  &quot;password&quot;: &quot;12345&quot;&#10;}" />
-                  <option name="type" value="JSON" />
-                </bodyState>
-              </option>
-              <option name="headers">
-                <list>
-                  <headerState>
-                    <option name="key" value="Content-Type" />
-                    <option name="value" value="application/json" />
-                  </headerState>
-                </list>
-              </option>
-              <option name="id" value="075d5d0e-707e-47eb-9a3a-019f26554529" />
-              <option name="method" value="POST" />
-              <option name="name" value="/user/register" />
-              <option name="url" value="{{base_url}}/user/register" />
-            </requestState>
-          </option>
-          <option name="response">
-            <responseState>
-              <option name="bodyBytesBase64" value="eyJlcnJvciI6IlRoZSBlbWFpbCBhbHJlYWR5IGV4aXN0KHMpIn0=" />
-              <option name="bodyString" value="{&#10;  &quot;error&quot; : &quot;The email already exist(s)&quot;&#10;}" />
-              <option name="code" value="409" />
-              <option name="contentType" value="application/json; charset=utf-8" />
-              <option name="headers">
-                <list>
-                  <headerState>
-                    <option name="key" value="X-Powered-By" />
-                    <option name="value" value="Express" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Access-Control-Allow-Origin" />
-                    <option name="value" value="*" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Access-Control-Allow-Credentials" />
-                    <option name="value" value="true" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Access-Control-Expose-Headers" />
-                    <option name="value" value="Content-Type,Authorization" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Content-Type" />
-                    <option name="value" value="application/json; charset=utf-8" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Content-Length" />
-                    <option name="value" value="38" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="ETag" />
-                    <option name="value" value="W/&quot;26-hXxfXz8TCiOBM2Ta0gTpwinUOOU&quot;" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Vary" />
-                    <option name="value" value="Accept-Encoding" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Set-Cookie" />
-                    <option name="value" value="connect.sid=s%3AXonxqiHh_N7vRewPhFEqtKHdmkOmS8RE.drJ00zKOU%2FJ5u%2FEf37FGZwvnQ5%2FXZE5xo4weqeII1E0; Path=/; HttpOnly" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Date" />
-                    <option name="value" value="Fri, 12 Apr 2024 11:14:30 GMT" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Connection" />
-                    <option name="value" value="keep-alive" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Keep-Alive" />
-                    <option name="value" value="timeout=5" />
-                  </headerState>
-                </list>
-              </option>
-              <option name="id" value="9b4fa2d7-4470-4188-9df1-40a24ca60ab4" />
-              <option name="message" value="Conflict" />
-              <option name="prettyResponseType" value="JSON" />
-              <option name="rawBodyString" value="{&quot;error&quot;:&quot;The email already exist(s)&quot;}" />
-              <option name="size" value="38" />
-              <option name="time" value="616" />
-            </responseState>
-          </option>
-        </requestHistoryState>
-        <requestHistoryState>
-          <option name="dateTime" value="1712926065352" />
-          <option name="id" value="031f7b1c-a06e-4577-8780-04afdec5ec43" />
-          <option name="request">
-            <requestState>
-              <option name="body">
-                <bodyState>
-                  <option name="raw" value="{&#10;  &quot;fullname&quot;: &quot;John Cole&quot;,&#10;  &quot;email&quot;: &quot;joecole@coll.com&quot;,&#10;  &quot;password&quot;: &quot;12345&quot;&#10;}" />
-                  <option name="type" value="JSON" />
-                </bodyState>
-              </option>
-              <option name="headers">
-                <list>
-                  <headerState>
-                    <option name="key" value="Content-Type" />
-                    <option name="value" value="application/json" />
-                  </headerState>
-                </list>
-              </option>
-              <option name="id" value="075d5d0e-707e-47eb-9a3a-019f26554529" />
-              <option name="method" value="POST" />
-              <option name="name" value="/user/register" />
-              <option name="url" value="{{base_url}}/user/register" />
-            </requestState>
-          </option>
-          <option name="response">
-            <responseState>
-              <option name="bodyBytesBase64" value="eyJtZXNzYWdlIjoiQWNjb3VudCBjcmVhdGVkIHN1Y2Nlc3NmdWxseSJ9" />
-              <option name="bodyString" value="{&#10;  &quot;message&quot; : &quot;Account created successfully&quot;&#10;}" />
-              <option name="code" value="201" />
-              <option name="contentType" value="application/json; charset=utf-8" />
-              <option name="headers">
-                <list>
-                  <headerState>
-                    <option name="key" value="X-Powered-By" />
-                    <option name="value" value="Express" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Access-Control-Allow-Origin" />
-                    <option name="value" value="*" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Access-Control-Allow-Credentials" />
-                    <option name="value" value="true" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Access-Control-Expose-Headers" />
-                    <option name="value" value="Content-Type,Authorization" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Content-Type" />
-                    <option name="value" value="application/json; charset=utf-8" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Content-Length" />
-                    <option name="value" value="42" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="ETag" />
-                    <option name="value" value="W/&quot;2a-ave86QdCxKdA8tsn1GN/5T3i4L8&quot;" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Vary" />
-                    <option name="value" value="Accept-Encoding" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Date" />
-                    <option name="value" value="Fri, 12 Apr 2024 12:47:45 GMT" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Connection" />
-                    <option name="value" value="keep-alive" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Keep-Alive" />
-                    <option name="value" value="timeout=5" />
-                  </headerState>
-                </list>
-              </option>
-              <option name="id" value="031f7b1c-a06e-4577-8780-04afdec5ec43" />
-              <option name="message" value="Created" />
-              <option name="prettyResponseType" value="JSON" />
-              <option name="rawBodyString" value="{&quot;message&quot;:&quot;Account created successfully&quot;}" />
-              <option name="size" value="42" />
-              <option name="time" value="3738" />
-            </responseState>
-          </option>
-        </requestHistoryState>
-        <requestHistoryState>
-          <option name="dateTime" value="1712926083942" />
-          <option name="id" value="482515d7-3036-4f1f-a585-1ec2cd5528c9" />
-          <option name="request">
-            <requestState>
-              <option name="body">
-                <bodyState>
-                  <option name="raw" value="{&#10;  &quot;fullname&quot;: &quot;John Cole&quot;,&#10;  &quot;email&quot;: &quot;joecole@coll.com&quot;,&#10;  &quot;password&quot;: &quot;12345&quot;&#10;}" />
-                  <option name="type" value="JSON" />
-                </bodyState>
-              </option>
-              <option name="headers">
-                <list>
-                  <headerState>
-                    <option name="key" value="Content-Type" />
-                    <option name="value" value="application/json" />
-                  </headerState>
-                </list>
-              </option>
-              <option name="id" value="075d5d0e-707e-47eb-9a3a-019f26554529" />
-              <option name="method" value="POST" />
-              <option name="name" value="/user/register" />
-              <option name="url" value="{{base_url}}/user/register" />
-            </requestState>
-          </option>
-          <option name="response">
-            <responseState>
-              <option name="bodyBytesBase64" value="eyJlcnJvciI6IlRoZSBlbWFpbCBhbHJlYWR5IGV4aXN0KHMpIn0=" />
-              <option name="bodyString" value="{&#10;  &quot;error&quot; : &quot;The email already exist(s)&quot;&#10;}" />
-              <option name="code" value="409" />
-              <option name="contentType" value="application/json; charset=utf-8" />
-              <option name="headers">
-                <list>
-                  <headerState>
-                    <option name="key" value="X-Powered-By" />
-                    <option name="value" value="Express" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Access-Control-Allow-Origin" />
-                    <option name="value" value="*" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Access-Control-Allow-Credentials" />
-                    <option name="value" value="true" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Access-Control-Expose-Headers" />
-                    <option name="value" value="Content-Type,Authorization" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Content-Type" />
-                    <option name="value" value="application/json; charset=utf-8" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Content-Length" />
-                    <option name="value" value="38" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="ETag" />
-                    <option name="value" value="W/&quot;26-hXxfXz8TCiOBM2Ta0gTpwinUOOU&quot;" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Vary" />
-                    <option name="value" value="Accept-Encoding" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Date" />
-                    <option name="value" value="Fri, 12 Apr 2024 12:48:03 GMT" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Connection" />
-                    <option name="value" value="keep-alive" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Keep-Alive" />
-                    <option name="value" value="timeout=5" />
-                  </headerState>
-                </list>
-              </option>
-              <option name="id" value="482515d7-3036-4f1f-a585-1ec2cd5528c9" />
-              <option name="message" value="Conflict" />
-              <option name="prettyResponseType" value="JSON" />
-              <option name="rawBodyString" value="{&quot;error&quot;:&quot;The email already exist(s)&quot;}" />
-              <option name="size" value="38" />
-              <option name="time" value="270" />
-            </responseState>
-          </option>
-        </requestHistoryState>
-        <requestHistoryState>
-          <option name="dateTime" value="1712929618079" />
-          <option name="id" value="30dafb8c-10a9-4e2d-8351-2bf6187bcf89" />
-          <option name="request">
-            <requestState>
-              <option name="body">
-                <bodyState>
-                  <option name="raw" value="{&#10;  &quot;fullname&quot;: &quot;John Cole&quot;,&#10;  &quot;email&quot;: &quot;joecole@coll.com&quot;,&#10;  &quot;password&quot;: &quot;12345&quot;&#10;}" />
-                  <option name="type" value="JSON" />
-                </bodyState>
-              </option>
-              <option name="headers">
-                <list>
-                  <headerState>
-                    <option name="key" value="Content-Type" />
-                    <option name="value" value="application/json" />
-                  </headerState>
-                </list>
-              </option>
-              <option name="id" value="075d5d0e-707e-47eb-9a3a-019f26554529" />
-              <option name="method" value="POST" />
-              <option name="name" value="/user/register" />
-              <option name="url" value="{{base_url}}/user/register" />
-            </requestState>
-          </option>
-          <option name="response">
-            <responseState>
-              <option name="bodyBytesBase64" value="eyJtZXNzYWdlIjoiQWNjb3VudCBjcmVhdGVkIHN1Y2Nlc3NmdWxseSJ9" />
-              <option name="bodyString" value="{&#10;  &quot;message&quot; : &quot;Account created successfully&quot;&#10;}" />
-              <option name="code" value="201" />
-              <option name="contentType" value="application/json; charset=utf-8" />
-              <option name="headers">
-                <list>
-                  <headerState>
-                    <option name="key" value="X-Powered-By" />
-                    <option name="value" value="Express" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Access-Control-Allow-Origin" />
-                    <option name="value" value="*" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Access-Control-Allow-Credentials" />
-                    <option name="value" value="true" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Access-Control-Expose-Headers" />
-                    <option name="value" value="Content-Type,Authorization" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Content-Type" />
-                    <option name="value" value="application/json; charset=utf-8" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Content-Length" />
-                    <option name="value" value="42" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="ETag" />
-                    <option name="value" value="W/&quot;2a-ave86QdCxKdA8tsn1GN/5T3i4L8&quot;" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Vary" />
-                    <option name="value" value="Accept-Encoding" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Set-Cookie" />
-                    <option name="value" value="connect.sid=s%3ATBXu-U5GX1YYyoxVGe24BNHPQv-G55a4.KQEJltDeMyN1qrwBGcO2PX9DUYt92aoSn7NaongQJOk; Path=/; HttpOnly" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Date" />
-                    <option name="value" value="Fri, 12 Apr 2024 13:46:58 GMT" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Connection" />
-                    <option name="value" value="keep-alive" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Keep-Alive" />
-                    <option name="value" value="timeout=5" />
-                  </headerState>
-                </list>
-              </option>
-              <option name="id" value="30dafb8c-10a9-4e2d-8351-2bf6187bcf89" />
-              <option name="message" value="Created" />
-              <option name="prettyResponseType" value="JSON" />
-              <option name="rawBodyString" value="{&quot;message&quot;:&quot;Account created successfully&quot;}" />
-              <option name="size" value="42" />
-              <option name="time" value="3428" />
-            </responseState>
-          </option>
-        </requestHistoryState>
-        <requestHistoryState>
-          <option name="dateTime" value="1712931998674" />
-          <option name="id" value="4b61f8d4-ce77-494a-8353-7a0ce35b7e6d" />
-          <option name="request">
-            <requestState>
-              <option name="body">
-                <bodyState>
-                  <option name="raw" value="{&#10;  &quot;fullname&quot;: &quot;John Cole&quot;,&#10;  &quot;email&quot;: &quot;joecole@coll.com&quot;,&#10;  &quot;password&quot;: &quot;12345&quot;&#10;}" />
-                  <option name="type" value="JSON" />
-                </bodyState>
-              </option>
-              <option name="description" value="Register user" />
-              <option name="headers">
-                <list>
-                  <headerState>
-                    <option name="key" value="Content-Type" />
-                    <option name="value" value="application/json" />
-                  </headerState>
-                </list>
-              </option>
-              <option name="id" value="075d5d0e-707e-47eb-9a3a-019f26554529" />
-              <option name="method" value="POST" />
-              <option name="name" value="/user/register" />
-              <option name="url" value="{{base_url}}/user/register" />
-            </requestState>
-          </option>
-          <option name="response">
-            <responseState>
-              <option name="bodyBytesBase64" value="eyJtZXNzYWdlIjoiQWNjb3VudCBjcmVhdGVkIHN1Y2Nlc3NmdWxseSJ9" />
-              <option name="bodyString" value="{&#10;  &quot;message&quot; : &quot;Account created successfully&quot;&#10;}" />
-              <option name="code" value="201" />
-              <option name="contentType" value="application/json; charset=utf-8" />
-              <option name="headers">
-                <list>
-                  <headerState>
-                    <option name="key" value="X-Powered-By" />
-                    <option name="value" value="Express" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Access-Control-Allow-Origin" />
-                    <option name="value" value="*" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Access-Control-Allow-Credentials" />
-                    <option name="value" value="true" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Access-Control-Expose-Headers" />
-                    <option name="value" value="Content-Type,Authorization" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Content-Type" />
-                    <option name="value" value="application/json; charset=utf-8" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Content-Length" />
-                    <option name="value" value="42" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="ETag" />
-                    <option name="value" value="W/&quot;2a-ave86QdCxKdA8tsn1GN/5T3i4L8&quot;" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Vary" />
-                    <option name="value" value="Accept-Encoding" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Date" />
-                    <option name="value" value="Fri, 12 Apr 2024 14:26:38 GMT" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Connection" />
-                    <option name="value" value="keep-alive" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Keep-Alive" />
-                    <option name="value" value="timeout=5" />
-                  </headerState>
-                </list>
-              </option>
-              <option name="id" value="4b61f8d4-ce77-494a-8353-7a0ce35b7e6d" />
-              <option name="message" value="Created" />
-              <option name="prettyResponseType" value="JSON" />
-              <option name="rawBodyString" value="{&quot;message&quot;:&quot;Account created successfully&quot;}" />
-              <option name="size" value="42" />
-              <option name="time" value="10171" />
-            </responseState>
-          </option>
-        </requestHistoryState>
-        <requestHistoryState>
           <option name="dateTime" value="1712932045800" />
           <option name="id" value="df4d97dd-829b-43dd-8773-504bc85a02ba" />
           <option name="request">
@@ -1274,99 +89,6 @@
               <option name="rawBodyString" value="{&quot;data&quot;:{&quot;authentication&quot;:{&quot;otp&quot;:{&quot;code&quot;:252249,&quot;expires&quot;:&quot;2024-04-12T14:56:28.594Z&quot;},&quot;password&quot;:&quot;$2b$10$X7mZyRd/bvn7Lf19y/mIUeruUtP6qxb0PJulS8Gq4iP1BuYfVTb.O&quot;},&quot;_id&quot;:&quot;66194494b15adc79db45e5ab&quot;,&quot;fullname&quot;:&quot;John Cole&quot;,&quot;email&quot;:&quot;joecole@coll.com&quot;,&quot;emailVerified&quot;:false,&quot;createdAt&quot;:&quot;2024-04-12T14:26:28.609Z&quot;,&quot;updatedAt&quot;:&quot;2024-04-12T14:26:28.609Z&quot;,&quot;__v&quot;:0}}" />
               <option name="size" value="353" />
               <option name="time" value="572" />
-            </responseState>
-          </option>
-        </requestHistoryState>
-        <requestHistoryState>
-          <option name="dateTime" value="1712932233044" />
-          <option name="id" value="608165a0-6556-4456-8226-2dfa638783ce" />
-          <option name="request">
-            <requestState>
-              <option name="body">
-                <bodyState>
-                  <option name="raw" value="{&#10;  &quot;fullname&quot;: &quot;John Cole&quot;,&#10;  &quot;email&quot;: &quot;joecole@coll.com&quot;,&#10;  &quot;password&quot;: &quot;12345&quot;&#10;}" />
-                  <option name="type" value="JSON" />
-                </bodyState>
-              </option>
-              <option name="description" value="Register user" />
-              <option name="headers">
-                <list>
-                  <headerState>
-                    <option name="key" value="Content-Type" />
-                    <option name="value" value="application/json" />
-                  </headerState>
-                </list>
-              </option>
-              <option name="id" value="075d5d0e-707e-47eb-9a3a-019f26554529" />
-              <option name="method" value="POST" />
-              <option name="name" value="/user/register" />
-              <option name="url" value="{{base_url}}/user/register" />
-            </requestState>
-          </option>
-          <option name="response">
-            <responseState>
-              <option name="bodyBytesBase64" value="eyJtZXNzYWdlIjoiQWNjb3VudCBjcmVhdGVkIHN1Y2Nlc3NmdWxseSJ9" />
-              <option name="bodyString" value="{&#10;  &quot;message&quot; : &quot;Account created successfully&quot;&#10;}" />
-              <option name="code" value="201" />
-              <option name="contentType" value="application/json; charset=utf-8" />
-              <option name="headers">
-                <list>
-                  <headerState>
-                    <option name="key" value="X-Powered-By" />
-                    <option name="value" value="Express" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Access-Control-Allow-Origin" />
-                    <option name="value" value="*" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Access-Control-Allow-Credentials" />
-                    <option name="value" value="true" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Access-Control-Expose-Headers" />
-                    <option name="value" value="Content-Type,Authorization" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Content-Type" />
-                    <option name="value" value="application/json; charset=utf-8" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Content-Length" />
-                    <option name="value" value="42" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="ETag" />
-                    <option name="value" value="W/&quot;2a-ave86QdCxKdA8tsn1GN/5T3i4L8&quot;" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Vary" />
-                    <option name="value" value="Accept-Encoding" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Set-Cookie" />
-                    <option name="value" value="connect.sid=s%3AuTKgZ_gkEJT23jyhZp-mIhqIYd0ReL72.SzQGPslAZJeQgkuu6bL9KMCPzctIAwHjaopqRuFqf%2BA; Path=/; HttpOnly" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Date" />
-                    <option name="value" value="Fri, 12 Apr 2024 14:30:33 GMT" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Connection" />
-                    <option name="value" value="keep-alive" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Keep-Alive" />
-                    <option name="value" value="timeout=5" />
-                  </headerState>
-                </list>
-              </option>
-              <option name="id" value="608165a0-6556-4456-8226-2dfa638783ce" />
-              <option name="message" value="Created" />
-              <option name="prettyResponseType" value="JSON" />
-              <option name="rawBodyString" value="{&quot;message&quot;:&quot;Account created successfully&quot;}" />
-              <option name="size" value="42" />
-              <option name="time" value="3555" />
             </responseState>
           </option>
         </requestHistoryState>
@@ -4361,6 +3083,1481 @@
               <option name="rawBodyString" value="{&quot;data&quot;:{&quot;authentication&quot;:{&quot;session&quot;:{&quot;token&quot;:&quot;$2b$10$Mhmo6Ho7/.Mfj81zv8/rUOn8JjZC1SClhypBuFLIhKMfAzhnfvM.e&quot;,&quot;expires&quot;:&quot;2024-05-12T22:52:54.426Z&quot;},&quot;otp&quot;:{&quot;code&quot;:364227,&quot;expires&quot;:&quot;2024-04-12T22:51:44.177Z&quot;},&quot;password&quot;:&quot;$2b$10$qpIr6L5K.LrbM3QoQhIVZ.5gur7ffpYp46DYU9oSOcT36Cv0oLbDG&quot;},&quot;_id&quot;:&quot;6619ba2a7aa167c9ef91416f&quot;,&quot;fullname&quot;:&quot;John Cole&quot;,&quot;email&quot;:&quot;joecole@coll.com&quot;,&quot;emailVerified&quot;:true,&quot;createdAt&quot;:&quot;2024-04-12T22:48:10.553Z&quot;,&quot;updatedAt&quot;:&quot;2024-04-12T22:52:54.426Z&quot;,&quot;__v&quot;:0}}" />
               <option name="size" value="472" />
               <option name="time" value="774" />
+            </responseState>
+          </option>
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1712964406881" />
+          <option name="id" value="5ae0c0df-dad5-40a4-968a-9ce0393be940" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;fullname&quot;: &quot;John Cole&quot;,&#10;  &quot;email&quot;: &quot;joecole@coll.com&quot;,&#10;  &quot;password&quot;: &quot;12345&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="description" value="Register admin" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="a5497ebb-e726-4576-b5ce-591fd89e3985" />
+              <option name="method" value="POST" />
+              <option name="name" value="/admin/register" />
+              <option name="url" value="{{base_url}}/admin/register" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="PCFET0NUWVBFIGh0bWw+CjxodG1sIGxhbmc9ImVuIj4KPGhlYWQ+CjxtZXRhIGNoYXJzZXQ9InV0Zi04Ij4KPHRpdGxlPkVycm9yPC90aXRsZT4KPC9oZWFkPgo8Ym9keT4KPHByZT5DYW5ub3QgUE9TVCAvYWRtaW4vcmVnaXN0ZXI8L3ByZT4KPC9ib2R5Pgo8L2h0bWw+Cg==" />
+              <option name="bodyString" value="&lt;!DOCTYPE html&gt;&#10;&lt;html lang=&quot;en&quot;&gt;&#10;&lt;head&gt;&#10;&lt;meta charset=&quot;utf-8&quot;&gt;&#10;&lt;title&gt;Error&lt;/title&gt;&#10;&lt;/head&gt;&#10;&lt;body&gt;&#10;&lt;pre&gt;Cannot POST /admin/register&lt;/pre&gt;&#10;&lt;/body&gt;&#10;&lt;/html&gt;&#10;" />
+              <option name="code" value="404" />
+              <option name="contentType" value="text/html; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="X-Powered-By" />
+                    <option name="value" value="Express" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Origin" />
+                    <option name="value" value="*" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Credentials" />
+                    <option name="value" value="true" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Expose-Headers" />
+                    <option name="value" value="Content-Type,Authorization" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Security-Policy" />
+                    <option name="value" value="default-src 'none'" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Content-Type-Options" />
+                    <option name="value" value="nosniff" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="text/html; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="154" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Accept-Encoding" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Set-Cookie" />
+                    <option name="value" value="connect.sid=s%3AN2h8axqcc5i1W7hqDPMygGOUY3a2LO56.i6AVxMCsBM0f%2BPv6vERLYqoecOgR8O84%2F3Yf54OuXf0; Path=/; HttpOnly" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Fri, 12 Apr 2024 23:26:46 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=5" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="5ae0c0df-dad5-40a4-968a-9ce0393be940" />
+              <option name="message" value="Not Found" />
+              <option name="prettyResponseType" value="HTML" />
+              <option name="previewType" value="HTML" />
+              <option name="rawBodyString" value="&lt;!DOCTYPE html&gt;&#10;&lt;html lang=&quot;en&quot;&gt;&#10;&lt;head&gt;&#10;&lt;meta charset=&quot;utf-8&quot;&gt;&#10;&lt;title&gt;Error&lt;/title&gt;&#10;&lt;/head&gt;&#10;&lt;body&gt;&#10;&lt;pre&gt;Cannot POST /admin/register&lt;/pre&gt;&#10;&lt;/body&gt;&#10;&lt;/html&gt;&#10;" />
+              <option name="size" value="154" />
+              <option name="time" value="36" />
+            </responseState>
+          </option>
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1712964525650" />
+          <option name="id" value="0e434112-7a35-4d8a-9e96-5d94ed163537" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;fullname&quot;: &quot;John Cole&quot;,&#10;  &quot;email&quot;: &quot;joecole@coll.com&quot;,&#10;  &quot;password&quot;: &quot;12345&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="description" value="Register admin" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="a5497ebb-e726-4576-b5ce-591fd89e3985" />
+              <option name="method" value="POST" />
+              <option name="name" value="/admin/register" />
+              <option name="url" value="{{base_url}}/admin/register" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJtZXNzYWdlIjoiQWNjb3VudCBjcmVhdGVkIHN1Y2Nlc3NmdWxseSJ9" />
+              <option name="bodyString" value="{&#10;  &quot;message&quot; : &quot;Account created successfully&quot;&#10;}" />
+              <option name="code" value="201" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="X-Powered-By" />
+                    <option name="value" value="Express" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Origin" />
+                    <option name="value" value="*" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Credentials" />
+                    <option name="value" value="true" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Expose-Headers" />
+                    <option name="value" value="Content-Type,Authorization" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="42" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="ETag" />
+                    <option name="value" value="W/&quot;2a-ave86QdCxKdA8tsn1GN/5T3i4L8&quot;" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Accept-Encoding" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Set-Cookie" />
+                    <option name="value" value="connect.sid=s%3AZwxCed7gfFShSVpCLtthS1s9oXryUMK4.X8qCKRlY4HfQLbz8oixdmwb6MJYk%2FhJh2Wtmw492850; Path=/; HttpOnly" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Fri, 12 Apr 2024 23:28:45 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=5" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="0e434112-7a35-4d8a-9e96-5d94ed163537" />
+              <option name="message" value="Created" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;message&quot;:&quot;Account created successfully&quot;}" />
+              <option name="size" value="42" />
+              <option name="time" value="10620" />
+            </responseState>
+          </option>
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1713226882875" />
+          <option name="id" value="47c2a9b8-ccc7-4171-bfa1-9aa067cb60e0" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;first_name&quot;: &quot;John Cole&quot;,&#10;  &quot;email&quot;: &quot;joecole@coll.com&quot;,&#10;  &quot;password&quot;: &quot;12345&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="description" value="Register user" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="075d5d0e-707e-47eb-9a3a-019f26554529" />
+              <option name="method" value="POST" />
+              <option name="name" value="/user/register" />
+              <option name="url" value="http://localhost:8080/auth/user/register" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="PCFET0NUWVBFIGh0bWw+CjxodG1sIGxhbmc9ImVuIj4KPGhlYWQ+CjxtZXRhIGNoYXJzZXQ9InV0Zi04Ij4KPHRpdGxlPkVycm9yPC90aXRsZT4KPC9oZWFkPgo8Ym9keT4KPHByZT5DYW5ub3QgUE9TVCAvYXV0aC91c2VyL3JlZ2lzdGVyPC9wcmU+CjwvYm9keT4KPC9odG1sPgo=" />
+              <option name="bodyString" value="&lt;!DOCTYPE html&gt;&#10;&lt;html lang=&quot;en&quot;&gt;&#10;&lt;head&gt;&#10;&lt;meta charset=&quot;utf-8&quot;&gt;&#10;&lt;title&gt;Error&lt;/title&gt;&#10;&lt;/head&gt;&#10;&lt;body&gt;&#10;&lt;pre&gt;Cannot POST /auth/user/register&lt;/pre&gt;&#10;&lt;/body&gt;&#10;&lt;/html&gt;&#10;" />
+              <option name="code" value="404" />
+              <option name="contentType" value="text/html; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="X-Powered-By" />
+                    <option name="value" value="Express" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Origin" />
+                    <option name="value" value="*" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Credentials" />
+                    <option name="value" value="true" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Expose-Headers" />
+                    <option name="value" value="Content-Type,Authorization" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Security-Policy" />
+                    <option name="value" value="default-src 'none'" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Content-Type-Options" />
+                    <option name="value" value="nosniff" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="text/html; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="158" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Accept-Encoding" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Set-Cookie" />
+                    <option name="value" value="connect.sid=s%3AlXx-FV88AYyheKV9xZeOHbGktUu1rOiy.79Bc%2BICzzUtHkcj7ugBvQJNVk5fx5hUT9aFQqEMq410; Path=/; HttpOnly" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Tue, 16 Apr 2024 00:21:22 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=5" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="47c2a9b8-ccc7-4171-bfa1-9aa067cb60e0" />
+              <option name="message" value="Not Found" />
+              <option name="prettyResponseType" value="HTML" />
+              <option name="previewType" value="HTML" />
+              <option name="rawBodyString" value="&lt;!DOCTYPE html&gt;&#10;&lt;html lang=&quot;en&quot;&gt;&#10;&lt;head&gt;&#10;&lt;meta charset=&quot;utf-8&quot;&gt;&#10;&lt;title&gt;Error&lt;/title&gt;&#10;&lt;/head&gt;&#10;&lt;body&gt;&#10;&lt;pre&gt;Cannot POST /auth/user/register&lt;/pre&gt;&#10;&lt;/body&gt;&#10;&lt;/html&gt;&#10;" />
+              <option name="size" value="158" />
+              <option name="time" value="31" />
+            </responseState>
+          </option>
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1713226909854" />
+          <option name="id" value="72d1f61e-9510-4606-bc74-e752fbb72e60" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;first_name&quot;: &quot;John Cole&quot;,&#10;  &quot;email&quot;: &quot;joecole@coll.com&quot;,&#10;  &quot;password&quot;: &quot;12345&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="description" value="Register user" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="075d5d0e-707e-47eb-9a3a-019f26554529" />
+              <option name="method" value="POST" />
+              <option name="name" value="/user/register" />
+              <option name="url" value="http://localhost:8080/auth/register" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJtc2ciOiJBY2NvdW50IGNyZWF0ZWQgc3VjY2Vzc2Z1bGx5In0=" />
+              <option name="bodyString" value="{&#10;  &quot;msg&quot; : &quot;Account created successfully&quot;&#10;}" />
+              <option name="code" value="200" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="X-Powered-By" />
+                    <option name="value" value="Express" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Origin" />
+                    <option name="value" value="*" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Credentials" />
+                    <option name="value" value="true" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Expose-Headers" />
+                    <option name="value" value="Content-Type,Authorization" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="38" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="ETag" />
+                    <option name="value" value="W/&quot;26-Zp2tp4I8X1nDJtUt+G7PB8GmDBk&quot;" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Accept-Encoding" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Tue, 16 Apr 2024 00:21:49 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=5" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="72d1f61e-9510-4606-bc74-e752fbb72e60" />
+              <option name="message" value="OK" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;msg&quot;:&quot;Account created successfully&quot;}" />
+              <option name="size" value="38" />
+              <option name="time" value="1796" />
+            </responseState>
+          </option>
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1713227077739" />
+          <option name="id" value="dda5b14c-d918-493d-b24d-668233c28144" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;first_name&quot;: &quot;John Cole&quot;,&#10;  &quot;email&quot;: &quot;papiliocurtis@gmail.com&quot;,&#10;  &quot;password&quot;: &quot;12345&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="description" value="Register user" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="075d5d0e-707e-47eb-9a3a-019f26554529" />
+              <option name="method" value="POST" />
+              <option name="name" value="/user/register" />
+              <option name="url" value="http://localhost:8080/auth/register" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJtc2ciOiJ1c2VyIGFscmVhZHkgZXhpdHMifQ==" />
+              <option name="bodyString" value="{&#10;  &quot;msg&quot; : &quot;user already exits&quot;&#10;}" />
+              <option name="code" value="409" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="X-Powered-By" />
+                    <option name="value" value="Express" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Origin" />
+                    <option name="value" value="*" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Credentials" />
+                    <option name="value" value="true" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Expose-Headers" />
+                    <option name="value" value="Content-Type,Authorization" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="28" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="ETag" />
+                    <option name="value" value="W/&quot;1c-Ep7/0R3iJHQlyXZVMXgSTJqPEfI&quot;" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Accept-Encoding" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Tue, 16 Apr 2024 00:24:37 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=5" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="dda5b14c-d918-493d-b24d-668233c28144" />
+              <option name="message" value="Conflict" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;msg&quot;:&quot;user already exits&quot;}" />
+              <option name="size" value="28" />
+              <option name="time" value="174" />
+            </responseState>
+          </option>
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1713227286316" />
+          <option name="id" value="cde368eb-b4d5-4a5b-8866-34cca348bd14" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;first_name&quot;: &quot;John Cole&quot;,&#10;  &quot;email&quot;: &quot;papiliocurtis@gmail.com&quot;,&#10;  &quot;password&quot;: &quot;12345&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="description" value="Register user" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="075d5d0e-707e-47eb-9a3a-019f26554529" />
+              <option name="method" value="POST" />
+              <option name="name" value="/user/register" />
+              <option name="url" value="http://localhost:8080/auth/register" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJtc2ciOiJ1c2VyIGFscmVhZHkgZXhpdHMifQ==" />
+              <option name="bodyString" value="{&#10;  &quot;msg&quot; : &quot;user already exits&quot;&#10;}" />
+              <option name="code" value="409" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="X-Powered-By" />
+                    <option name="value" value="Express" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Origin" />
+                    <option name="value" value="*" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Credentials" />
+                    <option name="value" value="true" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Expose-Headers" />
+                    <option name="value" value="Content-Type,Authorization" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="28" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="ETag" />
+                    <option name="value" value="W/&quot;1c-Ep7/0R3iJHQlyXZVMXgSTJqPEfI&quot;" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Accept-Encoding" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Tue, 16 Apr 2024 00:28:06 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=5" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="cde368eb-b4d5-4a5b-8866-34cca348bd14" />
+              <option name="message" value="Conflict" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;msg&quot;:&quot;user already exits&quot;}" />
+              <option name="size" value="28" />
+              <option name="time" value="165" />
+            </responseState>
+          </option>
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1713227290647" />
+          <option name="id" value="f811ce25-8c7c-4400-9a2f-f3f0987f8d92" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;first_name&quot;: &quot;John Cole&quot;,&#10;  &quot;email&quot;: &quot;papiliocurtis@gmail.com&quot;,&#10;  &quot;password&quot;: &quot;12345&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="description" value="Register user" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="075d5d0e-707e-47eb-9a3a-019f26554529" />
+              <option name="method" value="POST" />
+              <option name="name" value="/user/register" />
+              <option name="url" value="http://localhost:8080/auth/register" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJtc2ciOiJ1c2VyIGFscmVhZHkgZXhpdHMifQ==" />
+              <option name="bodyString" value="{&#10;  &quot;msg&quot; : &quot;user already exits&quot;&#10;}" />
+              <option name="code" value="409" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="X-Powered-By" />
+                    <option name="value" value="Express" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Origin" />
+                    <option name="value" value="*" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Credentials" />
+                    <option name="value" value="true" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Expose-Headers" />
+                    <option name="value" value="Content-Type,Authorization" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="28" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="ETag" />
+                    <option name="value" value="W/&quot;1c-Ep7/0R3iJHQlyXZVMXgSTJqPEfI&quot;" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Accept-Encoding" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Tue, 16 Apr 2024 00:28:10 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=5" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="f811ce25-8c7c-4400-9a2f-f3f0987f8d92" />
+              <option name="message" value="Conflict" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;msg&quot;:&quot;user already exits&quot;}" />
+              <option name="size" value="28" />
+              <option name="time" value="170" />
+            </responseState>
+          </option>
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1713227397077" />
+          <option name="id" value="ccfe6a1c-046a-4fc7-95ee-42574ef3a6c1" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;first_name&quot;: &quot;John Cole&quot;,&#10;  &quot;email&quot;: &quot;papiliocurtis@gmail.com&quot;,&#10;  &quot;password&quot;: &quot;12345&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="description" value="Register user" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="075d5d0e-707e-47eb-9a3a-019f26554529" />
+              <option name="method" value="POST" />
+              <option name="name" value="/user/register" />
+              <option name="url" value="http://localhost:8080/auth/register" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJtc2ciOiJBY2NvdW50IGNyZWF0ZWQgc3VjY2Vzc2Z1bGx5In0=" />
+              <option name="bodyString" value="{&#10;  &quot;msg&quot; : &quot;Account created successfully&quot;&#10;}" />
+              <option name="code" value="200" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="X-Powered-By" />
+                    <option name="value" value="Express" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Origin" />
+                    <option name="value" value="*" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Credentials" />
+                    <option name="value" value="true" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Expose-Headers" />
+                    <option name="value" value="Content-Type,Authorization" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="38" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="ETag" />
+                    <option name="value" value="W/&quot;26-Zp2tp4I8X1nDJtUt+G7PB8GmDBk&quot;" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Accept-Encoding" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Tue, 16 Apr 2024 00:29:57 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=5" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="ccfe6a1c-046a-4fc7-95ee-42574ef3a6c1" />
+              <option name="message" value="OK" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;msg&quot;:&quot;Account created successfully&quot;}" />
+              <option name="size" value="38" />
+              <option name="time" value="1418" />
+            </responseState>
+          </option>
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1713227510228" />
+          <option name="id" value="d84ca3d1-7fc8-49e4-bdcc-7c9d6991aeab" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;first_name&quot;: &quot;John Cole&quot;,&#10;  &quot;email&quot;: &quot;papiliocurtis@gmail.com&quot;,&#10;  &quot;password&quot;: &quot;12345&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="description" value="Register user" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="075d5d0e-707e-47eb-9a3a-019f26554529" />
+              <option name="method" value="POST" />
+              <option name="name" value="/user/register" />
+              <option name="url" value="http://localhost:8080/auth/register" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJtc2ciOiJBY2NvdW50IGNyZWF0ZWQgc3VjY2Vzc2Z1bGx5In0=" />
+              <option name="bodyString" value="{&#10;  &quot;msg&quot; : &quot;Account created successfully&quot;&#10;}" />
+              <option name="code" value="200" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="X-Powered-By" />
+                    <option name="value" value="Express" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Origin" />
+                    <option name="value" value="*" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Credentials" />
+                    <option name="value" value="true" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Expose-Headers" />
+                    <option name="value" value="Content-Type,Authorization" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="38" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="ETag" />
+                    <option name="value" value="W/&quot;26-Zp2tp4I8X1nDJtUt+G7PB8GmDBk&quot;" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Accept-Encoding" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Set-Cookie" />
+                    <option name="value" value="connect.sid=s%3AnNyqDqEwYMowOQibeg9Nd7AczFLo1OwG.9Nuwy3akQWw69nyQ775XM%2B3CkIhGM%2Bnp2SGmWX9Dk2M; Path=/; HttpOnly" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Tue, 16 Apr 2024 00:31:50 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=5" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="d84ca3d1-7fc8-49e4-bdcc-7c9d6991aeab" />
+              <option name="message" value="OK" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;msg&quot;:&quot;Account created successfully&quot;}" />
+              <option name="size" value="38" />
+              <option name="time" value="414" />
+            </responseState>
+          </option>
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1713227720993" />
+          <option name="id" value="a4d0a421-45c2-4fa9-b3ef-df526ea78aa1" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;first_name&quot;: &quot;John Cole&quot;,&#10;  &quot;email&quot;: &quot;papiliocurtis@gmail.com&quot;,&#10;  &quot;password&quot;: &quot;12345&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="description" value="Register user" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="075d5d0e-707e-47eb-9a3a-019f26554529" />
+              <option name="method" value="POST" />
+              <option name="name" value="/user/register" />
+              <option name="url" value="http://localhost:8080/auth/register" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJtc2ciOiJBY2NvdW50IGNyZWF0ZWQgc3VjY2Vzc2Z1bGx5In0=" />
+              <option name="bodyString" value="{&#10;  &quot;msg&quot; : &quot;Account created successfully&quot;&#10;}" />
+              <option name="code" value="200" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="X-Powered-By" />
+                    <option name="value" value="Express" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Origin" />
+                    <option name="value" value="*" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Credentials" />
+                    <option name="value" value="true" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Expose-Headers" />
+                    <option name="value" value="Content-Type,Authorization" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="38" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="ETag" />
+                    <option name="value" value="W/&quot;26-Zp2tp4I8X1nDJtUt+G7PB8GmDBk&quot;" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Accept-Encoding" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Set-Cookie" />
+                    <option name="value" value="connect.sid=s%3AUWy9SoX0VLHd6sh3-s_x_brqveVRbQ5X.FSgqvmvQRXycmVfvaXtv0%2BfLgsWM7HTKAWArEYFwj3I; Path=/; HttpOnly" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Tue, 16 Apr 2024 00:35:20 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=5" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="a4d0a421-45c2-4fa9-b3ef-df526ea78aa1" />
+              <option name="message" value="OK" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;msg&quot;:&quot;Account created successfully&quot;}" />
+              <option name="size" value="38" />
+              <option name="time" value="3762" />
+            </responseState>
+          </option>
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1713228656142" />
+          <option name="id" value="4c18efea-f8f3-4917-afea-320b5c3f78f0" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;first_name&quot;: &quot;John Cole&quot;,&#10;  &quot;email&quot;: &quot;papiliocurtis@gmail.com&quot;,&#10;  &quot;password&quot;: &quot;12345@Gh&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="description" value="Register user" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="075d5d0e-707e-47eb-9a3a-019f26554529" />
+              <option name="method" value="POST" />
+              <option name="name" value="/user/register" />
+              <option name="url" value="http://localhost:8080/auth/register" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJtc2ciOiJBY2NvdW50IGNyZWF0ZWQgc3VjY2Vzc2Z1bGx5In0=" />
+              <option name="bodyString" value="{&#10;  &quot;msg&quot; : &quot;Account created successfully&quot;&#10;}" />
+              <option name="code" value="200" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="X-Powered-By" />
+                    <option name="value" value="Express" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Origin" />
+                    <option name="value" value="*" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Credentials" />
+                    <option name="value" value="true" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Expose-Headers" />
+                    <option name="value" value="Content-Type,Authorization" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="38" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="ETag" />
+                    <option name="value" value="W/&quot;26-Zp2tp4I8X1nDJtUt+G7PB8GmDBk&quot;" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Accept-Encoding" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Tue, 16 Apr 2024 00:50:56 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=5" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="4c18efea-f8f3-4917-afea-320b5c3f78f0" />
+              <option name="message" value="OK" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;msg&quot;:&quot;Account created successfully&quot;}" />
+              <option name="size" value="38" />
+              <option name="time" value="2834" />
+            </responseState>
+          </option>
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1713230210995" />
+          <option name="id" value="30f2e53d-d11d-4cd4-aaf6-3979bddfba72" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;first_name&quot;: &quot;John Cole&quot;,&#10;  &quot;email&quot;: &quot;papiliocurtis@gmail.com&quot;,&#10;  &quot;password&quot;: &quot;12345@Gh&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="description" value="Register user" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="075d5d0e-707e-47eb-9a3a-019f26554529" />
+              <option name="method" value="POST" />
+              <option name="name" value="/user/register" />
+              <option name="url" value="http://api.jobsbyus.com/auth/register" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="PCFET0NUWVBFIGh0bWw+CjxodG1sIGxhbmc9ImVuIj4KPGhlYWQ+CjxtZXRhIGNoYXJzZXQ9InV0Zi04Ij4KPHRpdGxlPkVycm9yPC90aXRsZT4KPC9oZWFkPgo8Ym9keT4KPHByZT5DYW5ub3QgR0VUIC9hdXRoL3JlZ2lzdGVyPC9wcmU+CjwvYm9keT4KPC9odG1sPgo=" />
+              <option name="bodyString" value="&lt;!DOCTYPE html&gt;&#10;&lt;html lang=&quot;en&quot;&gt;&#10;&lt;head&gt;&#10;&lt;meta charset=&quot;utf-8&quot;&gt;&#10;&lt;title&gt;Error&lt;/title&gt;&#10;&lt;/head&gt;&#10;&lt;body&gt;&#10;&lt;pre&gt;Cannot GET /auth/register&lt;/pre&gt;&#10;&lt;/body&gt;&#10;&lt;/html&gt;&#10;" />
+              <option name="code" value="404" />
+              <option name="contentType" value="text/html; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Server" />
+                    <option name="value" value="nginx" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Tue, 16 Apr 2024 01:16:52 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="text/html; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="152" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Powered-By" />
+                    <option name="value" value="Express" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Origin" />
+                    <option name="value" value="*" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Credentials" />
+                    <option name="value" value="true" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Expose-Headers" />
+                    <option name="value" value="Content-Type,Authorization" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Security-Policy" />
+                    <option name="value" value="default-src 'none'" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Content-Type-Options" />
+                    <option name="value" value="nosniff" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Accept-Encoding" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Set-Cookie" />
+                    <option name="value" value="connect.sid=s%3AQNoHM84AvH2_J5260v5CjP2hCKNMkQYY.UNCocUgyZZLyT4Ply9T6iqxfrh5yM8n%2BtIEDLgGzdco; Path=/; HttpOnly" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="30f2e53d-d11d-4cd4-aaf6-3979bddfba72" />
+              <option name="message" value="Not Found" />
+              <option name="prettyResponseType" value="HTML" />
+              <option name="previewType" value="HTML" />
+              <option name="rawBodyString" value="&lt;!DOCTYPE html&gt;&#10;&lt;html lang=&quot;en&quot;&gt;&#10;&lt;head&gt;&#10;&lt;meta charset=&quot;utf-8&quot;&gt;&#10;&lt;title&gt;Error&lt;/title&gt;&#10;&lt;/head&gt;&#10;&lt;body&gt;&#10;&lt;pre&gt;Cannot GET /auth/register&lt;/pre&gt;&#10;&lt;/body&gt;&#10;&lt;/html&gt;&#10;" />
+              <option name="size" value="152" />
+              <option name="time" value="405" />
+            </responseState>
+          </option>
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1713230226252" />
+          <option name="id" value="5be87c01-06c3-4da9-add5-869d94689383" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;first_name&quot;: &quot;John Cole&quot;,&#10;  &quot;email&quot;: &quot;papiliocurtis@gmail.com&quot;,&#10;  &quot;password&quot;: &quot;12345@Gh&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="description" value="Register user" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="075d5d0e-707e-47eb-9a3a-019f26554529" />
+              <option name="method" value="POST" />
+              <option name="name" value="/user/register" />
+              <option name="url" value="https://api.jobsbyus.com/auth/register" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJtc2ciOiJ1c2VyIGFscmVhZHkgZXhpdHMifQ==" />
+              <option name="bodyString" value="{&#10;  &quot;msg&quot; : &quot;user already exits&quot;&#10;}" />
+              <option name="code" value="409" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Server" />
+                    <option name="value" value="nginx" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Tue, 16 Apr 2024 01:17:07 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="28" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Powered-By" />
+                    <option name="value" value="Express" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Origin" />
+                    <option name="value" value="*" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Credentials" />
+                    <option name="value" value="true" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Expose-Headers" />
+                    <option name="value" value="Content-Type,Authorization" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="ETag" />
+                    <option name="value" value="W/&quot;1c-Ep7/0R3iJHQlyXZVMXgSTJqPEfI&quot;" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Accept-Encoding" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="5be87c01-06c3-4da9-add5-869d94689383" />
+              <option name="message" value="Conflict" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;msg&quot;:&quot;user already exits&quot;}" />
+              <option name="size" value="28" />
+              <option name="time" value="650" />
+            </responseState>
+          </option>
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1713230894643" />
+          <option name="id" value="599fd14a-4932-4cd8-8cae-feb559557ddc" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;first_name&quot;: &quot;John Cole&quot;,&#10;  &quot;email&quot;: &quot;papiliocurtis@gmail.com&quot;,&#10;  &quot;password&quot;: &quot;12345@Gh&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="description" value="Register user" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="075d5d0e-707e-47eb-9a3a-019f26554529" />
+              <option name="method" value="POST" />
+              <option name="name" value="/user/register" />
+              <option name="url" value="https://api.jobsbyus.com/auth/register" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="QmFkIFJlcXVlc3Q=" />
+              <option name="bodyString" value="Bad Request" />
+              <option name="code" value="400" />
+              <option name="contentType" value="text/plain; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Server" />
+                    <option name="value" value="nginx" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Tue, 16 Apr 2024 01:28:16 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="text/plain; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="11" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Powered-By" />
+                    <option name="value" value="Express" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Origin" />
+                    <option name="value" value="*" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Credentials" />
+                    <option name="value" value="true" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Expose-Headers" />
+                    <option name="value" value="Content-Type,Authorization" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="ETag" />
+                    <option name="value" value="W/&quot;b-EFiDB1U+dmqzx9Mo2UjcZ1SJPO8&quot;" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Accept-Encoding" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Set-Cookie" />
+                    <option name="value" value="connect.sid=s%3A_mhVaDeXVSTyfD0XXzWRGq6hlxs4j8CH.kNdl%2Fn%2FN2dnvd9dbbaU%2BhVKvV4yUkbhugucIseEOcaY; Path=/; HttpOnly" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="599fd14a-4932-4cd8-8cae-feb559557ddc" />
+              <option name="message" value="Bad Request" />
+              <option name="prettyResponseType" value="TEXT" />
+              <option name="rawBodyString" value="Bad Request" />
+              <option name="size" value="11" />
+              <option name="time" value="10455" />
+            </responseState>
+          </option>
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1713232701525" />
+          <option name="id" value="5085630a-3b05-43fd-8f1a-4a6c359bdfa4" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;first_name&quot;: &quot;John Cole&quot;,&#10;  &quot;email&quot;: &quot;papiliocurtis@gmail.com&quot;,&#10;  &quot;password&quot;: &quot;12345@Gh&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="description" value="Register user" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="075d5d0e-707e-47eb-9a3a-019f26554529" />
+              <option name="method" value="POST" />
+              <option name="name" value="/user/register" />
+              <option name="url" value="https://api.jobsbyus.com/auth/register" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="QmFkIFJlcXVlc3Q=" />
+              <option name="bodyString" value="Bad Request" />
+              <option name="code" value="400" />
+              <option name="contentType" value="text/plain; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Server" />
+                    <option name="value" value="nginx" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Tue, 16 Apr 2024 01:58:23 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="text/plain; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="11" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Powered-By" />
+                    <option name="value" value="Express" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Origin" />
+                    <option name="value" value="*" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Credentials" />
+                    <option name="value" value="true" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Expose-Headers" />
+                    <option name="value" value="Content-Type,Authorization" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="ETag" />
+                    <option name="value" value="W/&quot;b-EFiDB1U+dmqzx9Mo2UjcZ1SJPO8&quot;" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Accept-Encoding" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Set-Cookie" />
+                    <option name="value" value="connect.sid=s%3A77naKKHbQ8SBd7VMJbwkIuDRg_KtoeN6.e%2FmLieEpELodMA3q8jvVrQAHmB0OBSuYz5P8pb%2B23LM; Path=/; HttpOnly" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="5085630a-3b05-43fd-8f1a-4a6c359bdfa4" />
+              <option name="message" value="Bad Request" />
+              <option name="prettyResponseType" value="TEXT" />
+              <option name="rawBodyString" value="Bad Request" />
+              <option name="size" value="11" />
+              <option name="time" value="533" />
+            </responseState>
+          </option>
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1713233363236" />
+          <option name="id" value="88554b0f-ffab-4341-b8ff-04a87f661365" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;first_name&quot;: &quot;John Cole&quot;,&#10;  &quot;email&quot;: &quot;papiliocurtis@gmail.com&quot;,&#10;  &quot;password&quot;: &quot;12345@Gh&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="description" value="Register user" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="075d5d0e-707e-47eb-9a3a-019f26554529" />
+              <option name="method" value="POST" />
+              <option name="name" value="/user/register" />
+              <option name="url" value="https://api.jobsbyus.com/auth/register" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJtc2ciOiJBY2NvdW50IGNyZWF0ZWQgc3VjY2Vzc2Z1bGx5In0=" />
+              <option name="bodyString" value="{&#10;  &quot;msg&quot; : &quot;Account created successfully&quot;&#10;}" />
+              <option name="code" value="200" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Server" />
+                    <option name="value" value="nginx" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Tue, 16 Apr 2024 02:09:24 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="38" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Powered-By" />
+                    <option name="value" value="Express" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Origin" />
+                    <option name="value" value="*" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Credentials" />
+                    <option name="value" value="true" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Expose-Headers" />
+                    <option name="value" value="Content-Type,Authorization" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="ETag" />
+                    <option name="value" value="W/&quot;26-Zp2tp4I8X1nDJtUt+G7PB8GmDBk&quot;" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Accept-Encoding" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Set-Cookie" />
+                    <option name="value" value="connect.sid=s%3A0evwYB8a2nz-QrXLkOlrx0ZY8cAAJzl4.gtBDWVLD%2B02NExX3tL2pr6gkFJbvRmUluieNCkvriQk; Path=/; HttpOnly" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="88554b0f-ffab-4341-b8ff-04a87f661365" />
+              <option name="message" value="OK" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;msg&quot;:&quot;Account created successfully&quot;}" />
+              <option name="size" value="38" />
+              <option name="time" value="1975" />
             </responseState>
           </option>
         </requestHistoryState>

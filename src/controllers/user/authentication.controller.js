@@ -1,13 +1,13 @@
-import {hashCompare, hashPassword} from "../helpers/hashing.js";
+import {hashCompare, hashPassword} from "../../helpers/hashing.helper.js";
 import {readFile} from "fs/promises";
-import {sendEmail} from "../helpers/mailer.js";
+import {sendEmail} from "../../helpers/mailer.helper.js";
 import Joi from "joi";
 import {genSaltSync, hashSync} from "bcrypt";
-import {createAdmin, getAdminByEmail, getAdminById} from "../models/admins.js";
+import {createUser, getUserByEmail, getUserById} from "../../models/users.js";
 
 const register = async (request, response) => {
     try {
-        const adminData = request.body;
+        const userData = request.body;
         const requestSchema = Joi.object({
             fullname: Joi.string().required(),
             email: Joi.string().email().required(),
@@ -22,10 +22,10 @@ const register = async (request, response) => {
         const otp_code = Math.floor(100000 + Math.random() * 800000);
 
         const values = {
-            fullname: adminData.fullname,
-            email: adminData.email,
+            fullname: userData.fullname,
+            email: userData.email,
             authentication: {
-                password: await hashPassword(adminData.password),
+                password: await hashPassword(userData.password),
                 otp: {
                     code: otp_code,
                     expires: new Date(Date.now() + 1800000) // otp expires in 30 minutes
@@ -33,20 +33,20 @@ const register = async (request, response) => {
             },
         }
 
-        await createAdmin(values).then(
-            async (createdAdminData) => {
+        await createUser(values).then(
+            async (createdUserData) => {
                 const htmlFilePath = './emails/verification_email.html';
                 const htmlContent = await readFile(htmlFilePath, 'utf8');
 
                 await sendEmail({
                     from: 'info@fileserver.com',
-                    to: adminData.email,
+                    to: userData.email,
                     subject: 'FileServer - Verify Your Account',
-                    html: htmlContent.replace("{FULLNAME}", adminData.fullname)
+                    html: htmlContent.replace("{FULLNAME}", userData.fullname)
                         .replace("{OTP_CODE}", otp_code.toString())
                 });
 
-                return createdAdminData;
+                return createdUserData;
             });
         response.status(201).json({message: "Account created successfully"});
     } catch (error) {
@@ -81,24 +81,24 @@ const otpVerification = async (request, response) => {
             return response.status(400).json({error: error.details[0].message});
         } else {
             const currentTimestamp = new Date().getTime();
-            const admin = await getAdminByEmail(otpData.email);
+            const user = await getUserByEmail(otpData.email);
 
-            if (!admin) {
-                return response.status(404).json({error: "Admin not found"});
-            } else if (admin.authentication.otp.expires < currentTimestamp) {
+            if (!user) {
+                return response.status(404).json({error: "User not found"});
+            } else if (user.authentication.otp.expires < currentTimestamp) {
                 return response.status(410).json({error: "OTP expired"}).end();
-            } else if (otpData.otp !== admin.authentication.otp.code.toString()) {
+            } else if (otpData.otp !== user.authentication.otp.code.toString()) {
 
                 return response.status(404).json({error: "Invalid OTP"}).end();
             } else {
-                admin.emailVerified = true;
-                admin.authentication.otp.code = otpData.otp;
-                admin.authentication.otp.expires = new Date(Date.now());
-                admin.authentication.session.token = await hashSync(otpData.email + Date.now(), genSaltSync(10));
-                admin.authentication.session.expires = new Date(Date.now() + 2592000000) // 30 days
-                const updatedAdmin = await admin.save().then((_admin) => getAdminById(_admin.id));
+                user.emailVerified = true;
+                user.authentication.otp.code = otpData.otp;
+                user.authentication.otp.expires = new Date(Date.now());
+                user.authentication.session.token = await hashSync(otpData.email + Date.now(), genSaltSync(10));
+                user.authentication.session.expires = new Date(Date.now() + 2592000000) // 30 days
+                const updatedUser = await user.save().then((_user) => getUserById(_user.id));
 
-                response.status(200).json({data: updatedAdmin});
+                response.status(200).json({data: updatedUser});
             }
         }
     } catch
@@ -120,16 +120,16 @@ const generateOTP = async (request, response) => {
     } else {
         const email = request.body.email;
         const otp_code = Math.floor(100000 + Math.random() * 800000);
-        const admin = await getAdminByEmail(email);
+        const user = await getUserByEmail(email);
 
-        if (!admin) {
-            return response.status(404).json({error: "Admin not found"});
+        if (!user) {
+            return response.status(404).json({error: "User not found"});
         }
 
-        admin.authentication.otp.code = otp_code;
-        admin.authentication.otp.expires = new Date(Date.now() + 1800000);
+        user.authentication.otp.code = otp_code;
+        user.authentication.otp.expires = new Date(Date.now() + 1800000);
 
-        await admin.save().then(async () => {
+        await user.save().then(async () => {
             const htmlFilePath = './emails/verification_email.html';
             const htmlContent = await readFile(htmlFilePath, 'utf8');
 
@@ -137,7 +137,7 @@ const generateOTP = async (request, response) => {
                 from: 'info@fileserver.com',
                 to: email,
                 subject: 'FileServer - Verify Your Account',
-                html: htmlContent.replace("{FULLNAME}", admin.fullname)
+                html: htmlContent.replace("{FULLNAME}", user.fullname)
                     .replace("{OTP_CODE}", otp_code.toString())
             });
         });
@@ -159,15 +159,16 @@ const login = async (request, response) => {
             return response.status(400).json({error: error.details[0].message});
         }
 
-        const adminData = request.body;
-        const admin = await getAdminByEmail(adminData.email);
+        const userData = request.body;
+        const user = await getUserByEmail(userData.email);
+        const currentTimestamp = new Date().getTime();
 
-        if (admin && hashCompare(adminData.password, admin.authentication.password)) {
-            admin.authentication.session.token = await hashSync(adminData.email + Date.now(), genSaltSync(10));
-            admin.authentication.session.expires = new Date(Date.now() + 2592000000) // 30 days
-            const updatedAdmin = await admin.save();
+        if (user && hashCompare(userData.password, user.authentication.password)) {
+            user.authentication.session.token = await hashSync(userData.email + Date.now(), genSaltSync(10));
+            user.authentication.session.expires = new Date(Date.now() + 2592000000) // 30 days
+            const updatedUser = await user.save();
 
-            response.json({data: updatedAdmin}).status(200);
+            response.json({data: updatedUser}).status(200);
         } else {
             response.status(401).json({error: 'Invalid credentials'});
         }

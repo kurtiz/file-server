@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/kurtiz/file-server#readme",
   "dependencies": {
+    "@aws-sdk/client-s3": "^3.554.0",
     "bcrypt": "^5.1.1",
     "body-parser": "^1.20.2",
     "compression": "^1.7.4",
@@ -38,5 +39,8 @@
     "nodemailer": "^6.9.13",
     "nodemailer-smtp-transport": "^2.7.4",
     "nodemon": "^3.1.0"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^8.4.1"
   }
 }

@@ -12,7 +12,7 @@
               <requestState>
                 <option name="body">
                   <bodyState>
-                    <option name="raw" value="{&#10;  &quot;fullname&quot;: &quot;John Cole&quot;,&#10;  &quot;email&quot;: &quot;joecole@coll.com&quot;,&#10;  &quot;password&quot;: &quot;12345&quot;&#10;}" />
+                    <option name="raw" value="{&#10;  &quot;first_name&quot;: &quot;John Cole&quot;,&#10;  &quot;email&quot;: &quot;papiliocurtis@gmail.com&quot;,&#10;  &quot;password&quot;: &quot;12345@Gh&quot;&#10;}" />
                     <option name="type" value="JSON" />
                   </bodyState>
                 </option>
@@ -28,7 +28,7 @@
                 <option name="id" value="075d5d0e-707e-47eb-9a3a-019f26554529" />
                 <option name="method" value="POST" />
                 <option name="name" value="/user/register" />
-                <option name="url" value="{{base_url}}/user/register" />
+                <option name="url" value="https://api.jobsbyus.com/auth/register" />
               </requestState>
               <requestState>
                 <option name="body">
@@ -175,6 +175,27 @@
                 <option name="id" value="363382a4-b484-4abb-9332-0efd95c594bc" />
                 <option name="method" value="POST" />
                 <option name="name" value="/admin/login" />
+                <option name="url" value="{{base_url}}/user/login" />
+              </requestState>
+              <requestState>
+                <option name="body">
+                  <bodyState>
+                    <option name="raw" value="{&#10;  &quot;email&quot;: &quot;joecole@coll.com&quot;,&#10;  &quot;password&quot;: &quot;12345&quot;&#10;}" />
+                    <option name="type" value="JSON" />
+                  </bodyState>
+                </option>
+                <option name="description" value="Upload file" />
+                <option name="headers">
+                  <list>
+                    <headerState>
+                      <option name="key" value="Content-Type" />
+                      <option name="value" value="application/json" />
+                    </headerState>
+                  </list>
+                </option>
+                <option name="id" value="e52784d2-4dae-4df1-aa6d-63d2adeee7bf" />
+                <option name="method" value="POST" />
+                <option name="name" value="/admin/file/upload" />
                 <option name="url" value="{{base_url}}/user/login" />
               </requestState>
             </list>

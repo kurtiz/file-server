@@ -12,6 +12,10 @@ const FileSchema = new mongoose.Schema(
             required: true,
             unique: true
         },
+        fileSize: {
+          type: String,
+          required: true
+        },
         title: {
             type: String,
             required: true,

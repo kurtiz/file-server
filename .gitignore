@@ -134,3 +134,6 @@ dist
 
 # local tests
 src/tests/main.test.js
+
+#uploads folder
+assets/uploads

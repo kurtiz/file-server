@@ -13,14 +13,14 @@ import {MAIL_HOST, MAIL_PASSWORD, MAIL_PORT, MAIL_USER} from "../config.js";
  */
 const transporter = nodemailer.createTransport(
     smtpTransport({
-        host: MAIL_HOST,
-        port: MAIL_PORT,
+        service: "gmail",
         auth: {
             user: MAIL_USER,
             pass: MAIL_PASSWORD
         }
     }),
 );
+
 
 /**
  * Sends an email using the transporter

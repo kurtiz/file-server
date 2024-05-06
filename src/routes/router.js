@@ -1,13 +1,22 @@
 import {Router} from "express";
 import userRouter from "./user.route.js";
 import adminRouter from "./admin.route.js";
+import {downloadFile} from "../controllers/fileDownload.controller.js";
 
+/**
+ * Main Router
+ * @type {Router}
+ */
 const router = Router();
 
 router.use("/user", userRouter);
 router.use("/admin", adminRouter);
 
-router.get("/", (req, res) => {
-    res.send("<h1>File Server</h1>");
-})
+router.get("/file/download/:filename", downloadFile);
+
+// home route just to show the site is working
+router.get("/", (request, response) => {
+    response.send("<h1>File Server is Live</h1>");
+});
+
 export default router;
