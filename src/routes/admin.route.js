@@ -1,7 +1,7 @@
 import {Router} from "express";
 import {generateOTP, login, otpVerification, register} from "../controllers/admin/authentication.controller.js";
 import {multerAWSUpload, multerLocalUpload} from "../middlewares/multer.middleware.js";
-import {awsFileUpload, localFileUpload} from "../controllers/admin/fileUpload.controller.js";
+import {awsFileUpload, fileDelete, localFileUpload} from "../controllers/admin/fileUpload.controller.js";
 import {isAuthenticatedAsAdmin} from "../middlewares/authentication.middleware.js";
 
 /**
@@ -20,5 +20,7 @@ adminRouter.post("/otp/new", generateOTP);
 adminRouter.post("/login", login);
 adminRouter.post("/file/upload/aws", isAuthenticatedAsAdmin, multerAWSUpload.single("file"), awsFileUpload);
 adminRouter.post("/file/upload/local", isAuthenticatedAsAdmin, multerLocalUpload.single('file'), localFileUpload);
+adminRouter.post("/file/delete/:fileId", isAuthenticatedAsAdmin, fileDelete);
+
 
 export default adminRouter;

@@ -1,5 +1,5 @@
 import multer from "multer";
-import {generateRandomFileName} from "../utils/randomFileName.js";
+import generateRandomFileName from "../utils/randomFileName.js";
 
 const multerAWSUpload = multer({storage: multer.memoryStorage()});
 

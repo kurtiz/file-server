@@ -1,7 +1,7 @@
-import {generateRandomFileName} from "../../utils/randomFileName.js";
+import generateRandomFileName from "../../utils/randomFileName.js";
 import {deleteFile, uploadFile} from "../../helpers/s3client.helper.js";
 import {SPACES_BUCKET} from "../../config.js";
-import {createFile} from "../../models/files.js";
+import {createFile, deleteFileById, getFileById} from "../../models/files.js";
 import Joi from "joi";
 import {formatFileSize} from "../../helpers/file.helper.js";
 import {join, dirname} from 'path';
@@ -116,7 +116,53 @@ const localFileUpload = async (request, response) => {
     }
 }
 
+const fileDelete = async (request, response) => {
+    const fileData = request.params;
+    const requestSchema = Joi.object({
+        fileId: Joi.string().required()
+    });
 
+    const {error, _} = requestSchema.validate(fileData);
+    if (error) {
+        return response.status(400).json({error: error.details[0].message});
+    }
+
+    const file = await getFileById(fileData.fileId);
+
+    if (!file) {
+        return response.status(404).json({error: "File not found"});
+    }
+
+    if (file.path.includes("digitaloceanspaces")) {
+        deleteFile(
+            SPACES_BUCKET,
+            'files',
+            file.filename
+        ).then(async () => {
+            await deleteFileById(fileData.fileId);
+            return response.status(200).json({message: "File deleted successfully"});
+        }).catch((error) => {
+            console.log(error);
+            return response.status(500).json({error: "Internal Server Error"})
+        });
+    } else {
+        _localFileDelete(file.filename).then(
+
+            async () => {
+                await deleteFileById(fileData.fileId);
+                return response.status(200).json({message: "File deleted successfully"})
+            }
+        ).catch(
+            (error) => {
+                console.log(error);
+                return response.status(500).json({error: "Internal Server Error"})
+            }
+        );
+    }
+
+}
+
+//TODO work on password reset
 const _localFileDelete = async (filename) => {
     const __dirname = dirname(fileURLToPath(import.meta.url));
     const filePath = join(__dirname, '../../../assets/uploads', filename);
@@ -131,4 +177,8 @@ const _localFileDelete = async (filename) => {
     });
 }
 
-export {awsFileUpload, localFileUpload}
+export {
+    awsFileUpload,
+    localFileUpload,
+    fileDelete
+};
