@@ -51,11 +51,13 @@ app.use(
 /**
  * Configures session middleware for the api.
  */
-app.use(session({
-    secret: SESSION_SECRET,
-    resave: false,
-    saveUninitialized: true,
-}))
+app.use(
+    session({
+        secret: SESSION_SECRET,
+        resave: false,
+        saveUninitialized: true,
+    })
+);
 
 /**
  * Compresses response bodies to reduce network traffic and improve performance.

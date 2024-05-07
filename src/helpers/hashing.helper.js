@@ -27,7 +27,4 @@ const hashCompare = (password, hashedPassword) => {
     return bcrypt.compareSync(password, hashedPassword);
 }
 
-export {
-    hashPassword,
-    hashCompare
-}
+export {hashPassword, hashCompare}

@@ -13,8 +13,7 @@ import {MAIL_HOST, MAIL_PASSWORD, MAIL_PORT, MAIL_USER} from "../config.js";
  */
 const transporter = nodemailer.createTransport(
     smtpTransport({
-        host: MAIL_HOST,
-        port: MAIL_PORT,
+        service: "gmail",
         auth: {
             user: MAIL_USER,
             pass: MAIL_PASSWORD
@@ -22,12 +21,13 @@ const transporter = nodemailer.createTransport(
     }),
 );
 
+
 /**
  * Sends an email using the transporter
  * @param {Object} options - {from: string, to: string, subject: string, text: string, html: string}
  * @return {Promise<void>}
  */
-export async function sendEmail(options) {
+async function sendEmail(options) {
     try {
         await transporter.sendMail(options);
         console.log('Email sent successfully');
@@ -35,3 +35,6 @@ export async function sendEmail(options) {
         console.error('Error sending email:', error);
     }
 }
+
+
+export {sendEmail}

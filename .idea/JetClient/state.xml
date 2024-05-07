@@ -12,7 +12,7 @@
               <requestState>
                 <option name="body">
                   <bodyState>
-                    <option name="raw" value="{&#10;  &quot;fullname&quot;: &quot;John Cole&quot;,&#10;  &quot;email&quot;: &quot;joecole@coll.com&quot;,&#10;  &quot;password&quot;: &quot;12345&quot;&#10;}" />
+                    <option name="raw" value="{&#10;  &quot;first_name&quot;: &quot;John Cole&quot;,&#10;  &quot;email&quot;: &quot;papiliocurtis@gmail.com&quot;,&#10;  &quot;password&quot;: &quot;12345@Gh&quot;&#10;}" />
                     <option name="type" value="JSON" />
                   </bodyState>
                 </option>
@@ -28,7 +28,7 @@
                 <option name="id" value="075d5d0e-707e-47eb-9a3a-019f26554529" />
                 <option name="method" value="POST" />
                 <option name="name" value="/user/register" />
-                <option name="url" value="{{base_url}}/user/register" />
+                <option name="url" value="https://api.jobsbyus.com/auth/register" />
               </requestState>
               <requestState>
                 <option name="body">
@@ -176,6 +176,130 @@
                 <option name="method" value="POST" />
                 <option name="name" value="/admin/login" />
                 <option name="url" value="{{base_url}}/user/login" />
+              </requestState>
+              <requestState>
+                <option name="auth">
+                  <authState>
+                    <option name="bearer">
+                      <jU>
+                        <option name="token" value="$2b$10$oFDNGMCdFaoCFOPgz1LwCuC0j4u5ZBKsY.LkhWuUl0ePoamQuDFv6" />
+                      </jU>
+                    </option>
+                    <option name="type" value="BEARER" />
+                  </authState>
+                </option>
+                <option name="body">
+                  <bodyState>
+                    <option name="formData">
+                      <list>
+                        <formDataParameterState>
+                          <option name="key" value="title" />
+                          <option name="value" value="Wedding Program Book for Bismark" />
+                        </formDataParameterState>
+                        <formDataParameterState>
+                          <option name="key" value="description" />
+                          <option name="value" value="Joe's wedding program book with has the program outline etc..." />
+                        </formDataParameterState>
+                        <formDataParameterState>
+                          <option name="key" value="file" />
+                          <option name="type" value="FILE" />
+                          <option name="value" value="C:\Users\aaron\Documents\JenamLogo.png" />
+                        </formDataParameterState>
+                      </list>
+                    </option>
+                    <option name="type" value="FORM_DATA" />
+                  </bodyState>
+                </option>
+                <option name="description" value="Upload file to local server" />
+                <option name="headers">
+                  <list>
+                    <headerState>
+                      <option name="key" value="Content-Type" />
+                      <option name="value" value="multipart/form-data" />
+                    </headerState>
+                  </list>
+                </option>
+                <option name="id" value="e52784d2-4dae-4df1-aa6d-63d2adeee7bf" />
+                <option name="method" value="POST" />
+                <option name="name" value="/admin/file/upload/local" />
+                <option name="url" value="{{base_url}}/admin/file/upload/local" />
+              </requestState>
+              <requestState>
+                <option name="auth">
+                  <authState>
+                    <option name="bearer">
+                      <jU>
+                        <option name="token" value="$2b$10$oFDNGMCdFaoCFOPgz1LwCuC0j4u5ZBKsY.LkhWuUl0ePoamQuDFv6" />
+                      </jU>
+                    </option>
+                    <option name="type" value="BEARER" />
+                  </authState>
+                </option>
+                <option name="body">
+                  <bodyState>
+                    <option name="formData">
+                      <list>
+                        <formDataParameterState>
+                          <option name="key" value="title" />
+                          <option name="value" value="Wedding Program Book for Kingsley" />
+                        </formDataParameterState>
+                        <formDataParameterState>
+                          <option name="key" value="description" />
+                          <option name="value" value="Joe's wedding program book with has the program outline etc..." />
+                        </formDataParameterState>
+                        <formDataParameterState>
+                          <option name="key" value="file" />
+                          <option name="type" value="FILE" />
+                          <option name="value" value="C:\Users\aaron\Documents\JenamLogo.png" />
+                        </formDataParameterState>
+                      </list>
+                    </option>
+                    <option name="type" value="FORM_DATA" />
+                  </bodyState>
+                </option>
+                <option name="description" value="Upload file to aws s3 container" />
+                <option name="headers">
+                  <list>
+                    <headerState>
+                      <option name="key" value="Content-Type" />
+                      <option name="value" value="multipart/form-data" />
+                    </headerState>
+                  </list>
+                </option>
+                <option name="id" value="b0e6c97a-08fa-442d-9c6f-aaa9e898f2c8" />
+                <option name="method" value="POST" />
+                <option name="name" value="/admin/file/upload/aws" />
+                <option name="url" value="{{base_url}}/admin/file/upload/aws" />
+              </requestState>
+              <requestState>
+                <option name="auth">
+                  <authState>
+                    <option name="bearer">
+                      <jU>
+                        <option name="token" value="$2b$10$oFDNGMCdFaoCFOPgz1LwCuC0j4u5ZBKsY.LkhWuUl0ePoamQuDFv6" />
+                      </jU>
+                    </option>
+                    <option name="type" value="BEARER" />
+                  </authState>
+                </option>
+                <option name="body">
+                  <bodyState>
+                    <option name="type" value="JSON" />
+                  </bodyState>
+                </option>
+                <option name="description" value="delete file" />
+                <option name="headers">
+                  <list>
+                    <headerState>
+                      <option name="key" value="Content-Type" />
+                      <option name="value" value="application/json" />
+                    </headerState>
+                  </list>
+                </option>
+                <option name="id" value="a809894d-2852-433a-877e-79ffd55728ca" />
+                <option name="method" value="POST" />
+                <option name="name" value="/admin/file/delete/:fileId" />
+                <option name="url" value="{{base_url}}/admin/file/delete/663a73f6b567a23a2cf05c7f" />
               </requestState>
             </list>
           </option>
