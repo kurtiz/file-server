@@ -7,7 +7,7 @@ import mongoose from "mongoose";
  */
 const DownloadSchema = new mongoose.Schema(
     {
-        download: {
+        file: {
             type: mongoose.Schema.Types.ObjectId,
             ref: 'File',
             required: true
@@ -36,7 +36,7 @@ const DownloadModel = mongoose.model('Download', DownloadSchema);
  * @returns {QueryWithHelpers<Array<HydratedDocument<Download, {}, {}>>, HydratedDocument<Download, {}, {}>, {}, Download, "find">}
  */
 const getDownloads = () => DownloadModel.find()
-    .populate("download")
+    .populate("file")
     .populate("downloadedBy");
 
 

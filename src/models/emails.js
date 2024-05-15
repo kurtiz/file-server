@@ -18,7 +18,7 @@ const EmailSchema = new mongoose.Schema(
         content: {
             type: String,
         },
-        email: {
+        file: {
             type: mongoose.Schema.Types.ObjectId,
             ref: 'File',
             required: true
