@@ -110,6 +110,7 @@ const otpVerification = async (request, response) => {
 
 
 const generateOTP = async (request, response) => {
+    const otpType = request.otpType
     const requestSchema = Joi.object({
         email: Joi.string().email().required()
     });
@@ -129,20 +130,61 @@ const generateOTP = async (request, response) => {
         admin.authentication.otp.code = otp_code;
         admin.authentication.otp.expires = new Date(Date.now() + 1800000);
 
-        await admin.save().then(async () => {
-            const htmlFilePath = './emails/verification_email.html';
-            const htmlContent = await readFile(htmlFilePath, 'utf8');
+        await admin.save().then(
+            async () => {
+                let htmlFilePath = "";
+                let subject = "";
 
-            await sendEmail({
-                from: 'info@fileserver.com',
-                to: email,
-                subject: 'FileServer - Verify Your Account',
-                html: htmlContent.replace("{FULLNAME}", admin.fullname)
-                    .replace("{OTP_CODE}", otp_code.toString())
-            });
+                switch (otpType) {
+                    case "verification":
+                        htmlFilePath = './emails/verification_email.html';
+                        subject = 'FileServer - Verify Your Account';
+                        break;
+                    case "password-reset":
+                        htmlFilePath = './emails/reset_password_email.html';
+                        subject = 'FileServer - Reset Your Password';
+                        break;
+                    default:
+                        console.log("Invalid OTP type: " + otpType);
+                        return response.status(500).json({error: "Internal Server Error"});
+                }
+
+                const htmlContent = await readFile(htmlFilePath, 'utf8');
+
+                await sendEmail({
+                    from: 'info@fileserver.com',
+                    to: email,
+                    subject: subject,
+                    html: htmlContent.replace("{FULLNAME}", admin.fullname)
+                        .replace("{OTP_CODE}", otp_code.toString())
+                });
         });
 
-        response.status(200).json({message: "Verification email sent!"});
+        response.status(200).json({message: "Email sent!"});
+    }
+}
+
+
+const resetPassword = async (request, response) => {
+    const requestSchema = Joi.object({
+        email: Joi.string().email().required(),
+        password: Joi.string().required()
+    });
+
+    const {error, _} = requestSchema.validate(request.body);
+    if (error) {
+        return response.status(400).json({error: error.details[0].message});
+    }
+
+    const adminData = request.body;
+    const admin = await getAdminByEmail(adminData.email);
+
+    if (!admin) {
+        return response.status(404).json({error: "Admin not found"});
+    } else {
+        admin.authentication.password = hashSync(adminData.password, genSaltSync(10));
+        const updatedAdmin = await admin.save().then((_admin) => getAdminById(_admin.id));
+        response.status(200).json({data: updatedAdmin});
     }
 }
 
@@ -181,5 +223,6 @@ export {
     register,
     login,
     otpVerification,
-    generateOTP
+    generateOTP,
+    resetPassword
 }

@@ -75,6 +75,48 @@
               <requestState>
                 <option name="body">
                   <bodyState>
+                    <option name="raw" value="{&#10;  &quot;email&quot;: &quot;joecole@coll.com&quot;&#10;}" />
+                    <option name="type" value="JSON" />
+                  </bodyState>
+                </option>
+                <option name="description" value="Generate new user OTP for password reset" />
+                <option name="headers">
+                  <list>
+                    <headerState>
+                      <option name="key" value="Content-Type" />
+                      <option name="value" value="application/json" />
+                    </headerState>
+                  </list>
+                </option>
+                <option name="id" value="fb9a382e-c8a3-44bf-b12f-9d34abe8507c" />
+                <option name="method" value="POST" />
+                <option name="name" value="/user/password/reset-initialize" />
+                <option name="url" value="{{base_url}}/user/password/reset-initialize" />
+              </requestState>
+              <requestState>
+                <option name="body">
+                  <bodyState>
+                    <option name="raw" value="{&#10;  &quot;email&quot;: &quot;joecole@coll.com&quot;&#10;}" />
+                    <option name="type" value="JSON" />
+                  </bodyState>
+                </option>
+                <option name="description" value="Reset user password" />
+                <option name="headers">
+                  <list>
+                    <headerState>
+                      <option name="key" value="Content-Type" />
+                      <option name="value" value="application/json" />
+                    </headerState>
+                  </list>
+                </option>
+                <option name="id" value="28c5affb-e0b0-4280-90c7-0083f9ccfe5a" />
+                <option name="method" value="POST" />
+                <option name="name" value="/user/password/reset" />
+                <option name="url" value="{{base_url}}/user/otp/new" />
+              </requestState>
+              <requestState>
+                <option name="body">
+                  <bodyState>
                     <option name="raw" value="{&#10;  &quot;email&quot;: &quot;joecole@coll.com&quot;,&#10;  &quot;password&quot;: &quot;12345&quot;&#10;}" />
                     <option name="type" value="JSON" />
                   </bodyState>
@@ -117,7 +159,7 @@
               <requestState>
                 <option name="body">
                   <bodyState>
-                    <option name="raw" value="{&#10;  &quot;email&quot;: &quot;joecole@coll.com&quot;,&#10;  &quot;otp&quot;: &quot;364227&quot;&#10;}" />
+                    <option name="raw" value="{&#10;  &quot;email&quot;: &quot;papiliocurtis@gmail.com&quot;,&#10;  &quot;otp&quot;: &quot;763311&quot;&#10;}" />
                     <option name="type" value="JSON" />
                   </bodyState>
                 </option>
@@ -155,6 +197,48 @@
                 <option name="method" value="POST" />
                 <option name="name" value="/admin/otp/new" />
                 <option name="url" value="{{base_url}}/admin/otp/new" />
+              </requestState>
+              <requestState>
+                <option name="body">
+                  <bodyState>
+                    <option name="raw" value="{&#10;  &quot;email&quot;: &quot;papiliocurtis@gmail.com&quot;&#10;}" />
+                    <option name="type" value="JSON" />
+                  </bodyState>
+                </option>
+                <option name="description" value="Generate new admin OTP for password reset" />
+                <option name="headers">
+                  <list>
+                    <headerState>
+                      <option name="key" value="Content-Type" />
+                      <option name="value" value="application/json" />
+                    </headerState>
+                  </list>
+                </option>
+                <option name="id" value="3dfe9e9b-66c4-450b-8294-1f632be83a08" />
+                <option name="method" value="POST" />
+                <option name="name" value="/admin/password/reset-initialize" />
+                <option name="url" value="{{base_url}}/admin/password/reset-initialize" />
+              </requestState>
+              <requestState>
+                <option name="body">
+                  <bodyState>
+                    <option name="raw" value="{&#10;  &quot;email&quot;: &quot;papiliocurtis@gmail.com&quot;,&#10;  &quot;password&quot;: &quot;12345@Gh&quot;&#10;}" />
+                    <option name="type" value="JSON" />
+                  </bodyState>
+                </option>
+                <option name="description" value="Reset admin password" />
+                <option name="headers">
+                  <list>
+                    <headerState>
+                      <option name="key" value="Content-Type" />
+                      <option name="value" value="application/json" />
+                    </headerState>
+                  </list>
+                </option>
+                <option name="id" value="c40970eb-2949-4553-b96a-3efcb4c2f8af" />
+                <option name="method" value="POST" />
+                <option name="name" value="/admin/password/reset" />
+                <option name="url" value="{{base_url}}/admin/password/reset" />
               </requestState>
               <requestState>
                 <option name="body">

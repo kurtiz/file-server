@@ -1,5 +1,12 @@
 import {Router} from "express";
-import {generateOTP, login, otpVerification, register} from "../controllers/user/authentication.controller.js";
+import {
+    generateOTP,
+    login,
+    otpVerification,
+    register,
+    resetPassword
+} from "../controllers/user/authentication.controller.js";
+import {passwordResetOtp, verificationOtp} from "../middlewares/otp.middleware.js";
 
 /**
  * Router for User
@@ -13,7 +20,9 @@ const userRouter = Router();
  */
 userRouter.post("/register", register);
 userRouter.post("/otp/verify", otpVerification);
-userRouter.post("/otp/new", generateOTP);
+userRouter.post("/otp/new", verificationOtp, generateOTP);
+userRouter.post("/password/reset-initialize", passwordResetOtp, generateOTP);
+userRouter.post("/password/reset", resetPassword);
 userRouter.post("/login", login);
 
 export default userRouter;

@@ -6086,6 +6086,1290 @@
             </responseState>
           </option>
         </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1715783122798" />
+          <option name="id" value="da589de8-0f6f-4228-afac-37f13fb94585" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;email&quot;: &quot;joecole@coll.com&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="description" value="Generate new user OTP for password reset" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="fb9a382e-c8a3-44bf-b12f-9d34abe8507c" />
+              <option name="method" value="POST" />
+              <option name="name" value="/user/password/reset-initialize" />
+              <option name="url" value="{{base_url}}/user/password/reset-initialize" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="PCFET0NUWVBFIGh0bWw+CjxodG1sIGxhbmc9ImVuIj4KPGhlYWQ+CjxtZXRhIGNoYXJzZXQ9InV0Zi04Ij4KPHRpdGxlPkVycm9yPC90aXRsZT4KPC9oZWFkPgo8Ym9keT4KPHByZT5DYW5ub3QgUE9TVCAvdXNlci9wYXNzd29yZC9yZXNldC1pbml0aWFsaXplPC9wcmU+CjwvYm9keT4KPC9odG1sPgo=" />
+              <option name="bodyString" value="&lt;!DOCTYPE html&gt;&#10;&lt;html lang=&quot;en&quot;&gt;&#10;&lt;head&gt;&#10;&lt;meta charset=&quot;utf-8&quot;&gt;&#10;&lt;title&gt;Error&lt;/title&gt;&#10;&lt;/head&gt;&#10;&lt;body&gt;&#10;&lt;pre&gt;Cannot POST /user/password/reset-initialize&lt;/pre&gt;&#10;&lt;/body&gt;&#10;&lt;/html&gt;&#10;" />
+              <option name="code" value="404" />
+              <option name="contentType" value="text/html; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="X-Powered-By" />
+                    <option name="value" value="Express" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Origin" />
+                    <option name="value" value="*" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Credentials" />
+                    <option name="value" value="true" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Expose-Headers" />
+                    <option name="value" value="Content-Type,Authorization" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Security-Policy" />
+                    <option name="value" value="default-src 'none'" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Content-Type-Options" />
+                    <option name="value" value="nosniff" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="text/html; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="170" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Accept-Encoding" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Set-Cookie" />
+                    <option name="value" value="connect.sid=s%3Ai06fpOd_NxTh38JhCS6oeECz-BgnUXE5.ASE7457GGHnnNS5EmKqRr61XZ3IM9tkYxitm9pjaTC8; Path=/; HttpOnly" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Wed, 15 May 2024 14:25:22 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=5" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="da589de8-0f6f-4228-afac-37f13fb94585" />
+              <option name="message" value="Not Found" />
+              <option name="prettyResponseType" value="HTML" />
+              <option name="previewType" value="HTML" />
+              <option name="rawBodyString" value="&lt;!DOCTYPE html&gt;&#10;&lt;html lang=&quot;en&quot;&gt;&#10;&lt;head&gt;&#10;&lt;meta charset=&quot;utf-8&quot;&gt;&#10;&lt;title&gt;Error&lt;/title&gt;&#10;&lt;/head&gt;&#10;&lt;body&gt;&#10;&lt;pre&gt;Cannot POST /user/password/reset-initialize&lt;/pre&gt;&#10;&lt;/body&gt;&#10;&lt;/html&gt;&#10;" />
+              <option name="size" value="170" />
+              <option name="time" value="47" />
+            </responseState>
+          </option>
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1715783161086" />
+          <option name="id" value="49201e87-fd20-4459-b346-1bf59e6e6d17" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;email&quot;: &quot;joecole@coll.com&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="description" value="Generate new user OTP for password reset" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="fb9a382e-c8a3-44bf-b12f-9d34abe8507c" />
+              <option name="method" value="POST" />
+              <option name="name" value="/user/password/reset-initialize" />
+              <option name="url" value="{{base_url}}/user/password/reset-initialize" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJlcnJvciI6IlVzZXIgbm90IGZvdW5kIn0=" />
+              <option name="bodyString" value="{&#10;  &quot;error&quot; : &quot;User not found&quot;&#10;}" />
+              <option name="code" value="404" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="X-Powered-By" />
+                    <option name="value" value="Express" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Origin" />
+                    <option name="value" value="*" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Credentials" />
+                    <option name="value" value="true" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Expose-Headers" />
+                    <option name="value" value="Content-Type,Authorization" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="26" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="ETag" />
+                    <option name="value" value="W/&quot;1a-hq/hT0ORGTkTfyRpVCZ/JB/r8Eg&quot;" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Accept-Encoding" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Set-Cookie" />
+                    <option name="value" value="connect.sid=s%3AtuwK3WdHQ-zUF1kzAQpRfRXDFPOjOcGf.iXivFJqcok%2FZbbBg8VBcnbB8O5gIyiPbK696diyjwCk; Path=/; HttpOnly" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Wed, 15 May 2024 14:26:01 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=5" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="49201e87-fd20-4459-b346-1bf59e6e6d17" />
+              <option name="message" value="Not Found" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;error&quot;:&quot;User not found&quot;}" />
+              <option name="size" value="26" />
+              <option name="time" value="359" />
+            </responseState>
+          </option>
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1715783897467" />
+          <option name="id" value="b1ba5deb-6e6a-4e16-a9a2-7e3ffb909217" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;email&quot;: &quot;papiliocurtis@gmail.com&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="description" value="Generate new admin OTP for password reset" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="3dfe9e9b-66c4-450b-8294-1f632be83a08" />
+              <option name="method" value="POST" />
+              <option name="name" value="/admin/password/reset-initialize" />
+              <option name="url" value="{{base_url}}/admin/password/reset-initialize" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="PCFET0NUWVBFIGh0bWw+CjxodG1sIGxhbmc9ImVuIj4KPGhlYWQ+CjxtZXRhIGNoYXJzZXQ9InV0Zi04Ij4KPHRpdGxlPkVycm9yPC90aXRsZT4KPC9oZWFkPgo8Ym9keT4KPHByZT5DYW5ub3QgUE9TVCAvYWRtaW4vcGFzc3dvcmQvcmVzZXQtaW5pdGlhbGl6ZTwvcHJlPgo8L2JvZHk+CjwvaHRtbD4K" />
+              <option name="bodyString" value="&lt;!DOCTYPE html&gt;&#10;&lt;html lang=&quot;en&quot;&gt;&#10;&lt;head&gt;&#10;&lt;meta charset=&quot;utf-8&quot;&gt;&#10;&lt;title&gt;Error&lt;/title&gt;&#10;&lt;/head&gt;&#10;&lt;body&gt;&#10;&lt;pre&gt;Cannot POST /admin/password/reset-initialize&lt;/pre&gt;&#10;&lt;/body&gt;&#10;&lt;/html&gt;&#10;" />
+              <option name="code" value="404" />
+              <option name="contentType" value="text/html; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="X-Powered-By" />
+                    <option name="value" value="Express" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Origin" />
+                    <option name="value" value="*" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Credentials" />
+                    <option name="value" value="true" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Expose-Headers" />
+                    <option name="value" value="Content-Type,Authorization" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Security-Policy" />
+                    <option name="value" value="default-src 'none'" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Content-Type-Options" />
+                    <option name="value" value="nosniff" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="text/html; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="171" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Accept-Encoding" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Set-Cookie" />
+                    <option name="value" value="connect.sid=s%3AOIqiEqbgOXApfX4BJ5qRbbUiy-To4f6s.BqBH%2BrAn8sUzVjjyt1%2B26zCpurAdjF98jUN7Brw6A1U; Path=/; HttpOnly" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Wed, 15 May 2024 14:38:17 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=5" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="b1ba5deb-6e6a-4e16-a9a2-7e3ffb909217" />
+              <option name="message" value="Not Found" />
+              <option name="prettyResponseType" value="HTML" />
+              <option name="previewType" value="HTML" />
+              <option name="rawBodyString" value="&lt;!DOCTYPE html&gt;&#10;&lt;html lang=&quot;en&quot;&gt;&#10;&lt;head&gt;&#10;&lt;meta charset=&quot;utf-8&quot;&gt;&#10;&lt;title&gt;Error&lt;/title&gt;&#10;&lt;/head&gt;&#10;&lt;body&gt;&#10;&lt;pre&gt;Cannot POST /admin/password/reset-initialize&lt;/pre&gt;&#10;&lt;/body&gt;&#10;&lt;/html&gt;&#10;" />
+              <option name="size" value="171" />
+              <option name="time" value="40" />
+            </responseState>
+          </option>
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1715784119348" />
+          <option name="id" value="87322ec6-9fc8-4268-acd8-c4cb55c4c597" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;email&quot;: &quot;papiliocurtis@gmail.com&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="description" value="Generate new admin OTP for password reset" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="3dfe9e9b-66c4-450b-8294-1f632be83a08" />
+              <option name="method" value="POST" />
+              <option name="name" value="/admin/password/reset-initialize" />
+              <option name="url" value="{{base_url}}/admin/password/reset-initialize" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJtZXNzYWdlIjoiRW1haWwgc2VudCEifQ==" />
+              <option name="bodyString" value="{&#10;  &quot;message&quot; : &quot;Email sent!&quot;&#10;}" />
+              <option name="code" value="200" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="X-Powered-By" />
+                    <option name="value" value="Express" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Origin" />
+                    <option name="value" value="*" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Credentials" />
+                    <option name="value" value="true" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Expose-Headers" />
+                    <option name="value" value="Content-Type,Authorization" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="25" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="ETag" />
+                    <option name="value" value="W/&quot;19-42ZCWAUz3yJ1TmkXjqulr0GkcwA&quot;" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Accept-Encoding" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Set-Cookie" />
+                    <option name="value" value="connect.sid=s%3Anr-y4xt5iXfNOMlkJ7_vn3mVxbWqo8On.mQXXzZ4gium9dmRdnOZVnfJ%2BWIwhjlYbgK7Oa%2BcgV7k; Path=/; HttpOnly" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Wed, 15 May 2024 14:41:59 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=5" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="87322ec6-9fc8-4268-acd8-c4cb55c4c597" />
+              <option name="message" value="OK" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;message&quot;:&quot;Email sent!&quot;}" />
+              <option name="size" value="25" />
+              <option name="time" value="3529" />
+            </responseState>
+          </option>
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1715784381867" />
+          <option name="id" value="4bfdba62-d7b9-45fd-b745-1ac1c90beba3" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;email&quot;: &quot;papiliocurtis@gmail.com&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="description" value="Generate new admin OTP for password reset" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="3dfe9e9b-66c4-450b-8294-1f632be83a08" />
+              <option name="method" value="POST" />
+              <option name="name" value="/admin/password/reset-initialize" />
+              <option name="url" value="{{base_url}}/admin/password/reset-initialize" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJtZXNzYWdlIjoiRW1haWwgc2VudCEifQ==" />
+              <option name="bodyString" value="{&#10;  &quot;message&quot; : &quot;Email sent!&quot;&#10;}" />
+              <option name="code" value="200" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="X-Powered-By" />
+                    <option name="value" value="Express" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Origin" />
+                    <option name="value" value="*" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Credentials" />
+                    <option name="value" value="true" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Expose-Headers" />
+                    <option name="value" value="Content-Type,Authorization" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="25" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="ETag" />
+                    <option name="value" value="W/&quot;19-42ZCWAUz3yJ1TmkXjqulr0GkcwA&quot;" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Accept-Encoding" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Set-Cookie" />
+                    <option name="value" value="connect.sid=s%3ABx3fs-ELqDqG9Tafh3TR_liU3u8iHM2B.ERtm7Q5xSuMX2q2vKk2548VqbfMa%2FF4%2FaOlNQ3Xhk6Q; Path=/; HttpOnly" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Wed, 15 May 2024 14:46:21 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=5" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="4bfdba62-d7b9-45fd-b745-1ac1c90beba3" />
+              <option name="message" value="OK" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;message&quot;:&quot;Email sent!&quot;}" />
+              <option name="size" value="25" />
+              <option name="time" value="2290" />
+            </responseState>
+          </option>
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1715784437684" />
+          <option name="id" value="2c08f8e2-315f-4791-b08c-efb9137e7f22" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;email&quot;: &quot;papiliocurtis@gmail.com&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="description" value="Generate new admin OTP for password reset" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="3dfe9e9b-66c4-450b-8294-1f632be83a08" />
+              <option name="method" value="POST" />
+              <option name="name" value="/admin/password/reset-initialize" />
+              <option name="url" value="{{base_url}}/admin/password/reset-initialize" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJtZXNzYWdlIjoiRW1haWwgc2VudCEifQ==" />
+              <option name="bodyString" value="{&#10;  &quot;message&quot; : &quot;Email sent!&quot;&#10;}" />
+              <option name="code" value="200" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="X-Powered-By" />
+                    <option name="value" value="Express" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Origin" />
+                    <option name="value" value="*" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Credentials" />
+                    <option name="value" value="true" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Expose-Headers" />
+                    <option name="value" value="Content-Type,Authorization" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="25" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="ETag" />
+                    <option name="value" value="W/&quot;19-42ZCWAUz3yJ1TmkXjqulr0GkcwA&quot;" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Accept-Encoding" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Set-Cookie" />
+                    <option name="value" value="connect.sid=s%3AVfCQ3CFhpYB8ERLtHjYrradiuKeQbFZg.4r%2FOuIc62AvBNpwBybKXCjp3z5EQuXZwxLZzdFOIslE; Path=/; HttpOnly" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Wed, 15 May 2024 14:47:17 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=5" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="2c08f8e2-315f-4791-b08c-efb9137e7f22" />
+              <option name="message" value="OK" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;message&quot;:&quot;Email sent!&quot;}" />
+              <option name="size" value="25" />
+              <option name="time" value="4013" />
+            </responseState>
+          </option>
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1715784521237" />
+          <option name="id" value="9e442e26-0e12-4e05-a236-56c66d6cfe0c" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;email&quot;: &quot;papiliocurtis@gmail.com&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="description" value="Generate new admin OTP for password reset" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="3dfe9e9b-66c4-450b-8294-1f632be83a08" />
+              <option name="method" value="POST" />
+              <option name="name" value="/admin/password/reset-initialize" />
+              <option name="url" value="{{base_url}}/admin/password/reset-initialize" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJtZXNzYWdlIjoiRW1haWwgc2VudCEifQ==" />
+              <option name="bodyString" value="{&#10;  &quot;message&quot; : &quot;Email sent!&quot;&#10;}" />
+              <option name="code" value="200" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="X-Powered-By" />
+                    <option name="value" value="Express" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Origin" />
+                    <option name="value" value="*" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Credentials" />
+                    <option name="value" value="true" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Expose-Headers" />
+                    <option name="value" value="Content-Type,Authorization" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="25" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="ETag" />
+                    <option name="value" value="W/&quot;19-42ZCWAUz3yJ1TmkXjqulr0GkcwA&quot;" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Accept-Encoding" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Wed, 15 May 2024 14:48:41 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=5" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="9e442e26-0e12-4e05-a236-56c66d6cfe0c" />
+              <option name="message" value="OK" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;message&quot;:&quot;Email sent!&quot;}" />
+              <option name="size" value="25" />
+              <option name="time" value="4477" />
+            </responseState>
+          </option>
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1715790862931" />
+          <option name="id" value="0d87b34e-6460-4bf2-b6ed-ff68dcdb0538" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;email&quot;: &quot;papiliocurtis@gmail.com&quot;,&#10;  &quot;otp&quot;: &quot;888364&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="description" value="Verify admin OTP" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="934365de-385d-41c5-8906-500c4d09cdd6" />
+              <option name="method" value="POST" />
+              <option name="name" value="/admin/otp/verify" />
+              <option name="url" value="{{base_url}}/admin/otp/verify" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJlcnJvciI6Ik9UUCBleHBpcmVkIn0=" />
+              <option name="bodyString" value="{&#10;  &quot;error&quot; : &quot;OTP expired&quot;&#10;}" />
+              <option name="code" value="410" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="X-Powered-By" />
+                    <option name="value" value="Express" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Origin" />
+                    <option name="value" value="*" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Credentials" />
+                    <option name="value" value="true" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Expose-Headers" />
+                    <option name="value" value="Content-Type,Authorization" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="23" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="ETag" />
+                    <option name="value" value="W/&quot;17-BqUy2F7EdSBHEeyu+ciaP+hHRuk&quot;" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Accept-Encoding" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Set-Cookie" />
+                    <option name="value" value="connect.sid=s%3AeMEPri10e3cDS3eHuj5wWkgODeBvciGl.meQqxnUDexZQ0ioFL5ovrKPKR7T2qgova%2Bk4WGGMFnQ; Path=/; HttpOnly" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Wed, 15 May 2024 16:34:22 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=5" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="0d87b34e-6460-4bf2-b6ed-ff68dcdb0538" />
+              <option name="message" value="Gone" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;error&quot;:&quot;OTP expired&quot;}" />
+              <option name="size" value="23" />
+              <option name="time" value="232" />
+            </responseState>
+          </option>
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1715790868799" />
+          <option name="id" value="8edced04-5a44-4428-805c-c804a2f46468" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;email&quot;: &quot;papiliocurtis@gmail.com&quot;,&#10;  &quot;otp&quot;: &quot;888364&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="description" value="Verify admin OTP" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="934365de-385d-41c5-8906-500c4d09cdd6" />
+              <option name="method" value="POST" />
+              <option name="name" value="/admin/otp/verify" />
+              <option name="url" value="{{base_url}}/admin/otp/verify" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJlcnJvciI6Ik9UUCBleHBpcmVkIn0=" />
+              <option name="bodyString" value="{&#10;  &quot;error&quot; : &quot;OTP expired&quot;&#10;}" />
+              <option name="code" value="410" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="X-Powered-By" />
+                    <option name="value" value="Express" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Origin" />
+                    <option name="value" value="*" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Credentials" />
+                    <option name="value" value="true" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Expose-Headers" />
+                    <option name="value" value="Content-Type,Authorization" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="23" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="ETag" />
+                    <option name="value" value="W/&quot;17-BqUy2F7EdSBHEeyu+ciaP+hHRuk&quot;" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Accept-Encoding" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Wed, 15 May 2024 16:34:28 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=5" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="8edced04-5a44-4428-805c-c804a2f46468" />
+              <option name="message" value="Gone" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;error&quot;:&quot;OTP expired&quot;}" />
+              <option name="size" value="23" />
+              <option name="time" value="237" />
+            </responseState>
+          </option>
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1715790877734" />
+          <option name="id" value="67fa502b-c9b1-435d-becb-353113f9218c" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;email&quot;: &quot;papiliocurtis@gmail.com&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="description" value="Generate new admin OTP for password reset" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="3dfe9e9b-66c4-450b-8294-1f632be83a08" />
+              <option name="method" value="POST" />
+              <option name="name" value="/admin/password/reset-initialize" />
+              <option name="url" value="{{base_url}}/admin/password/reset-initialize" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJtZXNzYWdlIjoiRW1haWwgc2VudCEifQ==" />
+              <option name="bodyString" value="{&#10;  &quot;message&quot; : &quot;Email sent!&quot;&#10;}" />
+              <option name="code" value="200" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="X-Powered-By" />
+                    <option name="value" value="Express" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Origin" />
+                    <option name="value" value="*" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Credentials" />
+                    <option name="value" value="true" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Expose-Headers" />
+                    <option name="value" value="Content-Type,Authorization" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="25" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="ETag" />
+                    <option name="value" value="W/&quot;19-42ZCWAUz3yJ1TmkXjqulr0GkcwA&quot;" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Accept-Encoding" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Wed, 15 May 2024 16:34:37 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=5" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="67fa502b-c9b1-435d-becb-353113f9218c" />
+              <option name="message" value="OK" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;message&quot;:&quot;Email sent!&quot;}" />
+              <option name="size" value="25" />
+              <option name="time" value="3169" />
+            </responseState>
+          </option>
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1715790892787" />
+          <option name="id" value="f7ff65d7-61e0-4c51-8391-5637d94afa4c" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;email&quot;: &quot;papiliocurtis@gmail.com&quot;,&#10;  &quot;otp&quot;: &quot;763311&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="description" value="Verify admin OTP" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="934365de-385d-41c5-8906-500c4d09cdd6" />
+              <option name="method" value="POST" />
+              <option name="name" value="/admin/otp/verify" />
+              <option name="url" value="{{base_url}}/admin/otp/verify" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJkYXRhIjp7ImF1dGhlbnRpY2F0aW9uIjp7InNlc3Npb24iOnsiZXhwaXJlcyI6IjIwMjQtMDYtMTRUMTY6MzQ6NTIuMzIwWiIsInRva2VuIjoiJDJiJDEwJGx5anhCTWdETlg4QWcwYTBXU08wbU9QNGNSMnlmMzhoTmc2eWliUURtQ28zRlNsMUhVczdDIn0sIm90cCI6eyJjb2RlIjo3NjMzMTEsImV4cGlyZXMiOiIyMDI0LTA1LTE1VDE2OjM0OjUyLjIzN1oifSwicGFzc3dvcmQiOiIkMmIkMTAkTHkzemZndFZjejBzWk8wT25MbkRrT3ZaMTFoWEt2ZERqNGtXU3F0NGJEUFN4ZXBPUEc2OEMifSwiX2lkIjoiNjYyODMwZTY0YzE3ZDJmN2E2Y2NjYTYzIiwiZnVsbG5hbWUiOiJBYXJvbiBXaWxsIERqYWJhIiwiZW1haWwiOiJwYXBpbGlvY3VydGlzQGdtYWlsLmNvbSIsImVtYWlsVmVyaWZpZWQiOnRydWUsImNyZWF0ZWRBdCI6IjIwMjQtMDQtMjNUMjI6MDY6MzAuNDgyWiIsInVwZGF0ZWRBdCI6IjIwMjQtMDUtMTVUMTY6MzQ6NTIuMzIxWiIsIl9fdiI6MH19" />
+              <option name="bodyString" value="{&#10;  &quot;data&quot; : {&#10;    &quot;authentication&quot; : {&#10;      &quot;session&quot; : {&#10;        &quot;expires&quot; : &quot;2024-06-14T16:34:52.320Z&quot;,&#10;        &quot;token&quot; : &quot;$2b$10$lyjxBMgDNX8Ag0a0WSO0mOP4cR2yf38hNg6yibQDmCo3FSl1HUs7C&quot;&#10;      },&#10;      &quot;otp&quot; : {&#10;        &quot;code&quot; : 763311,&#10;        &quot;expires&quot; : &quot;2024-05-15T16:34:52.237Z&quot;&#10;      },&#10;      &quot;password&quot; : &quot;$2b$10$Ly3zfgtVcz0sZO0OnLnDkOvZ11hXKvdDj4kWSqt4bDPSxepOPG68C&quot;&#10;    },&#10;    &quot;_id&quot; : &quot;662830e64c17d2f7a6ccca63&quot;,&#10;    &quot;fullname&quot; : &quot;Aaron Will Djaba&quot;,&#10;    &quot;email&quot; : &quot;papiliocurtis@gmail.com&quot;,&#10;    &quot;emailVerified&quot; : true,&#10;    &quot;createdAt&quot; : &quot;2024-04-23T22:06:30.482Z&quot;,&#10;    &quot;updatedAt&quot; : &quot;2024-05-15T16:34:52.321Z&quot;,&#10;    &quot;__v&quot; : 0&#10;  }&#10;}" />
+              <option name="code" value="200" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="X-Powered-By" />
+                    <option name="value" value="Express" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Origin" />
+                    <option name="value" value="*" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Credentials" />
+                    <option name="value" value="true" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Expose-Headers" />
+                    <option name="value" value="Content-Type,Authorization" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="486" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="ETag" />
+                    <option name="value" value="W/&quot;1e6-z3vQR7un+zlj4oBlvX3MYONImlM&quot;" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Accept-Encoding" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Wed, 15 May 2024 16:34:52 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=5" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="f7ff65d7-61e0-4c51-8391-5637d94afa4c" />
+              <option name="message" value="OK" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;data&quot;:{&quot;authentication&quot;:{&quot;session&quot;:{&quot;expires&quot;:&quot;2024-06-14T16:34:52.320Z&quot;,&quot;token&quot;:&quot;$2b$10$lyjxBMgDNX8Ag0a0WSO0mOP4cR2yf38hNg6yibQDmCo3FSl1HUs7C&quot;},&quot;otp&quot;:{&quot;code&quot;:763311,&quot;expires&quot;:&quot;2024-05-15T16:34:52.237Z&quot;},&quot;password&quot;:&quot;$2b$10$Ly3zfgtVcz0sZO0OnLnDkOvZ11hXKvdDj4kWSqt4bDPSxepOPG68C&quot;},&quot;_id&quot;:&quot;662830e64c17d2f7a6ccca63&quot;,&quot;fullname&quot;:&quot;Aaron Will Djaba&quot;,&quot;email&quot;:&quot;papiliocurtis@gmail.com&quot;,&quot;emailVerified&quot;:true,&quot;createdAt&quot;:&quot;2024-04-23T22:06:30.482Z&quot;,&quot;updatedAt&quot;:&quot;2024-05-15T16:34:52.321Z&quot;,&quot;__v&quot;:0}}" />
+              <option name="size" value="486" />
+              <option name="time" value="785" />
+            </responseState>
+          </option>
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1715790948904" />
+          <option name="id" value="93dd44cb-f98e-43d0-aa68-19c071a0d33a" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;email&quot;: &quot;papiliocurtis@gmail.com&quot;,&#10;  &quot;password&quot;: &quot;2020202020&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="description" value="Reset admin password" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="c40970eb-2949-4553-b96a-3efcb4c2f8af" />
+              <option name="method" value="POST" />
+              <option name="name" value="/admin/password/reset" />
+              <option name="url" value="{{base_url}}/admin/password/reset" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJkYXRhIjp7ImF1dGhlbnRpY2F0aW9uIjp7InNlc3Npb24iOnsiZXhwaXJlcyI6IjIwMjQtMDYtMTRUMTY6MzQ6NTIuMzIwWiIsInRva2VuIjoiJDJiJDEwJGx5anhCTWdETlg4QWcwYTBXU08wbU9QNGNSMnlmMzhoTmc2eWliUURtQ28zRlNsMUhVczdDIn0sIm90cCI6eyJjb2RlIjo3NjMzMTEsImV4cGlyZXMiOiIyMDI0LTA1LTE1VDE2OjM0OjUyLjIzN1oifSwicGFzc3dvcmQiOiIkMmIkMTAkSmYvWnN2OWY4V0R1R1kydDBtcmJ6ZWRjRGIwcjZmUmpGQ0JjbTFHSFFKeGFMQmtpQ0poT20ifSwiX2lkIjoiNjYyODMwZTY0YzE3ZDJmN2E2Y2NjYTYzIiwiZnVsbG5hbWUiOiJBYXJvbiBXaWxsIERqYWJhIiwiZW1haWwiOiJwYXBpbGlvY3VydGlzQGdtYWlsLmNvbSIsImVtYWlsVmVyaWZpZWQiOnRydWUsImNyZWF0ZWRBdCI6IjIwMjQtMDQtMjNUMjI6MDY6MzAuNDgyWiIsInVwZGF0ZWRBdCI6IjIwMjQtMDUtMTVUMTY6MzU6NDguNDI4WiIsIl9fdiI6MH19" />
+              <option name="bodyString" value="{&#10;  &quot;data&quot; : {&#10;    &quot;authentication&quot; : {&#10;      &quot;session&quot; : {&#10;        &quot;expires&quot; : &quot;2024-06-14T16:34:52.320Z&quot;,&#10;        &quot;token&quot; : &quot;$2b$10$lyjxBMgDNX8Ag0a0WSO0mOP4cR2yf38hNg6yibQDmCo3FSl1HUs7C&quot;&#10;      },&#10;      &quot;otp&quot; : {&#10;        &quot;code&quot; : 763311,&#10;        &quot;expires&quot; : &quot;2024-05-15T16:34:52.237Z&quot;&#10;      },&#10;      &quot;password&quot; : &quot;$2b$10$Jf/Zsv9f8WDuGY2t0mrbzedcDb0r6fRjFCBcm1GHQJxaLBkiCJhOm&quot;&#10;    },&#10;    &quot;_id&quot; : &quot;662830e64c17d2f7a6ccca63&quot;,&#10;    &quot;fullname&quot; : &quot;Aaron Will Djaba&quot;,&#10;    &quot;email&quot; : &quot;papiliocurtis@gmail.com&quot;,&#10;    &quot;emailVerified&quot; : true,&#10;    &quot;createdAt&quot; : &quot;2024-04-23T22:06:30.482Z&quot;,&#10;    &quot;updatedAt&quot; : &quot;2024-05-15T16:35:48.428Z&quot;,&#10;    &quot;__v&quot; : 0&#10;  }&#10;}" />
+              <option name="code" value="200" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="X-Powered-By" />
+                    <option name="value" value="Express" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Origin" />
+                    <option name="value" value="*" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Credentials" />
+                    <option name="value" value="true" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Expose-Headers" />
+                    <option name="value" value="Content-Type,Authorization" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="486" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="ETag" />
+                    <option name="value" value="W/&quot;1e6-zixz/cP41aTlZkAaUbeHrd18sfI&quot;" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Accept-Encoding" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Wed, 15 May 2024 16:35:48 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=5" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="93dd44cb-f98e-43d0-aa68-19c071a0d33a" />
+              <option name="message" value="OK" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;data&quot;:{&quot;authentication&quot;:{&quot;session&quot;:{&quot;expires&quot;:&quot;2024-06-14T16:34:52.320Z&quot;,&quot;token&quot;:&quot;$2b$10$lyjxBMgDNX8Ag0a0WSO0mOP4cR2yf38hNg6yibQDmCo3FSl1HUs7C&quot;},&quot;otp&quot;:{&quot;code&quot;:763311,&quot;expires&quot;:&quot;2024-05-15T16:34:52.237Z&quot;},&quot;password&quot;:&quot;$2b$10$Jf/Zsv9f8WDuGY2t0mrbzedcDb0r6fRjFCBcm1GHQJxaLBkiCJhOm&quot;},&quot;_id&quot;:&quot;662830e64c17d2f7a6ccca63&quot;,&quot;fullname&quot;:&quot;Aaron Will Djaba&quot;,&quot;email&quot;:&quot;papiliocurtis@gmail.com&quot;,&quot;emailVerified&quot;:true,&quot;createdAt&quot;:&quot;2024-04-23T22:06:30.482Z&quot;,&quot;updatedAt&quot;:&quot;2024-05-15T16:35:48.428Z&quot;,&quot;__v&quot;:0}}" />
+              <option name="size" value="486" />
+              <option name="time" value="803" />
+            </responseState>
+          </option>
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1715790961842" />
+          <option name="id" value="65c34afc-26ca-4036-9215-23b482d38edb" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;email&quot;: &quot;papiliocurtis@gmail.com&quot;,&#10;  &quot;password&quot;: &quot;2020202020&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="description" value="Reset admin password" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="c40970eb-2949-4553-b96a-3efcb4c2f8af" />
+              <option name="method" value="POST" />
+              <option name="name" value="/admin/password/reset" />
+              <option name="url" value="{{base_url}}/admin/password/reset" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJkYXRhIjp7ImF1dGhlbnRpY2F0aW9uIjp7InNlc3Npb24iOnsiZXhwaXJlcyI6IjIwMjQtMDYtMTRUMTY6MzQ6NTIuMzIwWiIsInRva2VuIjoiJDJiJDEwJGx5anhCTWdETlg4QWcwYTBXU08wbU9QNGNSMnlmMzhoTmc2eWliUURtQ28zRlNsMUhVczdDIn0sIm90cCI6eyJjb2RlIjo3NjMzMTEsImV4cGlyZXMiOiIyMDI0LTA1LTE1VDE2OjM0OjUyLjIzN1oifSwicGFzc3dvcmQiOiIkMmIkMTAkVlg1YjVJWGwxemFlNG1TOGpFZGxTdUptQmNVRmVNeDE4R2N0OWdUQ1FFVEZPUERWb1hWZVcifSwiX2lkIjoiNjYyODMwZTY0YzE3ZDJmN2E2Y2NjYTYzIiwiZnVsbG5hbWUiOiJBYXJvbiBXaWxsIERqYWJhIiwiZW1haWwiOiJwYXBpbGlvY3VydGlzQGdtYWlsLmNvbSIsImVtYWlsVmVyaWZpZWQiOnRydWUsImNyZWF0ZWRBdCI6IjIwMjQtMDQtMjNUMjI6MDY6MzAuNDgyWiIsInVwZGF0ZWRBdCI6IjIwMjQtMDUtMTVUMTY6MzY6MDEuMzg1WiIsIl9fdiI6MH19" />
+              <option name="bodyString" value="{&#10;  &quot;data&quot; : {&#10;    &quot;authentication&quot; : {&#10;      &quot;session&quot; : {&#10;        &quot;expires&quot; : &quot;2024-06-14T16:34:52.320Z&quot;,&#10;        &quot;token&quot; : &quot;$2b$10$lyjxBMgDNX8Ag0a0WSO0mOP4cR2yf38hNg6yibQDmCo3FSl1HUs7C&quot;&#10;      },&#10;      &quot;otp&quot; : {&#10;        &quot;code&quot; : 763311,&#10;        &quot;expires&quot; : &quot;2024-05-15T16:34:52.237Z&quot;&#10;      },&#10;      &quot;password&quot; : &quot;$2b$10$VX5b5IXl1zae4mS8jEdlSuJmBcUFeMx18Gct9gTCQETFOPDVoXVeW&quot;&#10;    },&#10;    &quot;_id&quot; : &quot;662830e64c17d2f7a6ccca63&quot;,&#10;    &quot;fullname&quot; : &quot;Aaron Will Djaba&quot;,&#10;    &quot;email&quot; : &quot;papiliocurtis@gmail.com&quot;,&#10;    &quot;emailVerified&quot; : true,&#10;    &quot;createdAt&quot; : &quot;2024-04-23T22:06:30.482Z&quot;,&#10;    &quot;updatedAt&quot; : &quot;2024-05-15T16:36:01.385Z&quot;,&#10;    &quot;__v&quot; : 0&#10;  }&#10;}" />
+              <option name="code" value="200" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="X-Powered-By" />
+                    <option name="value" value="Express" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Origin" />
+                    <option name="value" value="*" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Credentials" />
+                    <option name="value" value="true" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Expose-Headers" />
+                    <option name="value" value="Content-Type,Authorization" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="486" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="ETag" />
+                    <option name="value" value="W/&quot;1e6-Z1AGfE6LUEFxqi7EleqryPlAY/o&quot;" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Accept-Encoding" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Wed, 15 May 2024 16:36:01 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=5" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="65c34afc-26ca-4036-9215-23b482d38edb" />
+              <option name="message" value="OK" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;data&quot;:{&quot;authentication&quot;:{&quot;session&quot;:{&quot;expires&quot;:&quot;2024-06-14T16:34:52.320Z&quot;,&quot;token&quot;:&quot;$2b$10$lyjxBMgDNX8Ag0a0WSO0mOP4cR2yf38hNg6yibQDmCo3FSl1HUs7C&quot;},&quot;otp&quot;:{&quot;code&quot;:763311,&quot;expires&quot;:&quot;2024-05-15T16:34:52.237Z&quot;},&quot;password&quot;:&quot;$2b$10$VX5b5IXl1zae4mS8jEdlSuJmBcUFeMx18Gct9gTCQETFOPDVoXVeW&quot;},&quot;_id&quot;:&quot;662830e64c17d2f7a6ccca63&quot;,&quot;fullname&quot;:&quot;Aaron Will Djaba&quot;,&quot;email&quot;:&quot;papiliocurtis@gmail.com&quot;,&quot;emailVerified&quot;:true,&quot;createdAt&quot;:&quot;2024-04-23T22:06:30.482Z&quot;,&quot;updatedAt&quot;:&quot;2024-05-15T16:36:01.385Z&quot;,&quot;__v&quot;:0}}" />
+              <option name="size" value="486" />
+              <option name="time" value="779" />
+            </responseState>
+          </option>
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1715791040391" />
+          <option name="id" value="91effb16-d70b-40b2-8a8e-a7527a665d6d" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;email&quot;: &quot;papiliocurtis@gmail.com&quot;,&#10;  &quot;password&quot;: &quot;12345@Gh&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="description" value="Reset admin password" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="c40970eb-2949-4553-b96a-3efcb4c2f8af" />
+              <option name="method" value="POST" />
+              <option name="name" value="/admin/password/reset" />
+              <option name="url" value="{{base_url}}/admin/password/reset" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJkYXRhIjp7ImF1dGhlbnRpY2F0aW9uIjp7InNlc3Npb24iOnsiZXhwaXJlcyI6IjIwMjQtMDYtMTRUMTY6MzY6NTguMjE5WiIsInRva2VuIjoiJDJiJDEwJElKazh0aHlWYTVZb1RkWXhHdXZNYWVNMHJtaERrRVJpWUNkVUlCU0d0UEhGdTFrVERUNXJ1In0sIm90cCI6eyJjb2RlIjo3NjMzMTEsImV4cGlyZXMiOiIyMDI0LTA1LTE1VDE2OjM0OjUyLjIzN1oifSwicGFzc3dvcmQiOiIkMmIkMTAkZmlja3poNnFmcWFzbm0xRm1mYW1YLkMzM2VnZzJDalB1M1ZLODhQNG1pdlJkbTZCc1VUaEMifSwiX2lkIjoiNjYyODMwZTY0YzE3ZDJmN2E2Y2NjYTYzIiwiZnVsbG5hbWUiOiJBYXJvbiBXaWxsIERqYWJhIiwiZW1haWwiOiJwYXBpbGlvY3VydGlzQGdtYWlsLmNvbSIsImVtYWlsVmVyaWZpZWQiOnRydWUsImNyZWF0ZWRBdCI6IjIwMjQtMDQtMjNUMjI6MDY6MzAuNDgyWiIsInVwZGF0ZWRBdCI6IjIwMjQtMDUtMTVUMTY6Mzc6MTkuOTI0WiIsIl9fdiI6MH19" />
+              <option name="bodyString" value="{&#10;  &quot;data&quot; : {&#10;    &quot;authentication&quot; : {&#10;      &quot;session&quot; : {&#10;        &quot;expires&quot; : &quot;2024-06-14T16:36:58.219Z&quot;,&#10;        &quot;token&quot; : &quot;$2b$10$IJk8thyVa5YoTdYxGuvMaeM0rmhDkERiYCdUIBSGtPHFu1kTDT5ru&quot;&#10;      },&#10;      &quot;otp&quot; : {&#10;        &quot;code&quot; : 763311,&#10;        &quot;expires&quot; : &quot;2024-05-15T16:34:52.237Z&quot;&#10;      },&#10;      &quot;password&quot; : &quot;$2b$10$fickzh6qfqasnm1FmfamX.C33egg2CjPu3VK88P4mivRdm6BsUThC&quot;&#10;    },&#10;    &quot;_id&quot; : &quot;662830e64c17d2f7a6ccca63&quot;,&#10;    &quot;fullname&quot; : &quot;Aaron Will Djaba&quot;,&#10;    &quot;email&quot; : &quot;papiliocurtis@gmail.com&quot;,&#10;    &quot;emailVerified&quot; : true,&#10;    &quot;createdAt&quot; : &quot;2024-04-23T22:06:30.482Z&quot;,&#10;    &quot;updatedAt&quot; : &quot;2024-05-15T16:37:19.924Z&quot;,&#10;    &quot;__v&quot; : 0&#10;  }&#10;}" />
+              <option name="code" value="200" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="X-Powered-By" />
+                    <option name="value" value="Express" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Origin" />
+                    <option name="value" value="*" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Credentials" />
+                    <option name="value" value="true" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Expose-Headers" />
+                    <option name="value" value="Content-Type,Authorization" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="486" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="ETag" />
+                    <option name="value" value="W/&quot;1e6-C9C6AG6ANfBuFf/LU0DIvti2X1k&quot;" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Accept-Encoding" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Wed, 15 May 2024 16:37:20 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=5" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="91effb16-d70b-40b2-8a8e-a7527a665d6d" />
+              <option name="message" value="OK" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;data&quot;:{&quot;authentication&quot;:{&quot;session&quot;:{&quot;expires&quot;:&quot;2024-06-14T16:36:58.219Z&quot;,&quot;token&quot;:&quot;$2b$10$IJk8thyVa5YoTdYxGuvMaeM0rmhDkERiYCdUIBSGtPHFu1kTDT5ru&quot;},&quot;otp&quot;:{&quot;code&quot;:763311,&quot;expires&quot;:&quot;2024-05-15T16:34:52.237Z&quot;},&quot;password&quot;:&quot;$2b$10$fickzh6qfqasnm1FmfamX.C33egg2CjPu3VK88P4mivRdm6BsUThC&quot;},&quot;_id&quot;:&quot;662830e64c17d2f7a6ccca63&quot;,&quot;fullname&quot;:&quot;Aaron Will Djaba&quot;,&quot;email&quot;:&quot;papiliocurtis@gmail.com&quot;,&quot;emailVerified&quot;:true,&quot;createdAt&quot;:&quot;2024-04-23T22:06:30.482Z&quot;,&quot;updatedAt&quot;:&quot;2024-05-15T16:37:19.924Z&quot;,&quot;__v&quot;:0}}" />
+              <option name="size" value="486" />
+              <option name="time" value="802" />
+            </responseState>
+          </option>
+        </requestHistoryState>
       </list>
     </option>
   </component>
