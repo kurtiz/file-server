@@ -1,4 +1,4 @@
-import mongoose from "mongoose";
+import mongoose, {isValidObjectId} from "mongoose";
 
 /**
  * Mongoose schema for the Email model.
@@ -54,7 +54,9 @@ const getEmails = () => EmailModel.find().populate("file").populate("sentBy")
  * @param id user id
  * @returns {QueryWithHelpers<UnpackedIntersection<Document<unknown, {}, Email> & Email & {_id: Types.ObjectId}, Document<unknown, {}, Email> & Email & {_id: Types.ObjectId}>, Document<unknown, {}, Email> & Email & {_id: Types.ObjectId}, {}, UnpackedIntersection<Email, Document<unknown, {}, Email> & Email & {_id: Types.ObjectId}>, "findOne">}
  */
-const getEmailByUserId = (id) => EmailModel.findOne({sentBy: id}).populate("file").populate("sentBy")
+const getEmailByUserId = (id) => {
+    if (isValidObjectId(id)) return EmailModel.findOne({sentBy: id}).populate("file").populate("sentBy")
+}
 
 
 /**
@@ -62,7 +64,9 @@ const getEmailByUserId = (id) => EmailModel.findOne({sentBy: id}).populate("file
  * @param id email id
  * @returns {QueryWithHelpers<HydratedDocument<Email, {}, {}> | null, HydratedDocument<Email, {}, {}>, {}, Email, "findOne">}
  */
-const getEmailById = (id) => EmailModel.findById(id).populate("file").populate("sentBy")
+const getEmailById = (id) => {
+    if (isValidObjectId(id)) return EmailModel.findById(id).populate("file").populate("sentBy")
+}
 
 
 /**
@@ -78,7 +82,9 @@ const createEmail = (values) => new EmailModel(values).save().then((email) => em
  * @param id ID of the email
  * @returns {QueryWithHelpers<ModifyResult<HydratedDocument<Email, {}, {}>>, HydratedDocument<Email, {}, {}>, {}, Email, "findOneAndDelete">}
  */
-const deleteEmailById = (id) => EmailModel.findByIdAndDelete(id);
+const deleteEmailById = (id) => {
+    if(isValidObjectId(id)) return EmailModel.findByIdAndDelete(id);
+}
 
 /**
  * Updates the email with the ID of the email
@@ -86,7 +92,9 @@ const deleteEmailById = (id) => EmailModel.findByIdAndDelete(id);
  * @param values Email data to be used for the update
  * @returns {QueryWithHelpers<HydratedDocument<Email, {}, {}> | null, HydratedDocument<Email, {}, {}>, {}, Email, "findOneAndUpdate">}
  */
-const updateEmailById = (id, values) => EmailModel.findByIdAndUpdate(id, values);
+const updateEmailById = (id, values) => {
+    if (isValidObjectId(id)) return EmailModel.findByIdAndUpdate(id, values);
+}
 
 
 export {

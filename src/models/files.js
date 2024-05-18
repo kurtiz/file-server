@@ -1,4 +1,4 @@
-import mongoose from "mongoose";
+import mongoose, {isValidObjectId} from "mongoose";
 
 /**
  * Mongoose schema for the File model.
@@ -59,7 +59,9 @@ const getFiles = () => FileModel.find().populate("uploadedBy");
  * @param id user id
  * @returns {QueryWithHelpers<UnpackedIntersection<Document<unknown, {}, File> & File & {_id: Types.ObjectId}, Document<unknown, {}, File> & File & {_id: Types.ObjectId}>, Document<unknown, {}, File> & File & {_id: Types.ObjectId}, {}, UnpackedIntersection<File, Document<unknown, {}, File> & File & {_id: Types.ObjectId}>, "findOne">}
  */
-const getFileByUserId = (id) => FileModel.findOne({uploadedBy: id}).populate("uploadedBy");
+const getFileByUserId = (id) => {
+    if (isValidObjectId(id)) return FileModel.findOne({uploadedBy: id}).populate("uploadedBy");
+}
 
 
 /**
@@ -67,7 +69,9 @@ const getFileByUserId = (id) => FileModel.findOne({uploadedBy: id}).populate("up
  * @param id file id
  * @returns {QueryWithHelpers<HydratedDocument<File, {}, {}> | null, HydratedDocument<File, {}, {}>, {}, File, "findOne">}
  */
-const getFileById = (id) => FileModel.findById(id).populate("uploadedBy");
+const getFileById = (id) => {
+    if (isValidObjectId(id)) return FileModel.findById(id).populate("uploadedBy");
+}
 
 
 /**
@@ -83,7 +87,9 @@ const createFile = (values) => new FileModel(values).save().then((file) => file)
  * @param id ID of the file
  * @returns {QueryWithHelpers<ModifyResult<HydratedDocument<File, {}, {}>>, HydratedDocument<File, {}, {}>, {}, File, "findOneAndDelete">}
  */
-const deleteFileById = (id) => FileModel.findByIdAndDelete(id);
+const deleteFileById = (id) => {
+    if (isValidObjectId(id)) return FileModel.findByIdAndDelete(id);
+}
 
 /**
  * Updates the file with the ID of the file
@@ -91,7 +97,9 @@ const deleteFileById = (id) => FileModel.findByIdAndDelete(id);
  * @param values File data to be used for the update
  * @returns {QueryWithHelpers<HydratedDocument<File, {}, {}> | null, HydratedDocument<File, {}, {}>, {}, File, "findOneAndUpdate">}
  */
-const updateFileById = (id, values) => FileModel.findByIdAndUpdate(id, values);
+const updateFileById = (id, values) => {
+    if (isValidObjectId(id)) return FileModel.findByIdAndUpdate(id, values);
+}
 
 
 export {
