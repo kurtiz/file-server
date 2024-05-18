@@ -1,4 +1,4 @@
-import mongoose from "mongoose";
+import mongoose, {isValidObjectId} from "mongoose";
 
 /**
  * Mongoose schema for the Download model.
@@ -12,11 +12,6 @@ const DownloadSchema = new mongoose.Schema(
             ref: 'File',
             required: true
         },
-        downloadedBy: {
-            type: mongoose.Schema.Types.ObjectId,
-            ref: 'User',
-            required: true
-        }
     },
     {
         timestamps: true
@@ -36,18 +31,7 @@ const DownloadModel = mongoose.model('Download', DownloadSchema);
  * @returns {QueryWithHelpers<Array<HydratedDocument<Download, {}, {}>>, HydratedDocument<Download, {}, {}>, {}, Download, "find">}
  */
 const getDownloads = () => DownloadModel.find()
-    .populate("file")
-    .populate("downloadedBy");
-
-
-/**
- * Gets a download by the user id
- * @param id user id
- * @returns {QueryWithHelpers<UnpackedIntersection<Document<unknown, {}, Download> & Download & {_id: Types.ObjectId}, Document<unknown, {}, Download> & Download & {_id: Types.ObjectId}>, Document<unknown, {}, Download> & Download & {_id: Types.ObjectId}, {}, UnpackedIntersection<Download, Document<unknown, {}, Download> & Download & {_id: Types.ObjectId}>, "findOne">}
- */
-const getDownloadByUserId = (id) => DownloadModel.findOne({downloadedBy: id})
-    .populate("file")
-    .populate("downloadedBy");
+    .populate("file");
 
 
 /**
@@ -55,9 +39,20 @@ const getDownloadByUserId = (id) => DownloadModel.findOne({downloadedBy: id})
  * @param id file id
  * @returns {QueryWithHelpers<UnpackedIntersection<Document<unknown, {}, Download> & Download & {_id: Types.ObjectId}, Document<unknown, {}, Download> & Download & {_id: Types.ObjectId}>, Document<unknown, {}, Download> & Download & {_id: Types.ObjectId}, {}, UnpackedIntersection<Download, Document<unknown, {}, Download> & Download & {_id: Types.ObjectId}>, "findOne">}
  */
-const getDownloadByFileId = (id) => DownloadModel.findOne({file: id})
-    .populate("file")
-    .populate("downloadedBy");
+const getDownloadByFileId = (id) => {
+    if (isValidObjectId(id)) return DownloadModel.findOne({file: id}).populate("file");
+}
+
+
+/**
+ * Gets a downloads by the file id
+ * @param id file id
+ * @returns {QueryWithHelpers<UnpackedIntersection<Array<HydratedDocument<Download, {}, {}>>, Omit<Document<?, {}, Download>&Download&{_id: Types.ObjectId}, "_id"> & Document<?, {}, Download> & Download & {_id: Types.ObjectId} & Omit<Download, "_id">>, Document<unknown, {}, Download> & Download & {_id: Types.ObjectId}, {}, UnpackedIntersection<Download, Omit<Document<?, {}, Download>&Download&{_id: Types.ObjectId}, "_id"> & Document<?, {}, Download> & Download & {_id: Types.ObjectId} & Omit<Download, "_id">>, "find">}
+ */
+const getDownloadsByFileId = (id) => {
+    if (isValidObjectId(id)) return DownloadModel.find({file: id}).populate("file");
+}
+
 
 
 /**
@@ -65,9 +60,9 @@ const getDownloadByFileId = (id) => DownloadModel.findOne({file: id})
  * @param id download id
  * @returns {QueryWithHelpers<HydratedDocument<Download, {}, {}> | null, HydratedDocument<Download, {}, {}>, {}, Download, "findOne">}
  */
-const getDownloadById = (id) => DownloadModel.findById(id)
-    .populate("file")
-    .populate("downloadedBy");
+const getDownloadById = (id) => {
+    if (isValidObjectId(id)) return DownloadModel.findById(id).populate("file");
+}
 
 
 /**
@@ -83,7 +78,9 @@ const createDownload = (values) => new DownloadModel(values).save().then((downlo
  * @param id ID of the download
  * @returns {QueryWithHelpers<ModifyResult<HydratedDocument<Download, {}, {}>>, HydratedDocument<Download, {}, {}>, {}, Download, "findOneAndDelete">}
  */
-const deleteDownloadById = (id) => DownloadModel.findByIdAndDelete(id);
+const deleteDownloadById = (id) => {
+    if (isValidObjectId(id)) return DownloadModel.findByIdAndDelete(id);
+}
 
 /**
  * Updates the download with the ID of the download
@@ -97,7 +94,6 @@ const updateDownloadById = (id, values) => DownloadModel.findByIdAndUpdate(id, v
 export {
     getDownloads,
     getDownloadByFileId,
-    getDownloadByUserId,
     getDownloadById,
     createDownload,
     deleteDownloadById,

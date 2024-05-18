@@ -1,7 +1,7 @@
 import {Router} from "express";
 import userRouter from "./user.route.js";
 import adminRouter from "./admin.route.js";
-import {downloadFile} from "../controllers/fileDownload.controller.js";
+import {downloadFile, recordDownload} from "../controllers/fileDownload.controller.js";
 
 /**
  * Main Router
@@ -13,6 +13,7 @@ router.use("/user", userRouter);
 router.use("/admin", adminRouter);
 
 router.get("/file/download/:filename", downloadFile);
+router.get("/file/download/request/:fileId", recordDownload);
 
 // home route just to show the site is working
 router.get("/", (request, response) => {

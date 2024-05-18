@@ -7,6 +7,7 @@ import {formatFileSize} from "../../helpers/file.helper.js";
 import {join, dirname} from 'path';
 import {fileURLToPath} from 'url';
 import fs from 'fs';
+import {getDownloadById, getDownloads} from "../../models/downloads.js";
 
 
 const awsFileUpload = async (request, response) => {
@@ -147,7 +148,6 @@ const fileDelete = async (request, response) => {
         });
     } else {
         _localFileDelete(file.filename).then(
-
             async () => {
                 await deleteFileById(fileData.fileId);
                 return response.status(200).json({message: "File deleted successfully"})
@@ -162,7 +162,59 @@ const fileDelete = async (request, response) => {
 
 }
 
-//TODO work on password reset
+const getAllDownloads = async (request, response) => {
+    try {
+        const downloads = await getDownloads();
+        if (downloads) {
+            return response.status(200).json({data: downloads});
+        } else {
+            return response.status(404).json({error: "No downloads found"});
+        }
+    } catch (error) {
+        console.log(error);
+        return response.status(500).json({error: "Internal Server Error"});
+    }
+}
+
+
+const getAllDownloadsCount = async (request, response) => {
+    try {
+        const downloads = await getDownloads();
+        if (downloads) {
+            return response.status(200).json({data: {length: downloads?.length}});
+        } else {
+            return response.status(404).json({error: "No downloads found"});
+        }
+    } catch (error) {
+        console.log(error);
+        return response.status(500).json({error: "Internal Server Error"});
+    }
+}
+
+const getDownload = async (request, response) => {
+    try {
+        const requestSchema = Joi.object({
+            downloadId: Joi.string().required()
+        });
+        const {error, _} = requestSchema.validate(request.params);
+        if (error) {
+            return response.status(400).json({error: error.details[0].message});
+        }
+
+        const downloadId = request.params.downloadId;
+
+        const download = await getDownloadById(downloadId);
+        if (download) {
+            return response.status(200).json({data: download});
+        } else {
+            return response.status(404).json({error: "Download not found"});
+        }
+    } catch (error) {
+        console.log(error);
+        return response.status(500).json({error: "Internal Server Error"});
+    }
+}
+
 const _localFileDelete = async (filename) => {
     const __dirname = dirname(fileURLToPath(import.meta.url));
     const filePath = join(__dirname, '../../../assets/uploads', filename);
@@ -180,5 +232,8 @@ const _localFileDelete = async (filename) => {
 export {
     awsFileUpload,
     localFileUpload,
-    fileDelete
+    fileDelete,
+    getAllDownloads,
+    getAllDownloadsCount,
+    getDownload
 };

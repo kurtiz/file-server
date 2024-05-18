@@ -266,7 +266,7 @@
                   <authState>
                     <option name="bearer">
                       <jU>
-                        <option name="token" value="$2b$10$oFDNGMCdFaoCFOPgz1LwCuC0j4u5ZBKsY.LkhWuUl0ePoamQuDFv6" />
+                        <option name="token" value="$2b$10$Uj9mDhGmt99oBAk3hopfkug2xMuWHWOA.awTw79VHxk5JsM9.nR9e" />
                       </jU>
                     </option>
                     <option name="type" value="BEARER" />
@@ -384,6 +384,66 @@
                 <option name="method" value="POST" />
                 <option name="name" value="/admin/file/delete/:fileId" />
                 <option name="url" value="{{base_url}}/admin/file/delete/663a73f6b567a23a2cf05c7f" />
+              </requestState>
+              <requestState>
+                <option name="auth">
+                  <authState>
+                    <option name="bearer">
+                      <jU>
+                        <option name="token" value="{{auth_token}}" />
+                      </jU>
+                    </option>
+                    <option name="type" value="BEARER" />
+                  </authState>
+                </option>
+                <option name="body">
+                  <bodyState>
+                    <option name="type" value="JSON" />
+                  </bodyState>
+                </option>
+                <option name="description" value="Record downloads" />
+                <option name="headers">
+                  <list>
+                    <headerState>
+                      <option name="key" value="Content-Type" />
+                      <option name="value" value="application/json" />
+                    </headerState>
+                  </list>
+                </option>
+                <option name="id" value="3d6c6763-0c66-4ac6-a7ee-671d62d272f3" />
+                <option name="method" value="GET" />
+                <option name="name" value="/file/download/request/:fileId" />
+                <option name="url" value="{{base_url}}/file/download/request/66474975af18b8261290c511" />
+              </requestState>
+              <requestState>
+                <option name="auth">
+                  <authState>
+                    <option name="bearer">
+                      <jU>
+                        <option name="token" value="{{auth_token}}" />
+                      </jU>
+                    </option>
+                    <option name="type" value="BEARER" />
+                  </authState>
+                </option>
+                <option name="body">
+                  <bodyState>
+                    <option name="type" value="JSON" />
+                  </bodyState>
+                </option>
+                <option name="description" value="delete file" />
+                <option name="headers">
+                  <list>
+                    <headerState>
+                      <option name="key" value="Content-Type" />
+                      <option name="value" value="application/json" />
+                    </headerState>
+                  </list>
+                </option>
+                <option name="id" value="ea20212c-f52c-401b-8b22-049d11519efc" />
+                <option name="method" value="GET" />
+                <option name="name" value="/admin/file/delete/:fileId 1" />
+                <option name="url" value="{{base_url}}/admin/downloads" />
               </requestState>
             </list>
           </option>

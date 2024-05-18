@@ -7,7 +7,13 @@ import {
     resetPassword
 } from "../controllers/admin/authentication.controller.js";
 import {multerAWSUpload, multerLocalUpload} from "../middlewares/multer.middleware.js";
-import {awsFileUpload, fileDelete, localFileUpload} from "../controllers/admin/fileUpload.controller.js";
+import {
+    awsFileUpload,
+    fileDelete,
+    getAllDownloads,
+    getAllDownloadsCount, getDownload,
+    localFileUpload
+} from "../controllers/admin/file.controller.js";
 import {isAuthenticatedAsAdmin} from "../middlewares/authentication.middleware.js";
 import {passwordResetOtp, verificationOtp} from "../middlewares/otp.middleware.js";
 
@@ -30,6 +36,9 @@ adminRouter.post("/login", login);
 adminRouter.post("/file/upload/aws", isAuthenticatedAsAdmin, multerAWSUpload.single("file"), awsFileUpload);
 adminRouter.post("/file/upload/local", isAuthenticatedAsAdmin, multerLocalUpload.single('file'), localFileUpload);
 adminRouter.post("/file/delete/:fileId", isAuthenticatedAsAdmin, fileDelete);
+adminRouter.get("/downloads/", isAuthenticatedAsAdmin, getAllDownloads);
+adminRouter.get("/downloads/count", isAuthenticatedAsAdmin, getAllDownloadsCount);
+adminRouter.get("/download/:downloadId", isAuthenticatedAsAdmin, getDownload);
 
 
 export default adminRouter;
