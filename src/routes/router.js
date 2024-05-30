@@ -12,8 +12,8 @@ const router = Router();
 router.use("/user", userRouter);
 router.use("/admin", adminRouter);
 
-router.get("/file/download/:filename", downloadFile);
 router.get("/file/download/request/:fileId", recordDownload);
+router.get("/file/download/:filename", downloadFile);
 
 // home route just to show the site is working
 router.get("/", (request, response) => {
