@@ -68,9 +68,7 @@ const getUsers = () => UserModel.find();
  * @param email user email
  * @returns {QueryWithHelpers<Array<HydratedDocument<User, {}, {}>>, HydratedDocument<User, {}, {}>, {}, User, "find">}
  */
-const getUserByEmail = (email) => {
-    if (isValidObjectId(email)) return UserModel.findOne({email: email});
-}
+const getUserByEmail = (email) => UserModel.findOne({email: email});
 
 
 /**
@@ -78,9 +76,7 @@ const getUserByEmail = (email) => {
  * @param sessionToken session token of user
  * @returns {QueryWithHelpers<Array<HydratedDocument<User, {}, {}>>, HydratedDocument<User, {}, {}>, {}, User, "find">}
  */
-const getUserBySessionToken = (sessionToken) => {
-    if (isValidObjectId(sessionToken)) return UserModel.findOne({'authentication.session.token': sessionToken});
-}
+const getUserBySessionToken = (sessionToken) => UserModel.findOne({'authentication.session.token': sessionToken});
 
 
 /**

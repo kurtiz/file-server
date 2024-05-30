@@ -12,7 +12,7 @@
               <requestState>
                 <option name="body">
                   <bodyState>
-                    <option name="raw" value="{&#10;  &quot;first_name&quot;: &quot;John Cole&quot;,&#10;  &quot;email&quot;: &quot;papiliocurtis@gmail.com&quot;,&#10;  &quot;password&quot;: &quot;12345@Gh&quot;&#10;}" />
+                    <option name="raw" value="{&#10;  &quot;fullname&quot;: &quot;John Cole&quot;,&#10;  &quot;email&quot;: &quot;papilio@gmail.com&quot;,&#10;  &quot;password&quot;: &quot;12345@Gh&quot;&#10;}" />
                     <option name="type" value="JSON" />
                   </bodyState>
                 </option>
@@ -28,12 +28,12 @@
                 <option name="id" value="075d5d0e-707e-47eb-9a3a-019f26554529" />
                 <option name="method" value="POST" />
                 <option name="name" value="/user/register" />
-                <option name="url" value="https://api.jobsbyus.com/auth/register" />
+                <option name="url" value="{{base_url}}/user/register" />
               </requestState>
               <requestState>
                 <option name="body">
                   <bodyState>
-                    <option name="raw" value="{&#10;  &quot;email&quot;: &quot;joecole@coll.com&quot;,&#10;  &quot;otp&quot;: &quot;364227&quot;&#10;}" />
+                    <option name="raw" value="{&#10;  &quot;email&quot;: &quot;papilio@gmail.com&quot;,&#10;  &quot;otp&quot;: &quot;323074&quot;&#10;}" />
                     <option name="type" value="JSON" />
                   </bodyState>
                 </option>
@@ -159,27 +159,6 @@
               <requestState>
                 <option name="body">
                   <bodyState>
-                    <option name="raw" value="{&#10;  &quot;email&quot;: &quot;papiliocurtis@gmail.com&quot;,&#10;  &quot;otp&quot;: &quot;763311&quot;&#10;}" />
-                    <option name="type" value="JSON" />
-                  </bodyState>
-                </option>
-                <option name="description" value="Verify admin OTP" />
-                <option name="headers">
-                  <list>
-                    <headerState>
-                      <option name="key" value="Content-Type" />
-                      <option name="value" value="application/json" />
-                    </headerState>
-                  </list>
-                </option>
-                <option name="id" value="934365de-385d-41c5-8906-500c4d09cdd6" />
-                <option name="method" value="POST" />
-                <option name="name" value="/admin/otp/verify" />
-                <option name="url" value="{{base_url}}/admin/otp/verify" />
-              </requestState>
-              <requestState>
-                <option name="body">
-                  <bodyState>
                     <option name="raw" value="{&#10;  &quot;email&quot;: &quot;joecole@coll.com&quot;&#10;}" />
                     <option name="type" value="JSON" />
                   </bodyState>
@@ -197,6 +176,27 @@
                 <option name="method" value="POST" />
                 <option name="name" value="/admin/otp/new" />
                 <option name="url" value="{{base_url}}/admin/otp/new" />
+              </requestState>
+              <requestState>
+                <option name="body">
+                  <bodyState>
+                    <option name="raw" value="{&#10;  &quot;email&quot;: &quot;papiliocurtis@gmail.com&quot;,&#10;  &quot;otp&quot;: &quot;763311&quot;&#10;}" />
+                    <option name="type" value="JSON" />
+                  </bodyState>
+                </option>
+                <option name="description" value="Verify admin OTP" />
+                <option name="headers">
+                  <list>
+                    <headerState>
+                      <option name="key" value="Content-Type" />
+                      <option name="value" value="application/json" />
+                    </headerState>
+                  </list>
+                </option>
+                <option name="id" value="934365de-385d-41c5-8906-500c4d09cdd6" />
+                <option name="method" value="POST" />
+                <option name="name" value="/admin/otp/verify" />
+                <option name="url" value="{{base_url}}/admin/otp/verify" />
               </requestState>
               <requestState>
                 <option name="body">
@@ -266,7 +266,7 @@
                   <authState>
                     <option name="bearer">
                       <jU>
-                        <option name="token" value="$2b$10$Uj9mDhGmt99oBAk3hopfkug2xMuWHWOA.awTw79VHxk5JsM9.nR9e" />
+                        <option name="token" value="{{admin_auth_token}}" />
                       </jU>
                     </option>
                     <option name="type" value="BEARER" />
@@ -313,7 +313,7 @@
                   <authState>
                     <option name="bearer">
                       <jU>
-                        <option name="token" value="$2b$10$oFDNGMCdFaoCFOPgz1LwCuC0j4u5ZBKsY.LkhWuUl0ePoamQuDFv6" />
+                        <option name="token" value="{{admin_auth_token}}" />
                       </jU>
                     </option>
                     <option name="type" value="BEARER" />
@@ -420,7 +420,7 @@
                   <authState>
                     <option name="bearer">
                       <jU>
-                        <option name="token" value="{{auth_token}}" />
+                        <option name="token" value="{{user_auth_token}}" />
                       </jU>
                     </option>
                     <option name="type" value="BEARER" />
@@ -428,10 +428,11 @@
                 </option>
                 <option name="body">
                   <bodyState>
+                    <option name="raw" value="{&#10;  &quot;recipient&quot;: &quot;papiliocurtis@gmail.com&quot;,&#10;  &quot;subject&quot;: &quot;Jones Wedding program&quot;,&#10;  &quot;message&quot;: &quot;Attached below is your wedding file.&quot;,&#10;  &quot;fileId&quot;: &quot;66474975af18b8261290c511&quot;&#10;}" />
                     <option name="type" value="JSON" />
                   </bodyState>
                 </option>
-                <option name="description" value="delete file" />
+                <option name="description" value="Send file via email" />
                 <option name="headers">
                   <list>
                     <headerState>
@@ -441,9 +442,9 @@
                   </list>
                 </option>
                 <option name="id" value="ea20212c-f52c-401b-8b22-049d11519efc" />
-                <option name="method" value="GET" />
-                <option name="name" value="/admin/file/delete/:fileId 1" />
-                <option name="url" value="{{base_url}}/admin/downloads" />
+                <option name="method" value="POST" />
+                <option name="name" value="/user/send-email" />
+                <option name="url" value="{{base_url}}/user/send-email" />
               </requestState>
             </list>
           </option>

@@ -68,9 +68,7 @@ const getAdmins = () => AdminModel.find();
  * @param email admin email
  * @returns {QueryWithHelpers<Array<HydratedDocument<Admin, {}, {}>>, HydratedDocument<Admin, {}, {}>, {}, Admin, "find">}
  */
-const getAdminByEmail = (email) => {
-    if (isValidObjectId(email)) return AdminModel.findOne({email: email});
-}
+const getAdminByEmail = (email) => AdminModel.findOne({email: email});
 
 
 /**
@@ -78,9 +76,7 @@ const getAdminByEmail = (email) => {
  * @param sessionToken session token of admin
  * @returns {QueryWithHelpers<Array<HydratedDocument<Admin, {}, {}>>, HydratedDocument<Admin, {}, {}>, {}, Admin, "find">}
  */
-const getAdminBySessionToken = (sessionToken) => {
-    if (isValidObjectId(sessionToken)) return AdminModel.findOne({'authentication.session.token': sessionToken});
-}
+const getAdminBySessionToken = (sessionToken) => AdminModel.findOne({'authentication.session.token': sessionToken});
 
 
 /**

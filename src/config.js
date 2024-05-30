@@ -49,22 +49,42 @@ const SESSION_SECRET = env.config.sessionSecret;
 /**
  * Mail host for sending emails. This is extracted from the environment variable
  */
-const MAIL_HOST = env.config.mailHost;
+const TEST_MAIL_HOST = env.config.testMailHost;
 
 /**
  * Mail port for sending emails. This is extracted from the environment variable
  */
-const MAIL_PORT = env.config.mailPort;
+const TEST_MAIL_PORT = env.config.testMailPort;
 
 /**
  * Mail user for sending emails. This is extracted from the environment variable
  */
-const MAIL_USER = env.config.mailUser;
+const TEST_MAIL_USER = env.config.testMailUser;
 
 /**
  * Mail password for sending emails. This is extracted from the environment variable
  */
-const MAIL_PASSWORD = env.config.mailPassword;
+const TEST_MAIL_PASSWORD = env.config.testMailPassword;
+
+/**
+ * Mail host for sending emails. This is extracted from the environment variable
+ */
+const LIVE_MAIL_HOST = env.config.liveMailHost;
+
+/**
+ * Mail port for sending emails. This is extracted from the environment variable
+ */
+const LIVE_MAIL_PORT = env.config.liveMailPort;
+
+/**
+ * Mail user for sending emails. This is extracted from the environment variable
+ */
+const LIVE_MAIL_USER = env.config.liveMailUser;
+
+/**
+ * Mail password for sending emails. This is extracted from the environment variable
+ */
+const LIVE_MAIL_PASSWORD = env.config.liveMailPassword;
 
 /**
  * Key for Spaces. This is extracted from the environment variable
@@ -85,10 +105,14 @@ export {
     MONGO_URL,
     PORT,
     SESSION_SECRET,
-    MAIL_HOST,
-    MAIL_PORT,
-    MAIL_USER,
-    MAIL_PASSWORD,
+    TEST_MAIL_HOST,
+    TEST_MAIL_PORT,
+    TEST_MAIL_USER,
+    TEST_MAIL_PASSWORD,
+    LIVE_MAIL_HOST,
+    LIVE_MAIL_PORT,
+    LIVE_MAIL_USER,
+    LIVE_MAIL_PASSWORD,
     SPACES_KEY,
     SPACES_SECRET,
     SPACES_BUCKET

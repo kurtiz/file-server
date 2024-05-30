@@ -23,7 +23,7 @@ const recordDownload = async (request, response) => {
     createDownload({
         file: file._id
     }).then(() => {
-        return response.status(200).json({message: "Download recorded successfully", downloadLink: file.path});
+        return response.redirect(file.path);
     }).catch((error) => {
         console.log(error);
         return response.status(500).json({error: "Internal Server Error"});
