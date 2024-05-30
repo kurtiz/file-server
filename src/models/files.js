@@ -79,6 +79,13 @@ const getFileById = (id) => {
     if (isValidObjectId(id)) return FileModel.findById(id).populate("uploadedBy");
 }
 
+/**
+ * Gets file by their ID
+ * @returns {QueryWithHelpers<HydratedDocument<File, {}, {}> | null, HydratedDocument<File, {}, {}>, {}, File, "findOne">}
+ * @param query
+ */
+const getFilesByQuery = (query) => FileModel.find(query).populate("uploadedBy");
+
 
 /**
  * Create a new file
@@ -116,5 +123,6 @@ export {
     deleteFileById,
     updateFileById,
     getFilesCount,
+    getFilesByQuery,
     FileModel
 };

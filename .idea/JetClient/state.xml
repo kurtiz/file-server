@@ -400,7 +400,7 @@
                   <authState>
                     <option name="bearer">
                       <jU>
-                        <option name="token" value="{{auth_token}}" />
+                        <option name="token" value="{{user_auth_token}}" />
                       </jU>
                     </option>
                     <option name="type" value="BEARER" />
