@@ -1,4 +1,4 @@
-import mongoose from "mongoose";
+import mongoose, {isValidObjectId} from "mongoose";
 
 /**
  * Mongoose schema for the Admin model.
@@ -84,7 +84,9 @@ const getAdminBySessionToken = (sessionToken) => AdminModel.findOne({'authentica
  * @param id id of admin
  * @returns {QueryWithHelpers<HydratedDocument<Admin, {}, {}> | null, HydratedDocument<Admin, {}, {}>, {}, Admin, "findOne">}
  */
-const getAdminById = (id) => AdminModel.findById(id);
+const getAdminById = (id) => {
+    if (isValidObjectId(id)) return AdminModel.findById(id);
+}
 
 
 /**
@@ -100,7 +102,9 @@ const createAdmin = (values) => new AdminModel(values).save().then((admin) => ad
  * @param id ID of the admin
  * @returns {QueryWithHelpers<ModifyResult<HydratedDocument<Admin, {}, {}>>, HydratedDocument<Admin, {}, {}>, {}, Admin, "findOneAndDelete">}
  */
-const deleteAdminById = (id) => AdminModel.findByIdAndDelete(id);
+const deleteAdminById = (id) => {
+    if (isValidObjectId(id)) return AdminModel.findByIdAndDelete(id);
+}
 
 /**
  * Updates the admin with the ID of the admin
@@ -108,7 +112,9 @@ const deleteAdminById = (id) => AdminModel.findByIdAndDelete(id);
  * @param values Admin data to be used for the update
  * @returns {QueryWithHelpers<HydratedDocument<Admin, {}, {}> | null, HydratedDocument<Admin, {}, {}>, {}, Admin, "findOneAndUpdate">}
  */
-const updateAdminById = (id, values) => AdminModel.findByIdAndUpdate(id, values);
+const updateAdminById = (id, values) => {
+    if (isValidObjectId(id)) return AdminModel.findByIdAndUpdate(id, values);
+}
 
 
 export {

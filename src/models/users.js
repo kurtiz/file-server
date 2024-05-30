@@ -1,4 +1,4 @@
-import mongoose from "mongoose";
+import mongoose, {isValidObjectId} from "mongoose";
 
 /**
  * Mongoose schema for the User model.
@@ -84,7 +84,9 @@ const getUserBySessionToken = (sessionToken) => UserModel.findOne({'authenticati
  * @param id id of user
  * @returns {QueryWithHelpers<HydratedDocument<User, {}, {}> | null, HydratedDocument<User, {}, {}>, {}, User, "findOne">}
  */
-const getUserById = (id) => UserModel.findById(id);
+const getUserById = (id) => {
+    if (isValidObjectId(id)) return UserModel.findById(id);
+}
 
 
 /**
@@ -100,7 +102,9 @@ const createUser = (values) => new UserModel(values).save().then((user) => user)
  * @param id ID of the user
  * @returns {QueryWithHelpers<ModifyResult<HydratedDocument<User, {}, {}>>, HydratedDocument<User, {}, {}>, {}, User, "findOneAndDelete">}
  */
-const deleteUserById = (id) => UserModel.findByIdAndDelete(id);
+const deleteUserById = (id) => {
+    if (isValidObjectId(id)) return UserModel.findByIdAndDelete(id);
+}
 
 /**
  * Updates the user with the ID of the user
@@ -108,10 +112,13 @@ const deleteUserById = (id) => UserModel.findByIdAndDelete(id);
  * @param values User data to be used for the update
  * @returns {QueryWithHelpers<HydratedDocument<User, {}, {}> | null, HydratedDocument<User, {}, {}>, {}, User, "findOneAndUpdate">}
  */
-const updateUserById = (id, values) => UserModel.findByIdAndUpdate(id, values);
+const updateUserById = (id, values) => {
+    if (isValidObjectId(id)) return UserModel.findByIdAndUpdate(id, values);
+}
 
 
 export {
+
     getUsers,
     getUserByEmail,
     getUserBySessionToken,

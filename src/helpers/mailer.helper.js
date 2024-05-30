@@ -5,18 +5,39 @@
 
 import nodemailer from 'nodemailer';
 import smtpTransport from 'nodemailer-smtp-transport';
-import {MAIL_HOST, MAIL_PASSWORD, MAIL_PORT, MAIL_USER} from "../config.js";
+import {
+    LIVE_MAIL_PASSWORD,
+    LIVE_MAIL_USER,
+    TEST_MAIL_HOST,
+    TEST_MAIL_PASSWORD,
+    TEST_MAIL_PORT,
+    TEST_MAIL_USER
+} from "../config.js";
+
+/**
+ * Creates a nodemailer transporter for Gmail
+ * @type {Mail}
+ */
+const transporterLive = nodemailer.createTransport(smtpTransport({
+
+    service: 'gmail',
+    auth: {
+        user: LIVE_MAIL_USER,
+        pass: LIVE_MAIL_PASSWORD
+    }
+}));
+
 
 /**
  * Creates a nodemailer transporter
  * @type {Mail}
  */
-const transporter = nodemailer.createTransport(smtpTransport({
-    host: MAIL_HOST,
-    port: MAIL_PORT,
+const transporterTest = nodemailer.createTransport(smtpTransport({
+    host: TEST_MAIL_HOST,
+    port: TEST_MAIL_PORT,
     auth: {
-        user: MAIL_USER,
-        pass: MAIL_PASSWORD
+        user: TEST_MAIL_USER,
+        pass: TEST_MAIL_PASSWORD
     }
 }));
 
@@ -28,8 +49,14 @@ const transporter = nodemailer.createTransport(smtpTransport({
  */
 async function sendEmail(options) {
     try {
-        await transporter.sendMail(options);
-        console.log('Email sent successfully');
+        await transporterLive.sendMail(options)
+            .then(() => {
+                console.log('Email sent successfully');
+            })
+            .catch((error) => {
+                console.error('Error sending email:', error);
+                throw error;
+            });
     } catch (error) {
         console.error('Error sending email:', error);
     }
