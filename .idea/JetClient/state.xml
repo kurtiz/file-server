@@ -278,7 +278,7 @@
                       <list>
                         <formDataParameterState>
                           <option name="key" value="title" />
-                          <option name="value" value="Wedding Program Book for Bismark" />
+                          <option name="value" value="Wedding Program Book for Bintal" />
                         </formDataParameterState>
                         <formDataParameterState>
                           <option name="key" value="description" />
@@ -306,7 +306,7 @@
                 <option name="id" value="e52784d2-4dae-4df1-aa6d-63d2adeee7bf" />
                 <option name="method" value="POST" />
                 <option name="name" value="/admin/file/upload/local" />
-                <option name="url" value="{{base_url}}/admin/file/upload/local" />
+                <option name="url" value="https://file-server-zr8t.onrender.com/admin/file/upload/aws" />
               </requestState>
               <requestState>
                 <option name="auth">
@@ -428,7 +428,7 @@
                 </option>
                 <option name="body">
                   <bodyState>
-                    <option name="raw" value="{&#10;  &quot;recipient&quot;: &quot;papiliocurtis@gmail.com&quot;,&#10;  &quot;subject&quot;: &quot;Jones Wedding program&quot;,&#10;  &quot;message&quot;: &quot;Attached below is your wedding file.&quot;,&#10;  &quot;fileId&quot;: &quot;66474975af18b8261290c511&quot;&#10;}" />
+                    <option name="raw" value="{&#10;  &quot;recipient&quot;: &quot;papiliocurtis@gmail.com&quot;,&#10;  &quot;subject&quot;: &quot;Bintal Wedding program&quot;,&#10;  &quot;message&quot;: &quot;Attached below is your wedding file.&quot;,&#10;  &quot;fileId&quot;: &quot;665837335d0e5579e5ee1b96&quot;&#10;}" />
                     <option name="type" value="JSON" />
                   </bodyState>
                 </option>

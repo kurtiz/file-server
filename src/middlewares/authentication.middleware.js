@@ -12,13 +12,16 @@ const isAuthenticatedAsAdmin = async (request, response, next) => {
     if (admin_session_token) {
         const admin = await getAdminBySessionToken(admin_session_token);
         if (admin) {
+            if (admin.authentication.session.expires < Date.now()) {
+                return response.status(401).json({error: 'Unauthorized'});
+            }
             request.locals = admin;
             next();
         } else {
-            return response.status(401).send('Unauthorized');
+            return response.status(401).json({error: 'Unauthorized'});
         }
     } else {
-        return response.status(401).send('Unauthorized');
+        return response.status(401).json({error: 'Unauthorized'});
     }
 }
 
@@ -29,19 +32,21 @@ const isAuthenticatedAsUser = async (request, response, next) => {
         return response.status(401).send('Unauthorized');
     }
 
-    console.log("authHeader: ", authHeader);
     const user_session_token = authHeader.split(' ')[1];
 
     if (user_session_token) {
         const user = await getUserBySessionToken(user_session_token);
         if (user) {
+            if (user.authentication.session.expires < Date.now()) {
+                return response.status(401).json({error: 'Unauthorized'});
+            }
             request.locals = user;
             next();
         } else {
-            return response.status(401).send('Unauthorized');
+            return response.status(401).json({error: 'Unauthorized'});
         }
     } else {
-        return response.status(401).send('Unauthorized');
+        return response.status(401).json({error: 'Unauthorized'});
     }
 }
 

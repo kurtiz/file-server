@@ -3,7 +3,7 @@ import {sendEmail} from "../../helpers/mailer.helper.js";
 import {getFileById} from "../../models/files.js";
 import {createEmail} from "../../models/emails.js";
 
-//TODO Work on the email, check links that are sent with the emails and how to make them work
+
 const sendFileEmail = async (request, response) => {
     const emailData = request.body;
     const user = request.locals;
