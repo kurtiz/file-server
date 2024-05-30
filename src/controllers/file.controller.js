@@ -3,8 +3,8 @@ import Joi from "joi";
 
 const filesFeed = async (request, response) => {
     try {
-        const page = parseInt(request.query.page) || 1;
-        const limit = parseInt(request.query.limit) || 10;
+        const page = parseInt(request.params.page) || 1;
+        const limit = parseInt(request.params.limit) || 10;
 
         const skip = (page - 1) * limit;
 
