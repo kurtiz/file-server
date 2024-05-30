@@ -423,7 +423,7 @@
                 <option name="id" value="3d6c6763-0c66-4ac6-a7ee-671d62d272f3" />
                 <option name="method" value="GET" />
                 <option name="name" value="/file/download/request/:fileId" />
-                <option name="url" value="{{base_url}}/user/file/search/Bim" />
+                <option name="url" value="{{base_url}}/file/download/request/66474975af18b8261290c511" />
               </requestState>
               <requestState>
                 <option name="auth">
