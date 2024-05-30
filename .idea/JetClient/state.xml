@@ -190,7 +190,7 @@
                 </option>
                 <option name="body">
                   <bodyState>
-                    <option name="raw" value="{&#10;  &quot;email&quot;: &quot;papiliocurtis@gmail.com&quot;,&#10;  &quot;otp&quot;: &quot;763311&quot;&#10;}" />
+                    <option name="raw" value="{&#10;  &quot;email&quot;: &quot;papiliocurtis@gmail.com&quot;,&#10;  &quot;otp&quot;: &quot;641112&quot;&#10;}" />
                     <option name="type" value="JSON" />
                   </bodyState>
                 </option>
@@ -206,7 +206,7 @@
                 <option name="id" value="934365de-385d-41c5-8906-500c4d09cdd6" />
                 <option name="method" value="POST" />
                 <option name="name" value="/admin/otp/verify" />
-                <option name="url" value="{{base_url}}/admin/otp/password/verify" />
+                <option name="url" value="{{base_url}}/admin/otp/verify" />
               </requestState>
               <requestState>
                 <option name="body">
@@ -230,6 +230,16 @@
                 <option name="url" value="{{base_url}}/admin/password/reset-initialize" />
               </requestState>
               <requestState>
+                <option name="auth">
+                  <authState>
+                    <option name="bearer">
+                      <jU>
+                        <option name="token" value="{{admin_auth_token}}" />
+                      </jU>
+                    </option>
+                    <option name="type" value="BEARER" />
+                  </authState>
+                </option>
                 <option name="body">
                   <bodyState>
                     <option name="raw" value="{&#10;  &quot;email&quot;: &quot;papiliocurtis@gmail.com&quot;,&#10;  &quot;password&quot;: &quot;12345@Gh&quot;&#10;}" />

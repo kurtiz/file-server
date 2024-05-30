@@ -25,7 +25,7 @@ userRouter.post("/register", register);
 userRouter.post("/otp/verify", otpVerification);
 userRouter.post("/otp/new", verificationOtp, generateOTP);
 userRouter.post("/password/reset-initialize", passwordResetOtp, generateOTP);
-userRouter.post("/password/reset", resetPassword);
+userRouter.post("/password/reset", isAuthenticatedAsUser, resetPassword);
 userRouter.post("/login", login);
 userRouter.post("/send-email", isAuthenticatedAsUser, sendFileEmail);
 userRouter.get("/feed/:page/:limit", isAuthenticatedAsUser, filesFeed);

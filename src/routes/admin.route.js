@@ -24,16 +24,14 @@ import {filesFeed} from "../controllers/file.controller.js";
  */
 const adminRouter = Router();
 
-
 /**
  * Routes for admin
  */
 adminRouter.post("/register", register);
-adminRouter.post("/otp/verify", verificationOtp, otpVerification);
-adminRouter.post("/otp/new", generateOTP);
+adminRouter.post("/otp/verify",  otpVerification);
+adminRouter.post("/otp/new", verificationOtp, generateOTP);
 adminRouter.post("/password/reset-initialize", passwordResetOtp, generateOTP);
-adminRouter.post("/password/reset", resetPassword);
-adminRouter.post("/otp/password/verify", isAuthenticatedAsAdmin, otpVerification);
+adminRouter.post("/password/reset", isAuthenticatedAsAdmin, resetPassword);
 adminRouter.post("/login", login);
 adminRouter.post("/file/upload/aws", isAuthenticatedAsAdmin, multerAWSUpload.single("file"), awsFileUpload);
 adminRouter.post("/file/upload/local", isAuthenticatedAsAdmin, multerLocalUpload.single('file'), localFileUpload);
