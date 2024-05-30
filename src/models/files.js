@@ -13,8 +13,8 @@ const FileSchema = new mongoose.Schema(
             unique: true
         },
         fileSize: {
-          type: String,
-          required: true
+            type: String,
+            required: true
         },
         title: {
             type: String,
@@ -51,7 +51,13 @@ const FileModel = mongoose.model('File', FileSchema);
  * Gets all the files
  * @returns {QueryWithHelpers<Array<HydratedDocument<File, {}, {}>>, HydratedDocument<File, {}, {}>, {}, File, "find">}
  */
-const getFiles = () => FileModel.find().populate("uploadedBy");
+const getFiles = (skip = 0, limit = 10) => FileModel.find().populate("uploadedBy").skip(skip).limit(limit);
+
+/**
+ * Gets count of all the files
+ * @returns {QueryWithHelpers<number, HydratedDocument<File, {}, {}>, {}, File, "countDocuments">}
+ */
+const getFilesCount = () => FileModel.countDocuments();
 
 
 /**
@@ -109,5 +115,6 @@ export {
     createFile,
     deleteFileById,
     updateFileById,
+    getFilesCount,
     FileModel
 };

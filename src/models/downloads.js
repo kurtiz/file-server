@@ -33,6 +33,12 @@ const DownloadModel = mongoose.model('Download', DownloadSchema);
 const getDownloads = () => DownloadModel.find()
     .populate("file");
 
+/**
+ * Gets count of all the downloads
+ * @returns {QueryWithHelpers<number, HydratedDocument<Download, {}, {}>, {}, Download, "countDocuments">}
+ */
+const getDownloadsCount = () => DownloadModel.countDocuments();
+
 
 /**
  * Gets a download by the file id
@@ -98,5 +104,6 @@ export {
     createDownload,
     deleteDownloadById,
     updateDownloadById,
+    getDownloadsCount,
     DownloadModel
 };

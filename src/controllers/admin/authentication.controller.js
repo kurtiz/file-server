@@ -66,6 +66,7 @@ const register = async (request, response) => {
 const otpVerification = async (request, response) => {
     try {
         const otpData = request.body;
+
         const requestSchema = Joi.object({
             email: Joi.string().email().required(),
             otp: Joi.string().length(6).required()

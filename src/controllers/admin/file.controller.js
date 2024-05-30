@@ -159,7 +159,6 @@ const fileDelete = async (request, response) => {
             }
         );
     }
-
 }
 
 const getAllDownloads = async (request, response) => {
@@ -179,9 +178,9 @@ const getAllDownloads = async (request, response) => {
 
 const getAllDownloadsCount = async (request, response) => {
     try {
-        const downloads = await getDownloads();
-        if (downloads) {
-            return response.status(200).json({data: {length: downloads?.length}});
+        const numberOfDownloads = await getAllDownloadsCount();
+        if (numberOfDownloads) {
+            return response.status(200).json({data: {count: numberOfDownloads}});
         } else {
             return response.status(404).json({error: "No downloads found"});
         }

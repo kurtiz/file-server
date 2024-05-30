@@ -178,6 +178,16 @@
                 <option name="url" value="{{base_url}}/admin/otp/new" />
               </requestState>
               <requestState>
+                <option name="auth">
+                  <authState>
+                    <option name="bearer">
+                      <jU>
+                        <option name="token" value="{{admin_auth_token}}" />
+                      </jU>
+                    </option>
+                    <option name="type" value="BEARER" />
+                  </authState>
+                </option>
                 <option name="body">
                   <bodyState>
                     <option name="raw" value="{&#10;  &quot;email&quot;: &quot;papiliocurtis@gmail.com&quot;,&#10;  &quot;otp&quot;: &quot;763311&quot;&#10;}" />
@@ -196,7 +206,7 @@
                 <option name="id" value="934365de-385d-41c5-8906-500c4d09cdd6" />
                 <option name="method" value="POST" />
                 <option name="name" value="/admin/otp/verify" />
-                <option name="url" value="{{base_url}}/admin/otp/verify" />
+                <option name="url" value="{{base_url}}/admin/otp/password/verify" />
               </requestState>
               <requestState>
                 <option name="body">
