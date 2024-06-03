@@ -21,7 +21,9 @@ import cors from 'cors';
 import session from 'express-session';
 import {SESSION_SECRET} from "./config.js";
 import router from "./routes/router.js";
-import {connectToDatabase} from "./models/database.js";
+import {connectToTestDatabase} from "./models/database.js";
+import pino from 'pino-http';
+import logger from "./utils/logger.js";
 
 
 /**
@@ -30,6 +32,22 @@ import {connectToDatabase} from "./models/database.js";
  * @type {Express}
  */
 const app = express();
+
+/**
+ * Enables logging for the Express application (pino Logger).
+ */
+app.use(pino({
+    logger: logger,
+    customLogLevel: (_, response, err) => {
+        if (err) {
+            return 'error'; // Log errors as 'error'
+        } else if (response.statusCode >= 400) {
+            return 'warn'; // Log status codes >= 400 as 'warn'
+        } else {
+            return 'info'; // Log other requests as 'info'
+        }
+    },
+}));
 
 /**
  * Configures middleware for the Express application.
@@ -74,6 +92,7 @@ app.use(cookieParser());
  */
 app.use(bodyParser.json());
 
+
 /**
  * Creates an instance of the http server
  * @type {Server}
@@ -83,7 +102,8 @@ const server = http.createServer(app);
 /**
  * Connects to the database.
  */
-await connectToDatabase();
+// await connectToDatabase();
+await connectToTestDatabase();
 
 /**
  * Uses the registered routes in the router

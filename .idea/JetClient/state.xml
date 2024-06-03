@@ -12,7 +12,7 @@
               <requestState>
                 <option name="body">
                   <bodyState>
-                    <option name="raw" value="{&#10;  &quot;fullname&quot;: &quot;John Cole&quot;,&#10;  &quot;email&quot;: &quot;papilio@gmail.com&quot;,&#10;  &quot;password&quot;: &quot;12345@Gh&quot;&#10;}" />
+                    <option name="raw" value="{&#10;  &quot;fullname&quot;: &quot;John Cole&quot;,&#10;  &quot;email&quot;: &quot;papiliocurtis@gmail.com&quot;,&#10;  &quot;password&quot;: &quot;12345@Gh&quot;&#10;}" />
                     <option name="type" value="JSON" />
                   </bodyState>
                 </option>
@@ -138,7 +138,7 @@
               <requestState>
                 <option name="body">
                   <bodyState>
-                    <option name="raw" value="{&#10;  &quot;fullname&quot;: &quot;John Cole&quot;,&#10;  &quot;email&quot;: &quot;joecole@coll.com&quot;,&#10;  &quot;password&quot;: &quot;12345&quot;&#10;}" />
+                    <option name="raw" value="{&#10;  &quot;fullname&quot;: &quot;John Cole&quot;,&#10;  &quot;email&quot;: &quot;papiliocurtis@gmail.com&quot;,&#10;  &quot;password&quot;: &quot;12345@Gh&quot;&#10;}" />
                     <option name="type" value="JSON" />
                   </bodyState>
                 </option>

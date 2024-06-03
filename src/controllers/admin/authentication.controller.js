@@ -20,7 +20,6 @@ const register = async (request, response) => {
         }
 
         const otp_code = Math.floor(100000 + Math.random() * 800000);
-
         const values = {
             fullname: adminData.fullname,
             email: adminData.email,
@@ -50,9 +49,9 @@ const register = async (request, response) => {
             });
         response.status(201).json({message: "Account created successfully"});
     } catch (error) {
-        console.error("the error: ", error);
+        request.log.error(error);
 
-        if (error.errorResponse.code === 11000) {
+        if (error.errorResponse?.code === 11000) {
             response.status(409).json({
                 error: `The ${Object.keys(error.errorResponse.keyValue)} already exist(s)`
             });
@@ -69,7 +68,7 @@ const otpVerification = async (request, response) => {
 
         const requestSchema = Joi.object({
             email: Joi.string().email().required(),
-            otp: Joi.string().length(6).required()
+            otp: Joi.any().allow(Joi.string().length(6), Joi.number().max(999999)).required()
         });
 
         const {error, _} = requestSchema.validate({
@@ -78,7 +77,6 @@ const otpVerification = async (request, response) => {
         });
 
         if (error) {
-            console.log(error.details[0].message);
             return response.status(400).json({error: error.details[0].message});
         } else {
             const currentTimestamp = new Date().getTime();
@@ -88,9 +86,9 @@ const otpVerification = async (request, response) => {
                 return response.status(404).json({error: "Admin not found"});
             } else if (admin.authentication.otp.expires < currentTimestamp) {
                 return response.status(410).json({error: "OTP expired"}).end();
-            } else if (otpData.otp !== admin.authentication.otp.code.toString()) {
+            } else if (otpData.otp.toString() !== admin.authentication.otp.code.toString()) {
 
-                return response.status(404).json({error: "Invalid OTP"}).end();
+                return response.status(400).json({error: "Invalid OTP"}).end();
             } else {
                 admin.emailVerified = true;
                 admin.authentication.otp.code = otpData.otp;
@@ -102,90 +100,99 @@ const otpVerification = async (request, response) => {
                 response.status(200).json({data: updatedAdmin});
             }
         }
-    } catch
-        (error) {
-        console.error(error);
+    } catch (error) {
+        request.log.error(error);
         response.status(500).send('Internal server error');
     }
 }
 
 
 const generateOTP = async (request, response) => {
-    const otpType = request.otpType
-    const requestSchema = Joi.object({
-        email: Joi.string().email().required()
-    });
-
-    const {error, _} = requestSchema.validate(request.body);
-    if (error) {
-        return response.status(400).json({error: error.details[0].message});
-    } else {
-        const email = request.body.email;
-        const otp_code = Math.floor(100000 + Math.random() * 800000);
-        const admin = await getAdminByEmail(email);
-
-        if (!admin) {
-            return response.status(404).json({error: "Admin not found"});
-        }
-
-        admin.authentication.otp.code = otp_code;
-        admin.authentication.otp.expires = new Date(Date.now() + 1800000);
-
-        await admin.save().then(
-            async () => {
-                let htmlFilePath = "";
-                let subject = "";
-
-                switch (otpType) {
-                    case "verification":
-                        htmlFilePath = './emails/verification_email.html';
-                        subject = 'FileServer - Verify Your Account';
-                        break;
-                    case "password-reset":
-                        htmlFilePath = './emails/reset_password_email.html';
-                        subject = 'FileServer - Reset Your Password';
-                        break;
-                    default:
-                        console.log("Invalid OTP type: " + otpType);
-                        return response.status(500).json({error: "Internal Server Error"});
-                }
-
-                const htmlContent = await readFile(htmlFilePath, 'utf8');
-
-                await sendEmail({
-                    from: 'info@fileserver.com',
-                    to: email,
-                    subject: subject,
-                    html: htmlContent.replace("{FULLNAME}", admin.fullname)
-                        .replace("{OTP_CODE}", otp_code.toString())
-                });
+    try {
+        const otpType = request.otpType
+        const requestSchema = Joi.object({
+            email: Joi.string().email().required()
         });
 
-        response.status(200).json({message: "Email sent!"});
+        const {error, _} = requestSchema.validate(request.body);
+        if (error) {
+            return response.status(400).json({error: error.details[0].message});
+        } else {
+            const email = request.body.email;
+            const otp_code = Math.floor(100000 + Math.random() * 800000);
+            const admin = await getAdminByEmail(email);
+
+            if (!admin) {
+                return response.status(404).json({error: "Admin not found"});
+            }
+
+            admin.authentication.otp.code = otp_code;
+            admin.authentication.otp.expires = new Date(Date.now() + 1800000);
+
+            await admin.save().then(
+                async () => {
+                    let htmlFilePath = "";
+                    let subject = "";
+
+                    switch (otpType) {
+                        case "verification":
+                            htmlFilePath = './emails/verification_email.html';
+                            subject = 'FileServer - Verify Your Account';
+                            break;
+                        case "password-reset":
+                            htmlFilePath = './emails/reset_password_email.html';
+                            subject = 'FileServer - Reset Your Password';
+                            break;
+                        default:
+                            console.log("Invalid OTP type: " + otpType);
+                            return response.status(500).json({error: "Internal Server Error"});
+                    }
+
+                    const htmlContent = await readFile(htmlFilePath, 'utf8');
+
+                    await sendEmail({
+                        from: 'info@fileserver.com',
+                        to: email,
+                        subject: subject,
+                        html: htmlContent.replace("{FULLNAME}", admin.fullname)
+                            .replace("{OTP_CODE}", otp_code.toString())
+                    });
+                });
+
+            response.status(200).json({message: "Email sent!"});
+        }
+    } catch (error) {
+        request.log.error(error);
+        response.status(500).send('Internal server error');
     }
 }
 
 
 const resetPassword = async (request, response) => {
-    const requestSchema = Joi.object({
-        email: Joi.string().email().required(),
-        password: Joi.string().required()
-    });
+    try {
+        const requestSchema = Joi.object({
+            email: Joi.string().email().required(),
+            password: Joi.string().required()
+        });
 
-    const {error, _} = requestSchema.validate(request.body);
-    if (error) {
-        return response.status(400).json({error: error.details[0].message});
-    }
+        const {error, _} = requestSchema.validate(request.body);
+        if (error) {
+            return response.status(400).json({error: error.details[0].message});
+        }
 
-    const adminData = request.body;
-    const admin = await getAdminByEmail(adminData.email);
+        const adminData = request.body;
+        const admin = await getAdminByEmail(adminData.email);
 
-    if (!admin) {
-        return response.status(404).json({error: "Admin not found"});
-    } else {
-        admin.authentication.password = hashSync(adminData.password, genSaltSync(10));
-        const updatedAdmin = await admin.save().then((_admin) => getAdminById(_admin.id));
-        response.status(200).json({data: updatedAdmin});
+        if (!admin) {
+            return response.status(404).json({error: "Admin not found"});
+        } else {
+            admin.authentication.password = hashSync(adminData.password, genSaltSync(10));
+            const updatedAdmin = await admin.save().then((_admin) => getAdminById(_admin.id));
+            response.status(200).json({data: updatedAdmin});
+        }
+    } catch (error) {
+        request.log.error(error);
+        response.status(500).send('Internal server error');
     }
 }
 
@@ -215,7 +222,7 @@ const login = async (request, response) => {
             response.status(401).json({error: 'Invalid credentials'});
         }
     } catch (error) {
-        console.error(error);
+        request.log.error(error);
         response.status(500).json({error: 'Internal server error'});
     }
 }
