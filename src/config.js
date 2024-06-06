@@ -3,7 +3,7 @@
  * @module Config
  */
 
-import {cosmiconfig} from "cosmiconfig";
+import {cosmiconfigSync} from "cosmiconfig";
 
 /**
  * Loads the environment file (Looks for it within the project scope)
@@ -14,16 +14,16 @@ import {cosmiconfig} from "cosmiconfig";
  * you want to use, it is recommended you add it to the .envrc.json file
  * and export it as a constant in the config.js (this file)
  * @param {String}
- * @type {PublicExplorer}
+ * @type {PublicExplorerSync}
  */
-const explorer = cosmiconfig('env', {
+const explorer = cosmiconfigSync('env', {
     searchStrategy: "project"
 });
 
 /**
  * asynchronously search for the configuration file
  */
-const env = await explorer.search();
+const env = explorer.search();
 
 if (!env) {
     console.error('Configuration file not found.');
@@ -36,9 +36,20 @@ if (!env) {
 const PORT = env.config.port;
 
 /**
+ * Environment for the server. This is extracted from the environment variable
+ */
+const ENVIRONMENT = env.config.environment;
+
+/**
  * MongoDB URL for the server. This is extracted from the environment variable
  */
-const MONGO_URL = env.config.mongoUrl;
+const LIVE_MONGO_URL = env.config.liveMongoUrl;
+
+
+/**
+ * MongoDB URL for the server. This is extracted from the environment variable
+ */
+const TEST_MONGO_URL = env.config.testMongoUrl;
 
 
 /**
@@ -101,9 +112,16 @@ const SPACES_SECRET = env.config.spacesSecret;
  */
 const SPACES_BUCKET = env.config.spacesBucket;
 
+/**
+ * Token for Betterstack. This is extracted from the environment variable
+ */
+const BETTERSTACK_TOKEN = env.config.betterstackToken;
+
 export {
-    MONGO_URL,
     PORT,
+    ENVIRONMENT,
+    LIVE_MONGO_URL,
+    TEST_MONGO_URL,
     SESSION_SECRET,
     TEST_MAIL_HOST,
     TEST_MAIL_PORT,
@@ -115,5 +133,6 @@ export {
     LIVE_MAIL_PASSWORD,
     SPACES_KEY,
     SPACES_SECRET,
-    SPACES_BUCKET
+    SPACES_BUCKET,
+    BETTERSTACK_TOKEN
 };
