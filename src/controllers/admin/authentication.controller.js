@@ -177,6 +177,7 @@ const resetPassword = async (request, response) => {
 
         const {error, _} = requestSchema.validate(request.body);
         if (error) {
+            request.log.warn(error.details[0].message);
             return response.status(400).json({error: error.details[0].message});
         }
 

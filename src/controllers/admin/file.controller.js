@@ -7,7 +7,7 @@ import {formatFileSize} from "../../helpers/file.helper.js";
 import {join, dirname} from 'path';
 import {fileURLToPath} from 'url';
 import fs from 'fs';
-import {getDownloadById, getDownloads} from "../../models/downloads.js";
+import {getDownloadById, getDownloads, getDownloadsCount} from "../../models/downloads.js";
 
 
 const awsFileUpload = async (request, response) => {
@@ -90,7 +90,6 @@ const localFileUpload = async (request, response) => {
         }
 
         const fileSize = file.size;
-        console.log('File size:', formatFileSize(fileSize));
         const fileData = {
             filename: request.newFileName,
             uploadedBy: currentAdmin._id,
@@ -104,7 +103,7 @@ const localFileUpload = async (request, response) => {
         return response.status(200).json({data: createdFile});
 
     } catch (error) {
-        console.error("local upload error:", error);
+        request.log.error("local upload error:", error);
 
         if (error.errorResponse.code === 11000) {
             await _localFileDelete(request.newFileName);
@@ -154,7 +153,7 @@ const fileDelete = async (request, response) => {
             }
         ).catch(
             (error) => {
-                console.log(error);
+                request.log.error("File delete error:",error);
                 return response.status(500).json({error: "Internal Server Error"})
             }
         );
@@ -170,7 +169,7 @@ const getAllDownloads = async (request, response) => {
             return response.status(404).json({error: "No downloads found"});
         }
     } catch (error) {
-        console.log(error);
+        request.log.error(error);
         return response.status(500).json({error: "Internal Server Error"});
     }
 }
@@ -178,14 +177,14 @@ const getAllDownloads = async (request, response) => {
 
 const getAllDownloadsCount = async (request, response) => {
     try {
-        const numberOfDownloads = await getAllDownloadsCount();
+        const numberOfDownloads = await getDownloadsCount();
         if (numberOfDownloads) {
             return response.status(200).json({data: {count: numberOfDownloads}});
         } else {
             return response.status(404).json({error: "No downloads found"});
         }
     } catch (error) {
-        console.log(error);
+        request.log.error(error);
         return response.status(500).json({error: "Internal Server Error"});
     }
 }
@@ -206,10 +205,11 @@ const getDownload = async (request, response) => {
         if (download) {
             return response.status(200).json({data: download});
         } else {
+
             return response.status(404).json({error: "Download not found"});
         }
     } catch (error) {
-        console.log(error);
+        request.log.error(error);
         return response.status(500).json({error: "Internal Server Error"});
     }
 }

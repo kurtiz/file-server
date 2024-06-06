@@ -6,6 +6,7 @@
 import nodemailer from 'nodemailer';
 import smtpTransport from 'nodemailer-smtp-transport';
 import {
+    ENVIRONMENT,
     LIVE_MAIL_PASSWORD,
     LIVE_MAIL_USER,
     TEST_MAIL_HOST,
@@ -49,14 +50,19 @@ const transporterTest = nodemailer.createTransport(smtpTransport({
  */
 async function sendEmail(options) {
     try {
-        await transporterTest.sendMail(options)
-            .then(() => {
-                // console.log('Email sent successfully');
-            })
-            .catch((error) => {
-                console.error('Error sending email:', error);
-                throw error;
-            });
+        if (ENVIRONMENT !== "production") {
+            await transporterTest.sendMail(options)
+                .catch((error) => {
+                    console.error('Error sending email:', error);
+                    throw error;
+                });
+        } else {
+            await transporterLive.sendMail(options)
+                .catch((error) => {
+                    console.error('Error sending email:', error);
+                    throw error;
+                });
+        }
     } catch (error) {
         console.error('Error sending email:', error);
     }

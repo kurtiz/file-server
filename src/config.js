@@ -3,7 +3,7 @@
  * @module Config
  */
 
-import {cosmiconfig, cosmiconfigSync} from "cosmiconfig";
+import {cosmiconfigSync} from "cosmiconfig";
 
 /**
  * Loads the environment file (Looks for it within the project scope)
@@ -34,6 +34,11 @@ if (!env) {
  * Port number for the server. This is extracted from the environment variable
  */
 const PORT = env.config.port;
+
+/**
+ * Environment for the server. This is extracted from the environment variable
+ */
+const ENVIRONMENT = env.config.environment;
 
 /**
  * MongoDB URL for the server. This is extracted from the environment variable
@@ -114,6 +119,7 @@ const BETTERSTACK_TOKEN = env.config.betterstackToken;
 
 export {
     PORT,
+    ENVIRONMENT,
     LIVE_MONGO_URL,
     TEST_MONGO_URL,
     SESSION_SECRET,

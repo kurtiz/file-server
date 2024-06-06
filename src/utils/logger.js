@@ -7,6 +7,7 @@ const transports = pino.transport({
         {
             target: "pino-pretty",
             options: {
+                translateTime: "SYS:yyyy-mm-dd HH:MM:ss",
                 colorize: false,
                 destination: "./logs/error.log",
                 mkdir: true
@@ -15,6 +16,7 @@ const transports = pino.transport({
         {
             target: "pino-pretty",
             options: {
+                translateTime: "SYS:yyyy-mm-dd HH:MM:ss",
                 ignore: "pid,hostname,req,res",
             }
         },

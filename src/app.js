@@ -19,11 +19,12 @@ import cookieParser from 'cookie-parser';
 import compression from 'compression';
 import cors from 'cors';
 import session from 'express-session';
-import {SESSION_SECRET} from "./config.js";
+import {ENVIRONMENT, SESSION_SECRET} from "./config.js";
 import router from "./routes/router.js";
-import {connectToTestDatabase} from "./models/database.js";
+import {connectToDatabase, connectToTestDatabase} from "./models/database.js";
 import pino from 'pino-http';
 import logger from "./utils/logger.js";
+import SQLiteStoreFactory from 'connect-sqlite3';
 
 
 /**
@@ -34,12 +35,18 @@ import logger from "./utils/logger.js";
 const app = express();
 
 /**
+ * Creates SQLiteStore instance.
+ * @type {SQLiteStore}
+ */
+const SQLiteStore = SQLiteStoreFactory(session);
+
+/**
  * Enables logging for the Express application (pino Logger).
  */
 app.use(pino({
     logger: logger,
     customLogLevel: (_, response, err) => {
-        if (err) {
+        if (response.statusCode >= 500) {
             return 'error'; // Log errors as 'error'
         } else if (response.statusCode >= 400) {
             return 'warn'; // Log status codes >= 400 as 'warn'
@@ -71,6 +78,7 @@ app.use(
  */
 app.use(
     session({
+        store: new SQLiteStore,
         secret: SESSION_SECRET,
         resave: false,
         saveUninitialized: true,
@@ -102,8 +110,12 @@ const server = http.createServer(app);
 /**
  * Connects to the database.
  */
-// await connectToDatabase();
-await connectToTestDatabase();
+
+if (ENVIRONMENT !== "production") {
+    await connectToTestDatabase();
+} else {
+    await connectToDatabase();
+}
 
 /**
  * Uses the registered routes in the router
