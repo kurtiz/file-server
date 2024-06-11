@@ -117,6 +117,11 @@ const SPACES_BUCKET = env.config.spacesBucket;
  */
 const BETTERSTACK_TOKEN = env.config.betterstackToken;
 
+/**
+ * Frontend URL for the server. This is extracted from the environment variable
+ */
+const FRONTEND_URL = env.config.frontendUrl;
+
 export {
     PORT,
     ENVIRONMENT,
@@ -134,5 +139,6 @@ export {
     SPACES_KEY,
     SPACES_SECRET,
     SPACES_BUCKET,
-    BETTERSTACK_TOKEN
+    BETTERSTACK_TOKEN,
+    FRONTEND_URL
 };

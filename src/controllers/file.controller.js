@@ -25,6 +25,20 @@ const filesFeed = async (request, response) => {
     }
 }
 
+const filesCount = async (request, response) => {
+    try {
+        const numberOfFiles = await getFilesCount();
+        if (numberOfFiles) {
+            return response.status(200).json({data: {count: numberOfFiles}});
+        } else {
+            return response.status(404).json({error: "No files found"});
+        }
+    } catch (error) {
+        console.error(error);
+        return response.status(500).json({error: "Internal Server Error"});
+    }
+}
+
 
 const searchFile = async (request, response) => {
     try {
@@ -39,7 +53,7 @@ const searchFile = async (request, response) => {
             return response.status(400).json({error: error.details[0].message});
         }
 
-        const query = { title: new RegExp(params.query, 'i') };
+        const query = {title: new RegExp(params.query, 'i')};
         const files = await getFilesByQuery(query);
         response.status(200).json({data: files});
     } catch (error) {
@@ -47,4 +61,15 @@ const searchFile = async (request, response) => {
         response.status(500).json({error: "Internal server error"});
     }
 }
-export {filesFeed, searchFile}
+
+const recentFiles = async (request, response) => {
+    try {
+        const recentFiles = await getFiles(0, 5);
+        response.status(200).json({data: recentFiles});
+    } catch (error) {
+        console.error(error);
+        response.status(500).json({error: "Internal server error"});
+    }
+}
+
+export {filesFeed, filesCount, searchFile, recentFiles}

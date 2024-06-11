@@ -46,7 +46,13 @@ const EmailModel = mongoose.model('Email', EmailSchema);
  * Gets all the emails
  * @returns {QueryWithHelpers<Array<HydratedDocument<Email, {}, {}>>, HydratedDocument<Email, {}, {}>, {}, Email, "find">}
  */
-const getEmails = () => EmailModel.find().populate("file").populate("sentBy")
+const getEmails = (skip = 0, limit = null, filter= {}) => EmailModel.find(filter).populate("file").populate("sentBy").skip(skip).limit(limit);
+
+/**
+ * Gets count of all the downloads
+ * @returns {QueryWithHelpers<number, HydratedDocument<Download, {}, {}>, {}, Download, "countDocuments">}
+ */
+const getEmailsCount = () => EmailModel.countDocuments();
 
 
 /**
@@ -83,7 +89,7 @@ const createEmail = (values) => new EmailModel(values).save().then((email) => em
  * @returns {QueryWithHelpers<ModifyResult<HydratedDocument<Email, {}, {}>>, HydratedDocument<Email, {}, {}>, {}, Email, "findOneAndDelete">}
  */
 const deleteEmailById = (id) => {
-    if(isValidObjectId(id)) return EmailModel.findByIdAndDelete(id);
+    if (isValidObjectId(id)) return EmailModel.findByIdAndDelete(id);
 }
 
 /**
@@ -104,5 +110,6 @@ export {
     createEmail,
     deleteEmailById,
     updateEmailById,
+    getEmailsCount,
     EmailModel
 };

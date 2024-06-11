@@ -52,7 +52,7 @@ const awsFileUpload = async (request, response) => {
             }
         ).catch(async (error) => {
             console.error("Aws Error:", error);
-            if (error.errorResponse.code === 11000) {
+            if (error.errorResponse?.code === 11000) {
                 await deleteFile(SPACES_BUCKET, 'files', newFileName);
                 response.status(409).json({
                     error: `The ${Object.keys(error.errorResponse.keyValue)} already exist(s)`
@@ -95,7 +95,7 @@ const localFileUpload = async (request, response) => {
             uploadedBy: currentAdmin._id,
             title: request.body.title,
             description: request.body.description,
-            fileSize: formatFileSize(request.file.size),
+            fileSize: formatFileSize(fileSize),
             path: `${request.protocol}://${request.get('host')}/file/download/${request.newFileName}`
         };
 
@@ -103,7 +103,7 @@ const localFileUpload = async (request, response) => {
         return response.status(200).json({data: createdFile});
 
     } catch (error) {
-        request.log.error("local upload error:", error);
+        console.error("local upload error:", error);
 
         if (error.errorResponse.code === 11000) {
             await _localFileDelete(request.newFileName);
@@ -115,6 +115,7 @@ const localFileUpload = async (request, response) => {
         }
     }
 }
+
 
 const fileDelete = async (request, response) => {
     const fileData = request.params;
@@ -153,12 +154,13 @@ const fileDelete = async (request, response) => {
             }
         ).catch(
             (error) => {
-                request.log.error("File delete error:",error);
+                console.error("File delete error:",error);
                 return response.status(500).json({error: "Internal Server Error"})
             }
         );
     }
 }
+
 
 const getAllDownloads = async (request, response) => {
     try {
@@ -169,7 +171,7 @@ const getAllDownloads = async (request, response) => {
             return response.status(404).json({error: "No downloads found"});
         }
     } catch (error) {
-        request.log.error(error);
+        console.error(error);
         return response.status(500).json({error: "Internal Server Error"});
     }
 }
@@ -184,10 +186,11 @@ const getAllDownloadsCount = async (request, response) => {
             return response.status(404).json({error: "No downloads found"});
         }
     } catch (error) {
-        request.log.error(error);
+        console.error(error);
         return response.status(500).json({error: "Internal Server Error"});
     }
 }
+
 
 const getDownload = async (request, response) => {
     try {
@@ -209,7 +212,7 @@ const getDownload = async (request, response) => {
             return response.status(404).json({error: "Download not found"});
         }
     } catch (error) {
-        request.log.error(error);
+        console.error(error);
         return response.status(500).json({error: "Internal Server Error"});
     }
 }

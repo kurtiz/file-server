@@ -49,7 +49,7 @@ const register = async (request, response) => {
             });
         response.status(201).json({message: "Account created successfully"});
     } catch (error) {
-        request.log.error(error);
+        console.error(error);
 
         if (error.errorResponse?.code === 11000) {
             response.status(409).json({
@@ -101,7 +101,7 @@ const otpVerification = async (request, response) => {
             }
         }
     } catch (error) {
-        request.log.error(error);
+        console.error(error);
         response.status(500).send('Internal server error');
     }
 }
@@ -162,7 +162,7 @@ const generateOTP = async (request, response) => {
             response.status(200).json({message: "Email sent!"});
         }
     } catch (error) {
-        request.log.error(error);
+        console.error(error);
         response.status(500).send('Internal server error');
     }
 }
@@ -177,7 +177,7 @@ const resetPassword = async (request, response) => {
 
         const {error, _} = requestSchema.validate(request.body);
         if (error) {
-            request.log.warn(error.details[0].message);
+            console.warn(error.details[0].message);
             return response.status(400).json({error: error.details[0].message});
         }
 
@@ -192,7 +192,7 @@ const resetPassword = async (request, response) => {
             response.status(200).json({data: updatedAdmin});
         }
     } catch (error) {
-        request.log.error(error);
+        console.error(error);
         response.status(500).send('Internal server error');
     }
 }
@@ -223,7 +223,7 @@ const login = async (request, response) => {
             response.status(401).json({error: 'Invalid credentials'});
         }
     } catch (error) {
-        request.log.error(error);
+        console.error(error);
         response.status(500).json({error: 'Internal server error'});
     }
 }

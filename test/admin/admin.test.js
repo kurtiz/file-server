@@ -2,7 +2,7 @@ import {faker} from "@faker-js/faker";
 import axios from "axios";
 import {expect} from "chai";
 import {connectToTestDatabase} from "../../src/models/database.js";
-import {AdminModel, getAdminByEmail} from "../../src/models/admins.js";
+import {getAdminByEmail} from "../../src/models/admins.js";
 
 describe("Admin Endpoints Tests", () => {
     before((done) => {
@@ -16,7 +16,6 @@ describe("Admin Endpoints Tests", () => {
     let sessionToken;
 
     describe("Register Admin", async () => {
-
         it("Should create a new admin", async () => {
             const options = {
                 method: 'POST',
@@ -31,7 +30,6 @@ describe("Admin Endpoints Tests", () => {
             const data = await axios.request(options);
             expect(data.request.res.statusCode).to.equal(201);
         });
-
         it("Should return status code 400 because of missing fields", async () => {
             const options = {
                 method: 'POST',
@@ -47,7 +45,6 @@ describe("Admin Endpoints Tests", () => {
                 }
             );
         });
-
         it("Should verify otp and make email verified", async () => {
             const admin = await getAdminByEmail(email);
             const otp = admin.authentication.otp.code;
@@ -64,7 +61,6 @@ describe("Admin Endpoints Tests", () => {
             expect(axiosResponse.status).to.equal(200);
             expect(axiosResponse.data.data.emailVerified).to.equal(true);
         });
-
         it("Should request new otp", async () => {
             const options = {
                 method: 'POST',
@@ -138,6 +134,7 @@ describe("Admin Endpoints Tests", () => {
                 }
             };
             const axiosResponse = await axios.request(options);
+            sessionToken = axiosResponse.data.data.authentication.session.token;
             expect(axiosResponse.status).to.equal(200);
         });
     });

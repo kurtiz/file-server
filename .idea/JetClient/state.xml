@@ -345,16 +345,16 @@
                       <list>
                         <formDataParameterState>
                           <option name="key" value="title" />
-                          <option name="value" value="Wedding Program Book for Kingsley" />
+                          <option name="value" value="Qujo brukes Track (Suro Nipa)" />
                         </formDataParameterState>
                         <formDataParameterState>
                           <option name="key" value="description" />
-                          <option name="value" value="Joe's wedding program book with has the program outline etc..." />
+                          <option name="value" value="Qujo Brukes Release a new track Suro Nipa" />
                         </formDataParameterState>
                         <formDataParameterState>
                           <option name="key" value="file" />
                           <option name="type" value="FILE" />
-                          <option name="value" value="C:\Users\aaron\Documents\JenamLogo.png" />
+                          <option name="value" value="C:\Users\aaron\Documents\Qujo brukes Suro Nipa Prod by Danny glover beat 2024.mp3" />
                         </formDataParameterState>
                       </list>
                     </option>
@@ -373,7 +373,7 @@
                 <option name="id" value="b0e6c97a-08fa-442d-9c6f-aaa9e898f2c8" />
                 <option name="method" value="POST" />
                 <option name="name" value="/admin/file/upload/aws" />
-                <option name="url" value="{{base_url}}/admin/file/upload/aws" />
+                <option name="url" value="{{base_url}}/admin/file/upload/local" />
               </requestState>
               <requestState>
                 <option name="auth">
@@ -410,7 +410,7 @@
                   <authState>
                     <option name="bearer">
                       <jU>
-                        <option name="token" value="{{user_auth_token}}" />
+                        <option name="token" value="{{admin_auth_token}}" />
                       </jU>
                     </option>
                     <option name="type" value="BEARER" />
@@ -433,7 +433,7 @@
                 <option name="id" value="3d6c6763-0c66-4ac6-a7ee-671d62d272f3" />
                 <option name="method" value="GET" />
                 <option name="name" value="/file/download/request/:fileId" />
-                <option name="url" value="{{base_url}}/file/download/request/66474975af18b8261290c511" />
+                <option name="url" value="{{base_url}}/admin/emails/recent" />
               </requestState>
               <requestState>
                 <option name="auth">

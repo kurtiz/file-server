@@ -1,4 +1,5 @@
 import mongoose, {isValidObjectId} from "mongoose";
+import {EmailModel} from "./emails.js";
 
 /**
  * Mongoose schema for the User model.
@@ -70,6 +71,11 @@ const getUsers = () => UserModel.find();
  */
 const getUserByEmail = (email) => UserModel.findOne({email: email});
 
+/**
+ * Gets count of all the users
+ * @returns {QueryWithHelpers<number, HydratedDocument<User, {}, {}>, {}, User, "countDocuments">}
+ */
+const getUsersCount = () => UserModel.countDocuments();
 
 /**
  * Gets user by their session token
@@ -118,7 +124,6 @@ const updateUserById = (id, values) => {
 
 
 export {
-
     getUsers,
     getUserByEmail,
     getUserBySessionToken,
@@ -126,5 +131,6 @@ export {
     createUser,
     deleteUserById,
     updateUserById,
+    getUsersCount,
     UserModel
 };

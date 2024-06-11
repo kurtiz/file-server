@@ -41,22 +41,6 @@ const app = express();
 const SQLiteStore = SQLiteStoreFactory(session);
 
 /**
- * Enables logging for the Express application (pino Logger).
- */
-app.use(pino({
-    logger: logger,
-    customLogLevel: (_, response, err) => {
-        if (response.statusCode >= 500) {
-            return 'error'; // Log errors as 'error'
-        } else if (response.statusCode >= 400) {
-            return 'warn'; // Log status codes >= 400 as 'warn'
-        } else {
-            return 'info'; // Log other requests as 'info'
-        }
-    },
-}));
-
-/**
  * Configures middleware for the Express application.
  */
 app.use(

@@ -60,7 +60,6 @@ const getDownloadsByFileId = (id) => {
 }
 
 
-
 /**
  * Gets download by their ID
  * @param id download id
@@ -69,7 +68,6 @@ const getDownloadsByFileId = (id) => {
 const getDownloadById = (id) => {
     if (isValidObjectId(id)) return DownloadModel.findById(id).populate("file");
 }
-
 
 /**
  * Create a new download
