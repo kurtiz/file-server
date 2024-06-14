@@ -1,4 +1,4 @@
-import {getFiles, getFilesByQuery, getFilesCount} from "../models/files.js";
+import {getFiles, getFilesByQuery, getFilesCount, getFilesWithOptions} from "../models/files.js";
 import Joi from "joi";
 
 const filesFeed = async (request, response) => {
@@ -8,7 +8,7 @@ const filesFeed = async (request, response) => {
 
         const skip = (page - 1) * limit;
 
-        const files = await getFiles(skip, limit);
+        const files = await getFilesWithOptions(skip, limit);
         const totalCount = await getFilesCount();
 
         response.status(200).json({
@@ -72,4 +72,13 @@ const recentFiles = async (request, response) => {
     }
 }
 
-export {filesFeed, filesCount, searchFile, recentFiles}
+const getAllFiles = async (request, response) => {
+    try {
+        const files = await getFiles();
+        return response.status(200).json({data: files});
+    } catch (error) {
+        console.error(error);
+        return response.status(500).json({error: "Internal server error"});
+    }
+}
+export {filesFeed, filesCount, searchFile, recentFiles, getAllFiles}

@@ -51,7 +51,19 @@ const FileModel = mongoose.model('File', FileSchema);
  * Gets all the files
  * @returns {QueryWithHelpers<Array<HydratedDocument<File, {}, {}>>, HydratedDocument<File, {}, {}>, {}, File, "find">}
  */
-const getFiles = (skip = 0, limit = 10) => FileModel.find().populate("uploadedBy").skip(skip).limit(limit);
+const getFiles = () => FileModel.find()
+    .populate("uploadedBy")
+    .sort({createdAt: -1});
+
+/**
+ * Gets some of the files based on certain options
+ * @returns {QueryWithHelpers<Array<HydratedDocument<File, {}, {}>>, HydratedDocument<File, {}, {}>, {}, File, "find">}
+ */
+const getFilesWithOptions = (skip = 0, limit = 10) => FileModel.find()
+    .populate("uploadedBy")
+    .skip(skip)
+    .limit(limit)
+    .sort({createdAt: -1});
 
 /**
  * Gets count of all the files
@@ -84,7 +96,7 @@ const getFileById = (id) => {
  * @returns {QueryWithHelpers<HydratedDocument<File, {}, {}> | null, HydratedDocument<File, {}, {}>, {}, File, "findOne">}
  * @param query
  */
-const getFilesByQuery = (query) => FileModel.find(query).populate("uploadedBy");
+const getFilesByQuery = (query) => FileModel.find(query).populate("uploadedBy").sort({createdAt: -1});
 
 
 /**
@@ -124,5 +136,6 @@ export {
     updateFileById,
     getFilesCount,
     getFilesByQuery,
+    getFilesWithOptions,
     FileModel
 };

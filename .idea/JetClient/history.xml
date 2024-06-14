@@ -15652,6 +15652,121 @@
             </responseState>
           </option>
         </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1718187306011" />
+          <option name="id" value="c1dac265-ca02-4201-8d6e-4ff1319b307b" />
+          <option name="request">
+            <requestState>
+              <option name="auth">
+                <authState>
+                  <option name="bearer">
+                    <jU>
+                      <option name="token" value="{{admin_auth_token}}" />
+                    </jU>
+                  </option>
+                  <option name="type" value="BEARER" />
+                </authState>
+              </option>
+              <option name="body">
+                <bodyState>
+                  <option name="formData">
+                    <list>
+                      <formDataParameterState>
+                        <option name="key" value="title" />
+                        <option name="value" value="School Records" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="description" />
+                        <option name="value" value="School records database" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="file" />
+                        <option name="type" value="FILE" />
+                        <option name="value" value="C:\Users\aaron\Documents\SchoolRecord.accdb" />
+                      </formDataParameterState>
+                    </list>
+                  </option>
+                  <option name="type" value="FORM_DATA" />
+                </bodyState>
+              </option>
+              <option name="description" value="Upload file to aws s3 container" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="multipart/form-data" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="b0e6c97a-08fa-442d-9c6f-aaa9e898f2c8" />
+              <option name="method" value="POST" />
+              <option name="name" value="/admin/file/upload/aws" />
+              <option name="url" value="{{base_url}}/admin/file/upload/aws" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJkYXRhIjp7ImZpbGVuYW1lIjoiYzA3MmU4Yzg3YTU3ZDdjZDI0NWIyMDhhZGRkMWI1LmFjY2RiIiwiZmlsZVNpemUiOiI0MzYgS0IiLCJ0aXRsZSI6IlNjaG9vbCBSZWNvcmRzIiwiZGVzY3JpcHRpb24iOiJTY2hvb2wgcmVjb3JkcyBkYXRhYmFzZSIsInBhdGgiOiJodHRwczovL2pvYnNieXVzLm55YzMuY2RuLmRpZ2l0YWxvY2VhbnNwYWNlcy5jb20vZmlsZXMvYzA3MmU4Yzg3YTU3ZDdjZDI0NWIyMDhhZGRkMWI1LmFjY2RiIiwidXBsb2FkZWRCeSI6IjY2NWUwZDYwMDE5NTk5MGFkODYyMzg4YyIsIl9pZCI6IjY2Njk3NTI5MGNiMTA1ZDBmOTUyMWMwMyIsImNyZWF0ZWRBdCI6IjIwMjQtMDYtMTJUMTA6MTU6MDUuNzcwWiIsInVwZGF0ZWRBdCI6IjIwMjQtMDYtMTJUMTA6MTU6MDUuNzcwWiIsIl9fdiI6MH19" />
+              <option name="bodyString" value="{&#10;  &quot;data&quot; : {&#10;    &quot;filename&quot; : &quot;c072e8c87a57d7cd245b208addd1b5.accdb&quot;,&#10;    &quot;fileSize&quot; : &quot;436 KB&quot;,&#10;    &quot;title&quot; : &quot;School Records&quot;,&#10;    &quot;description&quot; : &quot;School records database&quot;,&#10;    &quot;path&quot; : &quot;https://jobsbyus.nyc3.cdn.digitaloceanspaces.com/files/c072e8c87a57d7cd245b208addd1b5.accdb&quot;,&#10;    &quot;uploadedBy&quot; : &quot;665e0d600195990ad862388c&quot;,&#10;    &quot;_id&quot; : &quot;666975290cb105d0f9521c03&quot;,&#10;    &quot;createdAt&quot; : &quot;2024-06-12T10:15:05.770Z&quot;,&#10;    &quot;updatedAt&quot; : &quot;2024-06-12T10:15:05.770Z&quot;,&#10;    &quot;__v&quot; : 0&#10;  }&#10;}" />
+              <option name="code" value="200" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="X-Powered-By" />
+                    <option name="value" value="Express" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Origin" />
+                    <option name="value" value="*" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Credentials" />
+                    <option name="value" value="true" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Expose-Headers" />
+                    <option name="value" value="Content-Type,Authorization" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="405" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="ETag" />
+                    <option name="value" value="W/&quot;195-riFD5F81J3nzkuhxReurbIq2znk&quot;" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Accept-Encoding" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Wed, 12 Jun 2024 10:15:06 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=5" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="c1dac265-ca02-4201-8d6e-4ff1319b307b" />
+              <option name="message" value="OK" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;data&quot;:{&quot;filename&quot;:&quot;c072e8c87a57d7cd245b208addd1b5.accdb&quot;,&quot;fileSize&quot;:&quot;436 KB&quot;,&quot;title&quot;:&quot;School Records&quot;,&quot;description&quot;:&quot;School records database&quot;,&quot;path&quot;:&quot;https://jobsbyus.nyc3.cdn.digitaloceanspaces.com/files/c072e8c87a57d7cd245b208addd1b5.accdb&quot;,&quot;uploadedBy&quot;:&quot;665e0d600195990ad862388c&quot;,&quot;_id&quot;:&quot;666975290cb105d0f9521c03&quot;,&quot;createdAt&quot;:&quot;2024-06-12T10:15:05.770Z&quot;,&quot;updatedAt&quot;:&quot;2024-06-12T10:15:05.770Z&quot;,&quot;__v&quot;:0}}" />
+              <option name="size" value="405" />
+              <option name="time" value="2348" />
+            </responseState>
+          </option>
+        </requestHistoryState>
       </list>
     </option>
   </component>

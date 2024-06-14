@@ -345,16 +345,16 @@
                       <list>
                         <formDataParameterState>
                           <option name="key" value="title" />
-                          <option name="value" value="Qujo brukes Track (Suro Nipa)" />
+                          <option name="value" value="School Records" />
                         </formDataParameterState>
                         <formDataParameterState>
                           <option name="key" value="description" />
-                          <option name="value" value="Qujo Brukes Release a new track Suro Nipa" />
+                          <option name="value" value="School records database" />
                         </formDataParameterState>
                         <formDataParameterState>
                           <option name="key" value="file" />
                           <option name="type" value="FILE" />
-                          <option name="value" value="C:\Users\aaron\Documents\Qujo brukes Suro Nipa Prod by Danny glover beat 2024.mp3" />
+                          <option name="value" value="C:\Users\aaron\Documents\SchoolRecord.accdb" />
                         </formDataParameterState>
                       </list>
                     </option>
@@ -373,7 +373,7 @@
                 <option name="id" value="b0e6c97a-08fa-442d-9c6f-aaa9e898f2c8" />
                 <option name="method" value="POST" />
                 <option name="name" value="/admin/file/upload/aws" />
-                <option name="url" value="{{base_url}}/admin/file/upload/local" />
+                <option name="url" value="{{base_url}}/admin/file/upload/aws" />
               </requestState>
               <requestState>
                 <option name="auth">

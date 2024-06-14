@@ -46,7 +46,12 @@ const EmailModel = mongoose.model('Email', EmailSchema);
  * Gets all the emails
  * @returns {QueryWithHelpers<Array<HydratedDocument<Email, {}, {}>>, HydratedDocument<Email, {}, {}>, {}, Email, "find">}
  */
-const getEmails = (skip = 0, limit = null, filter= {}) => EmailModel.find(filter).populate("file").populate("sentBy").skip(skip).limit(limit);
+const getEmails = (skip = 0, limit = null, filter= {}) => EmailModel.find(filter)
+    .populate("file")
+    .populate("sentBy")
+    .skip(skip)
+    .limit(limit)
+    .sort({createdAt: -1});
 
 /**
  * Gets count of all the downloads

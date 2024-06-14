@@ -31,7 +31,7 @@ const DownloadModel = mongoose.model('Download', DownloadSchema);
  * @returns {QueryWithHelpers<Array<HydratedDocument<Download, {}, {}>>, HydratedDocument<Download, {}, {}>, {}, Download, "find">}
  */
 const getDownloads = () => DownloadModel.find()
-    .populate("file");
+    .populate("file").sort({createdAt: -1});
 
 /**
  * Gets count of all the downloads
@@ -53,10 +53,10 @@ const getDownloadByFileId = (id) => {
 /**
  * Gets a downloads by the file id
  * @param id file id
- * @returns {QueryWithHelpers<UnpackedIntersection<Array<HydratedDocument<Download, {}, {}>>, Omit<Document<?, {}, Download>&Download&{_id: Types.ObjectId}, "_id"> & Document<?, {}, Download> & Download & {_id: Types.ObjectId} & Omit<Download, "_id">>, Document<unknown, {}, Download> & Download & {_id: Types.ObjectId}, {}, UnpackedIntersection<Download, Omit<Document<?, {}, Download>&Download&{_id: Types.ObjectId}, "_id"> & Document<?, {}, Download> & Download & {_id: Types.ObjectId} & Omit<Download, "_id">>, "find">}
+ * @returns {Query<(Omit<Document<unknown, {}, Download> & Download & {_id: Types.ObjectId}, never> & {})[], Document<unknown, {}, Download> & Download & {_id: Types.ObjectId}, {}, Download, "find"> & {}}
  */
 const getDownloadsByFileId = (id) => {
-    if (isValidObjectId(id)) return DownloadModel.find({file: id}).populate("file");
+    if (isValidObjectId(id)) return DownloadModel.find({file: id}).populate("file").sort({createdAt: -1});
 }
 
 

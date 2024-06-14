@@ -17,7 +17,7 @@ import {
 } from "../controllers/admin/file.controller.js";
 import {isAuthenticatedAsAdmin} from "../middlewares/authentication.middleware.js";
 import {passwordResetOtp, verificationOtp} from "../middlewares/otp.middleware.js";
-import {filesCount, filesFeed, recentFiles} from "../controllers/file.controller.js";
+import {filesCount, filesFeed, getAllFiles, recentFiles} from "../controllers/file.controller.js";
 import {getAllEmails, getEmailCount, getRecentEmails, getUserCount} from "../controllers/admin/email.controller.js";
 
 /**
@@ -45,6 +45,7 @@ adminRouter.get("/downloads/", isAuthenticatedAsAdmin, getAllDownloads);
 adminRouter.get("/downloads/count", isAuthenticatedAsAdmin, getAllDownloadsCount);
 adminRouter.get("/download/:downloadId", isAuthenticatedAsAdmin, getDownload);
 adminRouter.get("/feed/:page/:limit", isAuthenticatedAsAdmin, filesFeed);
+adminRouter.get("/files", isAuthenticatedAsAdmin, getAllFiles);
 adminRouter.get("/files/recent", isAuthenticatedAsAdmin, recentFiles);
 adminRouter.get("/emails/recent", isAuthenticatedAsAdmin, getRecentEmails);
 adminRouter.get("/emails", isAuthenticatedAsAdmin, getAllEmails);
