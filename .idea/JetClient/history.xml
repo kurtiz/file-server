@@ -16366,6 +16366,803 @@
             </responseState>
           </option>
         </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1720114307799" />
+          <option name="id" value="d7b04fbc-e263-4ad1-a28b-e256f70f408a" />
+          <option name="request">
+            <requestState>
+              <option name="auth">
+                <authState>
+                  <option name="bearer">
+                    <jU>
+                      <option name="token" value="{{user_auth_token}}" />
+                    </jU>
+                  </option>
+                  <option name="type" value="BEARER" />
+                </authState>
+              </option>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;title&quot;: &quot;Wedding Program Book for Joshua&quot;,&#10;  &quot;description&quot;: &quot;Joe's wedding program book with has the program outline etc...&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="description" value="Send file via email" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="13c25252-44d0-4686-a239-e580786595e2" />
+              <option name="method" value="PATCH" />
+              <option name="name" value="/user/send-email 1" />
+              <option name="url" value="{{base_url}}/file/update/6649156925c056b49ab4b8c0" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="PCFET0NUWVBFIGh0bWw+CjxodG1sIGxhbmc9ImVuIj4KPGhlYWQ+CjxtZXRhIGNoYXJzZXQ9InV0Zi04Ij4KPHRpdGxlPkVycm9yPC90aXRsZT4KPC9oZWFkPgo8Ym9keT4KPHByZT5DYW5ub3QgUEFUQ0ggL2ZpbGUvdXBkYXRlLzY2NDkxNTY5MjVjMDU2YjQ5YWI0YjhjMDwvcHJlPgo8L2JvZHk+CjwvaHRtbD4K" />
+              <option name="bodyString" value="&lt;!DOCTYPE html&gt;&#10;&lt;html lang=&quot;en&quot;&gt;&#10;&lt;head&gt;&#10;&lt;meta charset=&quot;utf-8&quot;&gt;&#10;&lt;title&gt;Error&lt;/title&gt;&#10;&lt;/head&gt;&#10;&lt;body&gt;&#10;&lt;pre&gt;Cannot PATCH /file/update/6649156925c056b49ab4b8c0&lt;/pre&gt;&#10;&lt;/body&gt;&#10;&lt;/html&gt;&#10;" />
+              <option name="code" value="404" />
+              <option name="contentType" value="text/html; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="X-Powered-By" />
+                    <option name="value" value="Express" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Origin" />
+                    <option name="value" value="*" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Credentials" />
+                    <option name="value" value="true" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Expose-Headers" />
+                    <option name="value" value="Content-Type,Authorization" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Security-Policy" />
+                    <option name="value" value="default-src 'none'" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Content-Type-Options" />
+                    <option name="value" value="nosniff" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="text/html; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="177" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Accept-Encoding" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Thu, 04 Jul 2024 17:31:47 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=5" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="d7b04fbc-e263-4ad1-a28b-e256f70f408a" />
+              <option name="message" value="Not Found" />
+              <option name="prettyResponseType" value="HTML" />
+              <option name="previewType" value="HTML" />
+              <option name="rawBodyString" value="&lt;!DOCTYPE html&gt;&#10;&lt;html lang=&quot;en&quot;&gt;&#10;&lt;head&gt;&#10;&lt;meta charset=&quot;utf-8&quot;&gt;&#10;&lt;title&gt;Error&lt;/title&gt;&#10;&lt;/head&gt;&#10;&lt;body&gt;&#10;&lt;pre&gt;Cannot PATCH /file/update/6649156925c056b49ab4b8c0&lt;/pre&gt;&#10;&lt;/body&gt;&#10;&lt;/html&gt;&#10;" />
+              <option name="size" value="177" />
+              <option name="time" value="48" />
+            </responseState>
+          </option>
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1720114320422" />
+          <option name="id" value="e2c4e50d-7abd-4f55-a41e-34f5fa4e5eef" />
+          <option name="request">
+            <requestState>
+              <option name="auth">
+                <authState>
+                  <option name="bearer">
+                    <jU>
+                      <option name="token" value="{{user_auth_token}}" />
+                    </jU>
+                  </option>
+                  <option name="type" value="BEARER" />
+                </authState>
+              </option>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;title&quot;: &quot;Wedding Program Book for Joshua&quot;,&#10;  &quot;description&quot;: &quot;Joe's wedding program book with has the program outline etc...&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="description" value="Send file via email" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="13c25252-44d0-4686-a239-e580786595e2" />
+              <option name="method" value="PATCH" />
+              <option name="name" value="/user/send-email 1" />
+              <option name="url" value="{{base_url}}/admin/file/update/6649156925c056b49ab4b8c0" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJlcnJvciI6IlVuYXV0aG9yaXplZCJ9" />
+              <option name="bodyString" value="{&#10;  &quot;error&quot; : &quot;Unauthorized&quot;&#10;}" />
+              <option name="code" value="401" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="X-Powered-By" />
+                    <option name="value" value="Express" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Origin" />
+                    <option name="value" value="*" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Credentials" />
+                    <option name="value" value="true" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Expose-Headers" />
+                    <option name="value" value="Content-Type,Authorization" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="24" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="ETag" />
+                    <option name="value" value="W/&quot;18-XPDV80vbMk4yY1/PADG4jYM4rSI&quot;" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Accept-Encoding" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Thu, 04 Jul 2024 17:32:00 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=5" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="e2c4e50d-7abd-4f55-a41e-34f5fa4e5eef" />
+              <option name="message" value="Unauthorized" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;error&quot;:&quot;Unauthorized&quot;}" />
+              <option name="size" value="24" />
+              <option name="time" value="169" />
+            </responseState>
+          </option>
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1720114335177" />
+          <option name="id" value="8d6f8943-6381-41f8-8ee2-8cbb590ca6ca" />
+          <option name="request">
+            <requestState>
+              <option name="auth">
+                <authState>
+                  <option name="bearer">
+                    <jU>
+                      <option name="token" value="{{admin_auth_token}}" />
+                    </jU>
+                  </option>
+                  <option name="type" value="BEARER" />
+                </authState>
+              </option>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;title&quot;: &quot;Wedding Program Book for Joshua&quot;,&#10;  &quot;description&quot;: &quot;Joe's wedding program book with has the program outline etc...&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="description" value="Send file via email" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="13c25252-44d0-4686-a239-e580786595e2" />
+              <option name="method" value="PATCH" />
+              <option name="name" value="/user/send-email 1" />
+              <option name="url" value="{{base_url}}/admin/file/update/6649156925c056b49ab4b8c0" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJlcnJvciI6IlVuYXV0aG9yaXplZCJ9" />
+              <option name="bodyString" value="{&#10;  &quot;error&quot; : &quot;Unauthorized&quot;&#10;}" />
+              <option name="code" value="401" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="X-Powered-By" />
+                    <option name="value" value="Express" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Origin" />
+                    <option name="value" value="*" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Credentials" />
+                    <option name="value" value="true" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Expose-Headers" />
+                    <option name="value" value="Content-Type,Authorization" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="24" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="ETag" />
+                    <option name="value" value="W/&quot;18-XPDV80vbMk4yY1/PADG4jYM4rSI&quot;" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Accept-Encoding" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Thu, 04 Jul 2024 17:32:15 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=5" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="8d6f8943-6381-41f8-8ee2-8cbb590ca6ca" />
+              <option name="message" value="Unauthorized" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;error&quot;:&quot;Unauthorized&quot;}" />
+              <option name="size" value="24" />
+              <option name="time" value="170" />
+            </responseState>
+          </option>
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1720114523243" />
+          <option name="id" value="6bbeeaf4-9dc6-4cc2-8521-96851dbb7530" />
+          <option name="request">
+            <requestState>
+              <option name="auth">
+                <authState>
+                  <option name="bearer">
+                    <jU>
+                      <option name="token" value="{{admin_auth_token}}" />
+                    </jU>
+                  </option>
+                  <option name="type" value="BEARER" />
+                </authState>
+              </option>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;title&quot;: &quot;Wedding Program Book for Joshua&quot;,&#10;  &quot;description&quot;: &quot;Joe's wedding program book with has the program outline etc...&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="description" value="Send file via email" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="13c25252-44d0-4686-a239-e580786595e2" />
+              <option name="method" value="PATCH" />
+              <option name="name" value="/user/send-email 1" />
+              <option name="url" value="{{base_url}}/admin/file/update/6649156925c056b49ab4b8c0" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJlcnJvciI6IkludGVybmFsIFNlcnZlciBFcnJvciJ9" />
+              <option name="bodyString" value="{&#10;  &quot;error&quot; : &quot;Internal Server Error&quot;&#10;}" />
+              <option name="code" value="500" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="X-Powered-By" />
+                    <option name="value" value="Express" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Origin" />
+                    <option name="value" value="*" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Credentials" />
+                    <option name="value" value="true" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Expose-Headers" />
+                    <option name="value" value="Content-Type,Authorization" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="33" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="ETag" />
+                    <option name="value" value="W/&quot;21-Fau8GdrOCOyGNNH/IiTxy2DuMu0&quot;" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Accept-Encoding" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Thu, 04 Jul 2024 17:35:23 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=5" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="6bbeeaf4-9dc6-4cc2-8521-96851dbb7530" />
+              <option name="message" value="Internal Server Error" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;error&quot;:&quot;Internal Server Error&quot;}" />
+              <option name="size" value="33" />
+              <option name="time" value="214" />
+            </responseState>
+          </option>
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1720114577283" />
+          <option name="id" value="ec0f8237-3f03-4844-b949-d28cbcf78631" />
+          <option name="request">
+            <requestState>
+              <option name="auth">
+                <authState>
+                  <option name="bearer">
+                    <jU>
+                      <option name="token" value="{{admin_auth_token}}" />
+                    </jU>
+                  </option>
+                  <option name="type" value="BEARER" />
+                </authState>
+              </option>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;title&quot;: &quot;Wedding Program Book for Joshua&quot;,&#10;  &quot;description&quot;: &quot;Joe's wedding program book with has the program outline etc...&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="description" value="Send file via email" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="13c25252-44d0-4686-a239-e580786595e2" />
+              <option name="method" value="PATCH" />
+              <option name="name" value="/user/send-email 1" />
+              <option name="url" value="{{base_url}}/admin/file/update/6649156925c056b49ab4b8c0" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJlcnJvciI6IkludGVybmFsIFNlcnZlciBFcnJvciJ9" />
+              <option name="bodyString" value="{&#10;  &quot;error&quot; : &quot;Internal Server Error&quot;&#10;}" />
+              <option name="code" value="500" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="X-Powered-By" />
+                    <option name="value" value="Express" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Origin" />
+                    <option name="value" value="*" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Credentials" />
+                    <option name="value" value="true" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Expose-Headers" />
+                    <option name="value" value="Content-Type,Authorization" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="33" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="ETag" />
+                    <option name="value" value="W/&quot;21-Fau8GdrOCOyGNNH/IiTxy2DuMu0&quot;" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Accept-Encoding" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Thu, 04 Jul 2024 17:36:17 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=5" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="ec0f8237-3f03-4844-b949-d28cbcf78631" />
+              <option name="message" value="Internal Server Error" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;error&quot;:&quot;Internal Server Error&quot;}" />
+              <option name="size" value="33" />
+              <option name="time" value="216" />
+            </responseState>
+          </option>
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1720114621935" />
+          <option name="id" value="22e4ea87-d43d-4460-b992-cabfd0dd8842" />
+          <option name="request">
+            <requestState>
+              <option name="auth">
+                <authState>
+                  <option name="bearer">
+                    <jU>
+                      <option name="token" value="{{admin_auth_token}}" />
+                    </jU>
+                  </option>
+                  <option name="type" value="BEARER" />
+                </authState>
+              </option>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;title&quot;: &quot;Wedding Program Book for Joshua&quot;,&#10;  &quot;description&quot;: &quot;Joe's wedding program book with has the program outline etc...&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="description" value="Send file via email" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="13c25252-44d0-4686-a239-e580786595e2" />
+              <option name="method" value="PATCH" />
+              <option name="name" value="/user/send-email 1" />
+              <option name="url" value="{{base_url}}/admin/file/update/6649156925c056b49ab4b8c0" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJlcnJvciI6IkludGVybmFsIFNlcnZlciBFcnJvciJ9" />
+              <option name="bodyString" value="{&#10;  &quot;error&quot; : &quot;Internal Server Error&quot;&#10;}" />
+              <option name="code" value="500" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="X-Powered-By" />
+                    <option name="value" value="Express" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Origin" />
+                    <option name="value" value="*" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Credentials" />
+                    <option name="value" value="true" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Expose-Headers" />
+                    <option name="value" value="Content-Type,Authorization" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="33" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="ETag" />
+                    <option name="value" value="W/&quot;21-Fau8GdrOCOyGNNH/IiTxy2DuMu0&quot;" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Accept-Encoding" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Thu, 04 Jul 2024 17:37:01 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=5" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="22e4ea87-d43d-4460-b992-cabfd0dd8842" />
+              <option name="message" value="Internal Server Error" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;error&quot;:&quot;Internal Server Error&quot;}" />
+              <option name="size" value="33" />
+              <option name="time" value="263" />
+            </responseState>
+          </option>
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1720114812582" />
+          <option name="id" value="746405e2-a55e-448a-a6b5-e07dd44576b1" />
+          <option name="request">
+            <requestState>
+              <option name="auth">
+                <authState>
+                  <option name="bearer">
+                    <jU>
+                      <option name="token" value="{{admin_auth_token}}" />
+                    </jU>
+                  </option>
+                  <option name="type" value="BEARER" />
+                </authState>
+              </option>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;title&quot;: &quot;Wedding Program Book for Joshua&quot;,&#10;  &quot;description&quot;: &quot;Joe's wedding program book with has the program outline etc...&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="description" value="Send file via email" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="13c25252-44d0-4686-a239-e580786595e2" />
+              <option name="method" value="PATCH" />
+              <option name="name" value="/user/send-email 1" />
+              <option name="url" value="{{base_url}}/admin/file/update/6649156925c056b49ab4b8c0" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJkYXRhIjp7Il9pZCI6IjY2NDkxNTY5MjVjMDU2YjQ5YWI0YjhjMCIsImZpbGVuYW1lIjoiMzkxYjRjZDRlZGNlMDQzYjJmZjIxYjhmOWMzZmQ1LnBuZyIsImZpbGVTaXplIjoiMTU0LjEzIEtCIiwidGl0bGUiOiJXZWRkaW5nIFByb2dyYW0gQm9vayBmb3IgSm9zaHVhIiwiZGVzY3JpcHRpb24iOiJKb2UncyB3ZWRkaW5nIHByb2dyYW0gYm9vayB3aXRoIGhhcyB0aGUgcHJvZ3JhbSBvdXRsaW5lIGV0Yy4uLiIsInBhdGgiOiJodHRwczovL2pvYnMtYnktdXMubnljMy5jZG4uZGlnaXRhbG9jZWFuc3BhY2VzLmNvbS9maWxlcy8zOTFiNGNkNGVkY2UwNDNiMmZmMjFiOGY5YzNmZDUucG5nIiwidXBsb2FkZWRCeSI6eyJhdXRoZW50aWNhdGlvbiI6eyJzZXNzaW9uIjp7ImV4cGlyZXMiOiIyMDI0LTA3LTAzVDE4OjA1OjQzLjYyNFoiLCJ0b2tlbiI6IiQyYiQxMCRHODZ3ZnNnNk9KU05qLmFDcDhFd1B1c2NvTUJQY1VDMi5MQTRrcWM3WTlOcWZHaTRTVWZweSJ9LCJvdHAiOnsiY29kZSI6MjQzNzcyLCJleHBpcmVzIjoiMjAyNC0wNi0wM1QxODozNTo0NC4wOTJaIn0sInBhc3N3b3JkIjoiJDJiJDEwJEUyU2FYcFhLVjJhTjBJeWlUdHo5QmVEODM5RE1aclo0Vnp0RGhLT09oTWJWZnY2TThPU0dTIn0sIl9pZCI6IjY2NWUwNWYyYzZiOGU5ZmVmY2IwOTVlYSIsImZ1bGxuYW1lIjoiRXZlcmV0dCBIYW5kIiwiZW1haWwiOiJGbGV0YV9Cb2dhbjM1QHlhaG9vLmNvbSIsImVtYWlsVmVyaWZpZWQiOnRydWUsImNyZWF0ZWRBdCI6IjIwMjQtMDYtMDNUMTg6MDU6MzguMzkxWiIsInVwZGF0ZWRBdCI6IjIwMjQtMDYtMDNUMTg6MDU6NDQuMDkzWiIsIl9fdiI6MH0sImNyZWF0ZWRBdCI6IjIwMjQtMDUtMThUMjA6NTQ6MDEuNjkwWiIsInVwZGF0ZWRBdCI6IjIwMjQtMDUtMThUMjA6NTQ6MDEuNjkwWiIsIl9fdiI6MH19" />
+              <option name="bodyString" value="{&#10;  &quot;data&quot; : {&#10;    &quot;_id&quot; : &quot;6649156925c056b49ab4b8c0&quot;,&#10;    &quot;filename&quot; : &quot;391b4cd4edce043b2ff21b8f9c3fd5.png&quot;,&#10;    &quot;fileSize&quot; : &quot;154.13 KB&quot;,&#10;    &quot;title&quot; : &quot;Wedding Program Book for Joshua&quot;,&#10;    &quot;description&quot; : &quot;Joe's wedding program book with has the program outline etc...&quot;,&#10;    &quot;path&quot; : &quot;https://jobs-by-us.nyc3.cdn.digitaloceanspaces.com/files/391b4cd4edce043b2ff21b8f9c3fd5.png&quot;,&#10;    &quot;uploadedBy&quot; : {&#10;      &quot;authentication&quot; : {&#10;        &quot;session&quot; : {&#10;          &quot;expires&quot; : &quot;2024-07-03T18:05:43.624Z&quot;,&#10;          &quot;token&quot; : &quot;$2b$10$G86wfsg6OJSNj.aCp8EwPuscoMBPcUC2.LA4kqc7Y9NqfGi4SUfpy&quot;&#10;        },&#10;        &quot;otp&quot; : {&#10;          &quot;code&quot; : 243772,&#10;          &quot;expires&quot; : &quot;2024-06-03T18:35:44.092Z&quot;&#10;        },&#10;        &quot;password&quot; : &quot;$2b$10$E2SaXpXKV2aN0IyiTtz9BeD839DMZrZ4VztDhKOOhMbVfv6M8OSGS&quot;&#10;      },&#10;      &quot;_id&quot; : &quot;665e05f2c6b8e9fefcb095ea&quot;,&#10;      &quot;fullname&quot; : &quot;Everett Hand&quot;,&#10;      &quot;email&quot; : &quot;Fleta_Bogan35@yahoo.com&quot;,&#10;      &quot;emailVerified&quot; : true,&#10;      &quot;createdAt&quot; : &quot;2024-06-03T18:05:38.391Z&quot;,&#10;      &quot;updatedAt&quot; : &quot;2024-06-03T18:05:44.093Z&quot;,&#10;      &quot;__v&quot; : 0&#10;    },&#10;    &quot;createdAt&quot; : &quot;2024-05-18T20:54:01.690Z&quot;,&#10;    &quot;updatedAt&quot; : &quot;2024-05-18T20:54:01.690Z&quot;,&#10;    &quot;__v&quot; : 0&#10;  }&#10;}" />
+              <option name="code" value="200" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="X-Powered-By" />
+                    <option name="value" value="Express" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Origin" />
+                    <option name="value" value="*" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Credentials" />
+                    <option name="value" value="true" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Expose-Headers" />
+                    <option name="value" value="Content-Type,Authorization" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="909" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="ETag" />
+                    <option name="value" value="W/&quot;38d-RaVAe3JcqjoPkdJ0r449skgg0XY&quot;" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Accept-Encoding" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Thu, 04 Jul 2024 17:40:12 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=5" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="746405e2-a55e-448a-a6b5-e07dd44576b1" />
+              <option name="message" value="OK" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;data&quot;:{&quot;_id&quot;:&quot;6649156925c056b49ab4b8c0&quot;,&quot;filename&quot;:&quot;391b4cd4edce043b2ff21b8f9c3fd5.png&quot;,&quot;fileSize&quot;:&quot;154.13 KB&quot;,&quot;title&quot;:&quot;Wedding Program Book for Joshua&quot;,&quot;description&quot;:&quot;Joe's wedding program book with has the program outline etc...&quot;,&quot;path&quot;:&quot;https://jobs-by-us.nyc3.cdn.digitaloceanspaces.com/files/391b4cd4edce043b2ff21b8f9c3fd5.png&quot;,&quot;uploadedBy&quot;:{&quot;authentication&quot;:{&quot;session&quot;:{&quot;expires&quot;:&quot;2024-07-03T18:05:43.624Z&quot;,&quot;token&quot;:&quot;$2b$10$G86wfsg6OJSNj.aCp8EwPuscoMBPcUC2.LA4kqc7Y9NqfGi4SUfpy&quot;},&quot;otp&quot;:{&quot;code&quot;:243772,&quot;expires&quot;:&quot;2024-06-03T18:35:44.092Z&quot;},&quot;password&quot;:&quot;$2b$10$E2SaXpXKV2aN0IyiTtz9BeD839DMZrZ4VztDhKOOhMbVfv6M8OSGS&quot;},&quot;_id&quot;:&quot;665e05f2c6b8e9fefcb095ea&quot;,&quot;fullname&quot;:&quot;Everett Hand&quot;,&quot;email&quot;:&quot;Fleta_Bogan35@yahoo.com&quot;,&quot;emailVerified&quot;:true,&quot;createdAt&quot;:&quot;2024-06-03T18:05:38.391Z&quot;,&quot;updatedAt&quot;:&quot;2024-06-03T18:05:44.093Z&quot;,&quot;__v&quot;:0},&quot;createdAt&quot;:&quot;2024-05-18T20:54:01.690Z&quot;,&quot;updatedAt&quot;:&quot;2024-05-18T20:54:01.690Z&quot;,&quot;__v&quot;:0}}" />
+              <option name="size" value="909" />
+              <option name="time" value="738" />
+            </responseState>
+          </option>
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1720114881589" />
+          <option name="id" value="496c682b-a048-498f-a78c-401e066cc92c" />
+          <option name="request">
+            <requestState>
+              <option name="auth">
+                <authState>
+                  <option name="bearer">
+                    <jU>
+                      <option name="token" value="{{admin_auth_token}}" />
+                    </jU>
+                  </option>
+                  <option name="type" value="BEARER" />
+                </authState>
+              </option>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;title&quot;: &quot;Wedding Program Book for Joshua&quot;,&#10;  &quot;description&quot;: &quot;Joe's wedding program book with has the program outline etc...&quot;,&#10;  &quot;hi&quot;: &quot;tyuiiu&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="description" value="Send file via email" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="13c25252-44d0-4686-a239-e580786595e2" />
+              <option name="method" value="PATCH" />
+              <option name="name" value="/user/send-email 1" />
+              <option name="url" value="{{base_url}}/admin/file/update/6649156925c056b49ab4b8c0" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJlcnJvciI6IlwiaGlcIiBpcyBub3QgYWxsb3dlZCJ9" />
+              <option name="bodyString" value="{&#10;  &quot;error&quot; : &quot;\&quot;hi\&quot; is not allowed&quot;&#10;}" />
+              <option name="code" value="400" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="X-Powered-By" />
+                    <option name="value" value="Express" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Origin" />
+                    <option name="value" value="*" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Credentials" />
+                    <option name="value" value="true" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Expose-Headers" />
+                    <option name="value" value="Content-Type,Authorization" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="33" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="ETag" />
+                    <option name="value" value="W/&quot;21-HQbTpypZRb6J1v4TpXhcfyf9bNU&quot;" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Accept-Encoding" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Thu, 04 Jul 2024 17:41:21 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=5" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="496c682b-a048-498f-a78c-401e066cc92c" />
+              <option name="message" value="Bad Request" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;error&quot;:&quot;\&quot;hi\&quot; is not allowed&quot;}" />
+              <option name="size" value="33" />
+              <option name="time" value="192" />
+            </responseState>
+          </option>
+        </requestHistoryState>
       </list>
     </option>
   </component>

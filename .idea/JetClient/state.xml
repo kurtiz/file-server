@@ -466,6 +466,37 @@
                 <option name="name" value="/user/send-email" />
                 <option name="url" value="{{base_url}}/user/send-email" />
               </requestState>
+              <requestState>
+                <option name="auth">
+                  <authState>
+                    <option name="bearer">
+                      <jU>
+                        <option name="token" value="{{admin_auth_token}}" />
+                      </jU>
+                    </option>
+                    <option name="type" value="BEARER" />
+                  </authState>
+                </option>
+                <option name="body">
+                  <bodyState>
+                    <option name="raw" value="{&#10;  &quot;title&quot;: &quot;Wedding Program Book for Joshua&quot;,&#10;  &quot;description&quot;: &quot;Joe's wedding program book with has the program outline etc...&quot;&#10;}" />
+                    <option name="type" value="JSON" />
+                  </bodyState>
+                </option>
+                <option name="description" value="Send file via email" />
+                <option name="headers">
+                  <list>
+                    <headerState>
+                      <option name="key" value="Content-Type" />
+                      <option name="value" value="application/json" />
+                    </headerState>
+                  </list>
+                </option>
+                <option name="id" value="13c25252-44d0-4686-a239-e580786595e2" />
+                <option name="method" value="PATCH" />
+                <option name="name" value="/user/send-email 1" />
+                <option name="url" value="{{base_url}}/admin/file/update/6649156925c056b49ab4b8c0" />
+              </requestState>
             </list>
           </option>
           <option name="sortWeight" value="1000000" />

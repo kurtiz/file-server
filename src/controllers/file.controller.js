@@ -39,7 +39,6 @@ const filesCount = async (request, response) => {
     }
 }
 
-
 const searchFile = async (request, response) => {
     try {
         const params = request.params;
@@ -81,4 +80,5 @@ const getAllFiles = async (request, response) => {
         return response.status(500).json({error: "Internal server error"});
     }
 }
+
 export {filesFeed, filesCount, searchFile, recentFiles, getAllFiles}
