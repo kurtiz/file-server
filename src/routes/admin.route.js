@@ -37,7 +37,7 @@ adminRouter.post("/password/reset", isAuthenticatedAsAdmin, resetPassword);
 adminRouter.post("/login", login);
 adminRouter.post("/file/upload/aws", isAuthenticatedAsAdmin, multerAWSUpload.single("file"), awsFileUpload);
 adminRouter.post("/file/upload/local", isAuthenticatedAsAdmin, multerLocalUpload.single('file'), localFileUpload);
-adminRouter.post("/file/delete/:fileId", isAuthenticatedAsAdmin, fileDelete);
+adminRouter.delete("/file/delete/:fileId", isAuthenticatedAsAdmin, fileDelete);
 adminRouter.get("/files/count", isAuthenticatedAsAdmin, filesCount);
 adminRouter.get("/emails/count", isAuthenticatedAsAdmin, getEmailCount);
 adminRouter.get("/users/count", isAuthenticatedAsAdmin, getUserCount);

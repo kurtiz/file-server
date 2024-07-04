@@ -354,7 +354,7 @@
                         <formDataParameterState>
                           <option name="key" value="file" />
                           <option name="type" value="FILE" />
-                          <option name="value" value="C:\Users\aaron\Documents\SchoolRecord.accdb" />
+                          <option name="value" value="C:\Users\aaron\Documents\billboard.png" />
                         </formDataParameterState>
                       </list>
                     </option>
@@ -401,7 +401,7 @@
                   </list>
                 </option>
                 <option name="id" value="a809894d-2852-433a-877e-79ffd55728ca" />
-                <option name="method" value="POST" />
+                <option name="method" value="DELETE" />
                 <option name="name" value="/admin/file/delete/:fileId" />
                 <option name="url" value="{{base_url}}/admin/file/delete/663a73f6b567a23a2cf05c7f" />
               </requestState>

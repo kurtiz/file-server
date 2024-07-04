@@ -64,7 +64,7 @@ const searchFile = async (request, response) => {
 
 const recentFiles = async (request, response) => {
     try {
-        const recentFiles = await getFiles(0, 5);
+        const recentFiles = await getFilesWithOptions(0, 5);
         response.status(200).json({data: recentFiles});
     } catch (error) {
         console.error(error);
