@@ -241,7 +241,6 @@ const updateFileData = async (request, response) => {
         if (file) {
             file.title = request.body.title;
             file.description = request.body.description;
-            console.log(file);
             file.save();
             return response.status(200).json({data: file});
         } else {
