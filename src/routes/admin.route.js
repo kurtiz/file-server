@@ -18,7 +18,13 @@ import {
 import {isAuthenticatedAsAdmin} from "../middlewares/authentication.middleware.js";
 import {passwordResetOtp, verificationOtp} from "../middlewares/otp.middleware.js";
 import {filesCount, filesFeed, getAllFiles, recentFiles} from "../controllers/file.controller.js";
-import {getAllEmails, getEmailCount, getRecentEmails, getUserCount} from "../controllers/admin/email.controller.js";
+import {
+    emailDelete,
+    getAllEmails,
+    getEmailCount,
+    getRecentEmails,
+    getUserCount
+} from "../controllers/admin/email.controller.js";
 
 /**
  * Router for Admin
@@ -39,6 +45,7 @@ adminRouter.post("/file/upload/aws", isAuthenticatedAsAdmin, multerAWSUpload.sin
 adminRouter.post("/file/upload/local", isAuthenticatedAsAdmin, multerLocalUpload.single('file'), localFileUpload);
 adminRouter.patch("/file/update/:fileId", isAuthenticatedAsAdmin, updateFileData);
 adminRouter.delete("/file/delete/:fileId", isAuthenticatedAsAdmin, fileDelete);
+adminRouter.delete("/email/delete/:emailId", isAuthenticatedAsAdmin, emailDelete);
 adminRouter.get("/files/count", isAuthenticatedAsAdmin, filesCount);
 adminRouter.get("/emails/count", isAuthenticatedAsAdmin, getEmailCount);
 adminRouter.get("/users/count", isAuthenticatedAsAdmin, getUserCount);

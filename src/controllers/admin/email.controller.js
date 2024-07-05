@@ -1,5 +1,6 @@
-import {getEmails, getEmailsCount} from "../../models/emails.js";
+import {deleteEmailById, getEmails, getEmailsCount} from "../../models/emails.js";
 import {getUsersCount} from "../../models/users.js";
+import Joi from "joi";
 
 const getEmailCount = async (request, response) => {
     try {
@@ -57,4 +58,30 @@ const getRecentEmails = async (request, response) => {
     }
 }
 
-export {getEmailCount, getUserCount, getAllEmails, getRecentEmails}
+const emailDelete = async (request, response) => {
+    try {
+        const emailData = request.params;
+        const requestSchema = Joi.object({
+            emailId: Joi.string().required()
+        });
+
+        const {error, _} = requestSchema.validate(emailData);
+        if (error) {
+            return response.status(400).json({error: error.details[0].message});
+        }
+
+        await deleteEmailById(emailData.emailId);
+        return response.status(200).json({message: "Email deleted successfully"});
+    } catch (error) {
+        console.error(error);
+        return response.status(500).json({error: "Internal Server Error"});
+    }
+}
+
+export {
+    getEmailCount,
+    getUserCount,
+    getAllEmails,
+    getRecentEmails,
+    emailDelete
+}
