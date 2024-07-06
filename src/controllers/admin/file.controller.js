@@ -8,6 +8,7 @@ import {dirname, join} from 'path';
 import {fileURLToPath} from 'url';
 import fs from 'fs';
 import {getDownloadById, getDownloads, getDownloadsCount} from "../../models/downloads.js";
+import {getEmailsCountByFileId} from "../../models/emails.js";
 
 
 const awsFileUpload = async (request, response) => {
@@ -252,6 +253,30 @@ const updateFileData = async (request, response) => {
     }
 }
 
+const getFileEmailCount = async (request, response) => {
+    try {
+        const requestSchema = Joi.object({
+            fileId: Joi.string().required()
+        });
+        const {error, _} = requestSchema.validate(request.params);
+        if (error) {
+            return response.status(400).json({error: error.details[0].message});
+        }
+
+        const fileId = request.params.fileId;
+        const emailCount = await getEmailsCountByFileId(fileId);
+        if (emailCount) {
+            return response.status(200).json({data: {count: emailCount}});
+        } else {
+            return response.status(404).json({error: "File not found"});
+        }
+
+    } catch (error) {
+        console.error(error);
+        return response.status(500).json({error: "Internal Server Error"});
+    }
+}
+
 const _localFileDelete = async (filename) => {
     const __dirname = dirname(fileURLToPath(import.meta.url));
     const filePath = join(__dirname, '../../../assets/uploads', filename);
@@ -273,5 +298,6 @@ export {
     getAllDownloads,
     getAllDownloadsCount,
     getDownload,
-    updateFileData
+    updateFileData,
+    getFileEmailCount
 };

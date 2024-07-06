@@ -440,7 +440,7 @@
                   <authState>
                     <option name="bearer">
                       <jU>
-                        <option name="token" value="{{user_auth_token}}" />
+                        <option name="token" value="{{admin_auth_token}}" />
                       </jU>
                     </option>
                     <option name="type" value="BEARER" />
@@ -448,7 +448,6 @@
                 </option>
                 <option name="body">
                   <bodyState>
-                    <option name="raw" value="{&#10;  &quot;recipient&quot;: &quot;papiliocurtis@gmail.com&quot;,&#10;  &quot;subject&quot;: &quot;Bintal Wedding program&quot;,&#10;  &quot;message&quot;: &quot;Attached below is your wedding file.&quot;,&#10;  &quot;fileId&quot;: &quot;665837335d0e5579e5ee1b96&quot;&#10;}" />
                     <option name="type" value="JSON" />
                   </bodyState>
                 </option>
@@ -462,9 +461,9 @@
                   </list>
                 </option>
                 <option name="id" value="ea20212c-f52c-401b-8b22-049d11519efc" />
-                <option name="method" value="POST" />
+                <option name="method" value="GET" />
                 <option name="name" value="/user/send-email" />
-                <option name="url" value="{{base_url}}/user/send-email" />
+                <option name="url" value="{{base_url}}/admin/files/email/count/66689ff241e23c3cc7044ed7" />
               </requestState>
               <requestState>
                 <option name="auth">

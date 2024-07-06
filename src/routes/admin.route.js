@@ -12,7 +12,7 @@ import {
     fileDelete,
     getAllDownloads,
     getAllDownloadsCount,
-    getDownload,
+    getDownload, getFileEmailCount,
     localFileUpload, updateFileData
 } from "../controllers/admin/file.controller.js";
 import {isAuthenticatedAsAdmin} from "../middlewares/authentication.middleware.js";
@@ -48,6 +48,7 @@ adminRouter.delete("/file/delete/:fileId", isAuthenticatedAsAdmin, fileDelete);
 adminRouter.delete("/email/delete/:emailId", isAuthenticatedAsAdmin, emailDelete);
 adminRouter.post("/send-email", isAuthenticatedAsAdmin, sendFileEmail);
 adminRouter.get("/files/count", isAuthenticatedAsAdmin, filesCount);
+adminRouter.get("/files/email/count/:fileId", isAuthenticatedAsAdmin, getFileEmailCount);
 adminRouter.get("/emails/count", isAuthenticatedAsAdmin, getEmailCount);
 adminRouter.get("/users/count", isAuthenticatedAsAdmin, getUserCount);
 adminRouter.get("/downloads/", isAuthenticatedAsAdmin, getAllDownloads);

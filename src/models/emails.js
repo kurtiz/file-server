@@ -49,7 +49,7 @@ const EmailModel = mongoose.model('Email', EmailSchema);
  * Gets all the emails
  * @returns {QueryWithHelpers<Array<HydratedDocument<Email, {}, {}>>, HydratedDocument<Email, {}, {}>, {}, Email, "find">}
  */
-const getEmails = (skip = 0, limit = null, filter= {}) => EmailModel.find(filter)
+const getEmails = (skip = 0, limit = null, filter = {}) => EmailModel.find(filter)
     .populate("file")
     .populate("sentByUser")
     .populate("sentByAdmin")
@@ -58,10 +58,18 @@ const getEmails = (skip = 0, limit = null, filter= {}) => EmailModel.find(filter
     .sort({createdAt: -1});
 
 /**
- * Gets count of all the downloads
+ * Gets count of all the emails
  * @returns {QueryWithHelpers<number, HydratedDocument<Download, {}, {}>, {}, Download, "countDocuments">}
  */
 const getEmailsCount = () => EmailModel.countDocuments();
+
+/**
+ * Gets count of emails by file id
+ * @returns {QueryWithHelpers<number, Document<unknown, {}, Email> & Email & {_id: Types.ObjectId}, {}, Email, "countDocuments">}
+ */
+const getEmailsCountByFileId = (fileId) => {
+    if (isValidObjectId(fileId)) return EmailModel.find({file: fileId}).countDocuments();
+}
 
 
 /**
@@ -130,5 +138,6 @@ export {
     updateEmailById,
     getEmailsCount,
     getEmailByAdminId,
+    getEmailsCountByFileId,
     EmailModel
 };
