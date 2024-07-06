@@ -23,7 +23,7 @@ import {
     getAllEmails,
     getEmailCount,
     getRecentEmails,
-    getUserCount
+    getUserCount, sendFileEmail
 } from "../controllers/admin/email.controller.js";
 
 /**
@@ -46,6 +46,7 @@ adminRouter.post("/file/upload/local", isAuthenticatedAsAdmin, multerLocalUpload
 adminRouter.patch("/file/update/:fileId", isAuthenticatedAsAdmin, updateFileData);
 adminRouter.delete("/file/delete/:fileId", isAuthenticatedAsAdmin, fileDelete);
 adminRouter.delete("/email/delete/:emailId", isAuthenticatedAsAdmin, emailDelete);
+adminRouter.post("/send-email", isAuthenticatedAsAdmin, sendFileEmail);
 adminRouter.get("/files/count", isAuthenticatedAsAdmin, filesCount);
 adminRouter.get("/emails/count", isAuthenticatedAsAdmin, getEmailCount);
 adminRouter.get("/users/count", isAuthenticatedAsAdmin, getUserCount);

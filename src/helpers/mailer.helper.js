@@ -50,21 +50,14 @@ const transporterTest = nodemailer.createTransport(smtpTransport({
  */
 async function sendEmail(options) {
     try {
-        if (ENVIRONMENT !== "production") {
-            await transporterTest.sendMail(options)
-                .catch((error) => {
-                    console.error('Error sending email:', error);
-                    throw error;
-                });
+        if (ENVIRONMENT !== "test") {
+            await transporterTest.sendMail(options);
         } else {
-            await transporterLive.sendMail(options)
-                .catch((error) => {
-                    console.error('Error sending email:', error);
-                    throw error;
-                });
+            await transporterLive.sendMail(options);
         }
     } catch (error) {
         console.error('Error sending email:', error);
+        throw error;
     }
 }
 

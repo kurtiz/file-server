@@ -23,10 +23,13 @@ const EmailSchema = new mongoose.Schema(
             ref: 'File',
             required: true
         },
-        sentBy: {
+        sentByUser: {
             type: mongoose.Schema.Types.ObjectId,
             ref: 'User',
-            required: true
+        },
+        sentByAdmin: {
+            type: mongoose.Schema.Types.ObjectId,
+            ref: 'Admin',
         }
     },
     {
@@ -48,7 +51,8 @@ const EmailModel = mongoose.model('Email', EmailSchema);
  */
 const getEmails = (skip = 0, limit = null, filter= {}) => EmailModel.find(filter)
     .populate("file")
-    .populate("sentBy")
+    .populate("sentByUser")
+    .populate("sentByAdmin")
     .skip(skip)
     .limit(limit)
     .sort({createdAt: -1});

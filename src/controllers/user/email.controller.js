@@ -24,7 +24,7 @@ const sendFileEmail = async (request, response) => {
         <a style="background: #b94e06; color: white; padding: 5px 10px; margin-top: 25px; 
         text-decoration: none; border-radius: 5px;" 
         href="https://file-server-zr8t.onrender.com/file/download/request/${file._id}" 
-        target="_blank">Download File</a>`;
+        target="_blank">Download File</a><br>`;
 
     const options = {
         from: 'no-reply-info@fileserver.com',
@@ -40,7 +40,7 @@ const sendFileEmail = async (request, response) => {
                 subject: emailData.subject,
                 content: message,
                 file: emailData.fileId,
-                sentBy: user._id
+                sentByUser: user._id
             }).then(() => {
                 return response.status(200).json({message: "Email sent"});
             }).catch(() => {
@@ -51,5 +51,6 @@ const sendFileEmail = async (request, response) => {
             return response.status(500).json({error: "Internal server error"});
         });
 }
+
 
 export {sendFileEmail}
