@@ -1,7 +1,7 @@
 import Joi from "joi";
 import {sendEmail} from "../../helpers/mailer.helper.js";
 import {getFileById} from "../../models/files.js";
-import {createEmail} from "../../models/emails.js";
+import {createEmail, getEmailByUserId} from "../../models/emails.js";
 
 
 const sendFileEmail = async (request, response) => {
@@ -52,5 +52,19 @@ const sendFileEmail = async (request, response) => {
         });
 }
 
+const getUserEmails = async (request, response) => {
+    try {
+        const user = request.locals;
+        if (!user) {
+            return response.status(404).json({error: "User not found"});
+        }
+        const emails = await getEmailByUserId(user._id);
+        response.status(200).json({data: emails});
+    } catch (error) {
+        console.error(error);
+        response.status(500).json({error: "Internal server error"});
+    }
+}
 
-export {sendFileEmail}
+
+export {sendFileEmail, getUserEmails}

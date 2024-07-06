@@ -158,6 +158,7 @@ const generateOTP = async (request, response) => {
                     html: htmlContent.replace("{FULLNAME}", user.fullname)
                         .replace("{OTP_CODE}", otp_code.toString())
                 });
+                console.log("sent email")
             });
 
         response.status(200).json({message: "Email sent!"});

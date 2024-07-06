@@ -7,9 +7,9 @@ import {
     resetPassword
 } from "../controllers/user/authentication.controller.js";
 import {passwordResetOtp, verificationOtp} from "../middlewares/otp.middleware.js";
-import {sendFileEmail} from "../controllers/user/email.controller.js";
+import {getUserEmails, sendFileEmail} from "../controllers/user/email.controller.js";
 import {isAuthenticatedAsUser} from "../middlewares/authentication.middleware.js";
-import {filesFeed, searchFile} from "../controllers/file.controller.js";
+import {filesFeed, getAllFiles, searchFile} from "../controllers/file.controller.js";
 
 /**
  * Router for User
@@ -28,6 +28,8 @@ userRouter.post("/password/reset-initialize", passwordResetOtp, generateOTP);
 userRouter.post("/password/reset", isAuthenticatedAsUser, resetPassword);
 userRouter.post("/login", login);
 userRouter.post("/send-email", isAuthenticatedAsUser, sendFileEmail);
+userRouter.get("/files", isAuthenticatedAsUser, getAllFiles);
+userRouter.get("/emails", isAuthenticatedAsUser, getUserEmails);
 userRouter.get("/feed/:page/:limit", isAuthenticatedAsUser, filesFeed);
 userRouter.get("/file/search/:query", isAuthenticatedAsUser, searchFile);
 

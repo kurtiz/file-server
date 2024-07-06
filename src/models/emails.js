@@ -70,7 +70,16 @@ const getEmailsCount = () => EmailModel.countDocuments();
  * @returns {QueryWithHelpers<UnpackedIntersection<Document<unknown, {}, Email> & Email & {_id: Types.ObjectId}, Document<unknown, {}, Email> & Email & {_id: Types.ObjectId}>, Document<unknown, {}, Email> & Email & {_id: Types.ObjectId}, {}, UnpackedIntersection<Email, Document<unknown, {}, Email> & Email & {_id: Types.ObjectId}>, "findOne">}
  */
 const getEmailByUserId = (id) => {
-    if (isValidObjectId(id)) return EmailModel.findOne({sentBy: id}).populate("file").populate("sentBy")
+    if (isValidObjectId(id)) return EmailModel.findOne({sentByUser: id}).populate("file").populate("sentByUser")
+}
+
+/**
+ * Gets an email by the user id
+ * @param id user id
+ * @returns {QueryWithHelpers<UnpackedIntersection<Document<unknown, {}, Email> & Email & {_id: Types.ObjectId}, Document<unknown, {}, Email> & Email & {_id: Types.ObjectId}>, Document<unknown, {}, Email> & Email & {_id: Types.ObjectId}, {}, UnpackedIntersection<Email, Document<unknown, {}, Email> & Email & {_id: Types.ObjectId}>, "findOne">}
+ */
+const getEmailByAdminId = (id) => {
+    if (isValidObjectId(id)) return EmailModel.findOne({sentByAdmin: id}).populate("file").populate("sentByAdmin")
 }
 
 
@@ -120,5 +129,6 @@ export {
     deleteEmailById,
     updateEmailById,
     getEmailsCount,
+    getEmailByAdminId,
     EmailModel
 };
