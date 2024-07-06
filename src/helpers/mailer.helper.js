@@ -50,7 +50,7 @@ const transporterTest = nodemailer.createTransport(smtpTransport({
  */
 async function sendEmail(options) {
     try {
-        if (ENVIRONMENT !== "test") {
+        if (ENVIRONMENT !== "live") {
             await transporterTest.sendMail(options);
         } else {
             await transporterLive.sendMail(options);
