@@ -1,0 +1,58 @@
+{
+  "name": "file-server",
+  "version": "1.0.0",
+  "description": "A simple file server to host files with some simple features",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon",
+    "test": "mocha --exit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kurtiz/file-server.git"
+  },
+  "keywords": [
+    "file",
+    "server",
+    "hosting"
+  ],
+  "author": "Aaron Will Djaba",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kurtiz/file-server/issues"
+  },
+  "homepage": "https://github.com/kurtiz/file-server#readme",
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.554.0",
+    "@logtail/pino": "^0.4.21",
+    "axios": "^1.7.2",
+    "bcrypt": "^5.1.1",
+    "body-parser": "^1.20.2",
+    "compression": "^1.7.4",
+    "connect-sqlite3": "^0.9.15",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "cosmiconfig": "^9.0.0",
+    "express": "^4.19.2",
+    "express-session": "^1.18.0",
+    "joi": "^17.12.3",
+    "mongoose": "^8.3.1",
+    "multer": "^1.4.5-lts.1",
+    "nodemailer": "^6.9.13",
+    "nodemailer-smtp-transport": "^2.4.2",
+    "nodemon": "^3.1.0",
+    "pino": "^8.0.0",
+    "pino-http": "^10.1.0",
+    "pino-pretty": "^11.1.0",
+    "pino-roll": "^1.1.0",
+    "sinon": "^18.0.0"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^8.4.1",
+    "chai": "^5.1.1",
+    "chai-http": "^4.4.0",
+    "mocha": "^10.4.0",
+    "supertest": "^7.0.0"
+  }
+}

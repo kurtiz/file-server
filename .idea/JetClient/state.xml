@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JetClientState">
+    <option name="folders">
+      <list>
+        <folderState>
+          <option name="description" value="Endpoints (Local)" />
+          <option name="id" value="c43ee8dd-1ef4-4efd-87cd-9ebb709e7670" />
+          <option name="name" value="Local" />
+          <option name="requests">
+            <list>
+              <requestState>
+                <option name="body">
+                  <bodyState>
+                    <option name="raw" value="{&#10;  &quot;fullname&quot;: &quot;John Cole&quot;,&#10;  &quot;email&quot;: &quot;papiliocurtis@gmail.com&quot;,&#10;  &quot;password&quot;: &quot;12345@Gh&quot;&#10;}" />
+                    <option name="type" value="JSON" />
+                  </bodyState>
+                </option>
+                <option name="description" value="Register user" />
+                <option name="headers">
+                  <list>
+                    <headerState>
+                      <option name="key" value="Content-Type" />
+                      <option name="value" value="application/json" />
+                    </headerState>
+                  </list>
+                </option>
+                <option name="id" value="075d5d0e-707e-47eb-9a3a-019f26554529" />
+                <option name="method" value="POST" />
+                <option name="name" value="/user/register" />
+                <option name="url" value="{{base_url}}/user/register" />
+              </requestState>
+              <requestState>
+                <option name="body">
+                  <bodyState>
+                    <option name="raw" value="{&#10;  &quot;email&quot;: &quot;papilio@gmail.com&quot;,&#10;  &quot;otp&quot;: &quot;323074&quot;&#10;}" />
+                    <option name="type" value="JSON" />
+                  </bodyState>
+                </option>
+                <option name="description" value="Verify user OTP" />
+                <option name="headers">
+                  <list>
+                    <headerState>
+                      <option name="key" value="Content-Type" />
+                      <option name="value" value="application/json" />
+                    </headerState>
+                  </list>
+                </option>
+                <option name="id" value="393b5ba0-668d-479f-a1b2-5c0efb7a2d12" />
+                <option name="method" value="POST" />
+                <option name="name" value="/user/otp/verify" />
+                <option name="url" value="{{base_url}}/user/otp/verify" />
+              </requestState>
+              <requestState>
+                <option name="body">
+                  <bodyState>
+                    <option name="raw" value="{&#10;  &quot;email&quot;: &quot;joecole@coll.com&quot;&#10;}" />
+                    <option name="type" value="JSON" />
+                  </bodyState>
+                </option>
+                <option name="description" value="Generate new user OTP" />
+                <option name="headers">
+                  <list>
+                    <headerState>
+                      <option name="key" value="Content-Type" />
+                      <option name="value" value="application/json" />
+                    </headerState>
+                  </list>
+                </option>
+                <option name="id" value="464d040c-1fc2-46de-9830-0b028fb5d521" />
+                <option name="method" value="POST" />
+                <option name="name" value="/user/otp/new" />
+                <option name="url" value="{{base_url}}/user/otp/new" />
+              </requestState>
+              <requestState>
+                <option name="body">
+                  <bodyState>
+                    <option name="raw" value="{&#10;  &quot;email&quot;: &quot;joecole@coll.com&quot;&#10;}" />
+                    <option name="type" value="JSON" />
+                  </bodyState>
+                </option>
+                <option name="description" value="Generate new user OTP for password reset" />
+                <option name="headers">
+                  <list>
+                    <headerState>
+                      <option name="key" value="Content-Type" />
+                      <option name="value" value="application/json" />
+                    </headerState>
+                  </list>
+                </option>
+                <option name="id" value="fb9a382e-c8a3-44bf-b12f-9d34abe8507c" />
+                <option name="method" value="POST" />
+                <option name="name" value="/user/password/reset-initialize" />
+                <option name="url" value="{{base_url}}/user/password/reset-initialize" />
+              </requestState>
+              <requestState>
+                <option name="body">
+                  <bodyState>
+                    <option name="raw" value="{&#10;  &quot;email&quot;: &quot;joecole@coll.com&quot;&#10;}" />
+                    <option name="type" value="JSON" />
+                  </bodyState>
+                </option>
+                <option name="description" value="Reset user password" />
+                <option name="headers">
+                  <list>
+                    <headerState>
+                      <option name="key" value="Content-Type" />
+                      <option name="value" value="application/json" />
+                    </headerState>
+                  </list>
+                </option>
+                <option name="id" value="28c5affb-e0b0-4280-90c7-0083f9ccfe5a" />
+                <option name="method" value="POST" />
+                <option name="name" value="/user/password/reset" />
+                <option name="url" value="{{base_url}}/user/otp/new" />
+              </requestState>
+              <requestState>
+                <option name="body">
+                  <bodyState>
+                    <option name="raw" value="{&#10;  &quot;email&quot;: &quot;joecole@coll.com&quot;,&#10;  &quot;password&quot;: &quot;12345&quot;&#10;}" />
+                    <option name="type" value="JSON" />
+                  </bodyState>
+                </option>
+                <option name="description" value="User login" />
+                <option name="headers">
+                  <list>
+                    <headerState>
+                      <option name="key" value="Content-Type" />
+                      <option name="value" value="application/json" />
+                    </headerState>
+                  </list>
+                </option>
+                <option name="id" value="04e8830d-196b-49bc-baa4-ebf3f1d8177c" />
+                <option name="method" value="POST" />
+                <option name="name" value="/user/login" />
+                <option name="url" value="{{base_url}}/user/login" />
+              </requestState>
+              <requestState>
+                <option name="body">
+                  <bodyState>
+                    <option name="raw" value="{&#10;  &quot;fullname&quot;: &quot;John Cole&quot;,&#10;  &quot;email&quot;: &quot;papilio@gmail.com&quot;,&#10;  &quot;password&quot;: &quot;12345@Gh&quot;&#10;}" />
+                    <option name="type" value="JSON" />
+                  </bodyState>
+                </option>
+                <option name="description" value="Register admin" />
+                <option name="headers">
+                  <list>
+                    <headerState>
+                      <option name="key" value="Content-Type" />
+                      <option name="value" value="application/json" />
+                    </headerState>
+                  </list>
+                </option>
+                <option name="id" value="a5497ebb-e726-4576-b5ce-591fd89e3985" />
+                <option name="method" value="POST" />
+                <option name="name" value="/admin/register" />
+                <option name="url" value="{{base_url}}/admin/register" />
+              </requestState>
+              <requestState>
+                <option name="body">
+                  <bodyState>
+                    <option name="raw" value="{&#10;  &quot;email&quot;: &quot;papilio@gmail.com&quot;&#10;}" />
+                    <option name="type" value="JSON" />
+                  </bodyState>
+                </option>
+                <option name="description" value="Generate new admin OTP" />
+                <option name="headers">
+                  <list>
+                    <headerState>
+                      <option name="key" value="Content-Type" />
+                      <option name="value" value="application/json" />
+                    </headerState>
+                  </list>
+                </option>
+                <option name="id" value="311a563c-e434-42a1-85aa-50632947f6b7" />
+                <option name="method" value="POST" />
+                <option name="name" value="/admin/otp/new" />
+                <option name="url" value="{{base_url}}/admin/otp/new" />
+              </requestState>
+              <requestState>
+                <option name="auth">
+                  <authState>
+                    <option name="bearer">
+                      <jU>
+                        <option name="token" value="{{admin_auth_token}}" />
+                      </jU>
+                    </option>
+                    <option name="type" value="BEARER" />
+                  </authState>
+                </option>
+                <option name="body">
+                  <bodyState>
+                    <option name="raw" value="{&#10;  &quot;email&quot;: &quot;papiliocurtis@gmail.com&quot;,&#10;  &quot;otp&quot;: &quot;641112&quot;&#10;}" />
+                    <option name="type" value="JSON" />
+                  </bodyState>
+                </option>
+                <option name="description" value="Verify admin OTP" />
+                <option name="headers">
+                  <list>
+                    <headerState>
+                      <option name="key" value="Content-Type" />
+                      <option name="value" value="application/json" />
+                    </headerState>
+                  </list>
+                </option>
+                <option name="id" value="934365de-385d-41c5-8906-500c4d09cdd6" />
+                <option name="method" value="POST" />
+                <option name="name" value="/admin/otp/verify" />
+                <option name="url" value="{{base_url}}/admin/otp/verify" />
+              </requestState>
+              <requestState>
+                <option name="body">
+                  <bodyState>
+                    <option name="raw" value="{&#10;  &quot;email&quot;: &quot;papiliocurtis@gmail.com&quot;&#10;}" />
+                    <option name="type" value="JSON" />
+                  </bodyState>
+                </option>
+                <option name="description" value="Generate new admin OTP for password reset" />
+                <option name="headers">
+                  <list>
+                    <headerState>
+                      <option name="key" value="Content-Type" />
+                      <option name="value" value="application/json" />
+                    </headerState>
+                  </list>
+                </option>
+                <option name="id" value="3dfe9e9b-66c4-450b-8294-1f632be83a08" />
+                <option name="method" value="POST" />
+                <option name="name" value="/admin/password/reset-initialize" />
+                <option name="url" value="{{base_url}}/admin/password/reset-initialize" />
+              </requestState>
+              <requestState>
+                <option name="auth">
+                  <authState>
+                    <option name="bearer">
+                      <jU>
+                        <option name="token" value="{{admin_auth_token}}" />
+                      </jU>
+                    </option>
+                    <option name="type" value="BEARER" />
+                  </authState>
+                </option>
+                <option name="body">
+                  <bodyState>
+                    <option name="raw" value="{&#10;  &quot;email&quot;: &quot;papiliocurtis@gmail.com&quot;,&#10;  &quot;password&quot;: &quot;12345@Gh&quot;&#10;}" />
+                    <option name="type" value="JSON" />
+                  </bodyState>
+                </option>
+                <option name="description" value="Reset admin password" />
+                <option name="headers">
+                  <list>
+                    <headerState>
+                      <option name="key" value="Content-Type" />
+                      <option name="value" value="application/json" />
+                    </headerState>
+                  </list>
+                </option>
+                <option name="id" value="c40970eb-2949-4553-b96a-3efcb4c2f8af" />
+                <option name="method" value="POST" />
+                <option name="name" value="/admin/password/reset" />
+                <option name="url" value="{{base_url}}/admin/password/reset" />
+              </requestState>
+              <requestState>
+                <option name="body">
+                  <bodyState>
+                    <option name="raw" value="{&#10;  &quot;email&quot;: &quot;joecole@coll.com&quot;,&#10;  &quot;password&quot;: &quot;12345&quot;&#10;}" />
+                    <option name="type" value="JSON" />
+                  </bodyState>
+                </option>
+                <option name="description" value="Admin login" />
+                <option name="headers">
+                  <list>
+                    <headerState>
+                      <option name="key" value="Content-Type" />
+                      <option name="value" value="application/json" />
+                    </headerState>
+                  </list>
+                </option>
+                <option name="id" value="363382a4-b484-4abb-9332-0efd95c594bc" />
+                <option name="method" value="POST" />
+                <option name="name" value="/admin/login" />
+                <option name="url" value="{{base_url}}/user/login" />
+              </requestState>
+              <requestState>
+                <option name="auth">
+                  <authState>
+                    <option name="bearer">
+                      <jU>
+                        <option name="token" value="{{admin_auth_token}}" />
+                      </jU>
+                    </option>
+                    <option name="type" value="BEARER" />
+                  </authState>
+                </option>
+                <option name="body">
+                  <bodyState>
+                    <option name="formData">
+                      <list>
+                        <formDataParameterState>
+                          <option name="key" value="title" />
+                          <option name="value" value="Wedding Program Book for Bintal" />
+                        </formDataParameterState>
+                        <formDataParameterState>
+                          <option name="key" value="description" />
+                          <option name="value" value="Joe's wedding program book with has the program outline etc..." />
+                        </formDataParameterState>
+                        <formDataParameterState>
+                          <option name="key" value="file" />
+                          <option name="type" value="FILE" />
+                          <option name="value" value="C:\Users\aaron\Documents\JenamLogo.png" />
+                        </formDataParameterState>
+                      </list>
+                    </option>
+                    <option name="type" value="FORM_DATA" />
+                  </bodyState>
+                </option>
+                <option name="description" value="Upload file to local server" />
+                <option name="headers">
+                  <list>
+                    <headerState>
+                      <option name="key" value="Content-Type" />
+                      <option name="value" value="multipart/form-data" />
+                    </headerState>
+                  </list>
+                </option>
+                <option name="id" value="e52784d2-4dae-4df1-aa6d-63d2adeee7bf" />
+                <option name="method" value="POST" />
+                <option name="name" value="/admin/file/upload/local" />
+                <option name="url" value="https://file-server-zr8t.onrender.com/admin/file/upload/aws" />
+              </requestState>
+              <requestState>
+                <option name="auth">
+                  <authState>
+                    <option name="bearer">
+                      <jU>
+                        <option name="token" value="{{admin_auth_token}}" />
+                      </jU>
+                    </option>
+                    <option name="type" value="BEARER" />
+                  </authState>
+                </option>
+                <option name="body">
+                  <bodyState>
+                    <option name="formData">
+                      <list>
+                        <formDataParameterState>
+                          <option name="key" value="title" />
+                          <option name="value" value="School Records" />
+                        </formDataParameterState>
+                        <formDataParameterState>
+                          <option name="key" value="description" />
+                          <option name="value" value="School records database" />
+                        </formDataParameterState>
+                        <formDataParameterState>
+                          <option name="key" value="file" />
+                          <option name="type" value="FILE" />
+                          <option name="value" value="C:\Users\aaron\Documents\billboard.png" />
+                        </formDataParameterState>
+                      </list>
+                    </option>
+                    <option name="type" value="FORM_DATA" />
+                  </bodyState>
+                </option>
+                <option name="description" value="Upload file to aws s3 container" />
+                <option name="headers">
+                  <list>
+                    <headerState>
+                      <option name="key" value="Content-Type" />
+                      <option name="value" value="multipart/form-data" />
+                    </headerState>
+                  </list>
+                </option>
+                <option name="id" value="b0e6c97a-08fa-442d-9c6f-aaa9e898f2c8" />
+                <option name="method" value="POST" />
+                <option name="name" value="/admin/file/upload/aws" />
+                <option name="url" value="{{base_url}}/admin/file/upload/aws" />
+              </requestState>
+              <requestState>
+                <option name="auth">
+                  <authState>
+                    <option name="bearer">
+                      <jU>
+                        <option name="token" value="$2b$10$oFDNGMCdFaoCFOPgz1LwCuC0j4u5ZBKsY.LkhWuUl0ePoamQuDFv6" />
+                      </jU>
+                    </option>
+                    <option name="type" value="BEARER" />
+                  </authState>
+                </option>
+                <option name="body">
+                  <bodyState>
+                    <option name="type" value="JSON" />
+                  </bodyState>
+                </option>
+                <option name="description" value="delete file" />
+                <option name="headers">
+                  <list>
+                    <headerState>
+                      <option name="key" value="Content-Type" />
+                      <option name="value" value="application/json" />
+                    </headerState>
+                  </list>
+                </option>
+                <option name="id" value="a809894d-2852-433a-877e-79ffd55728ca" />
+                <option name="method" value="DELETE" />
+                <option name="name" value="/admin/file/delete/:fileId" />
+                <option name="url" value="{{base_url}}/admin/file/delete/663a73f6b567a23a2cf05c7f" />
+              </requestState>
+              <requestState>
+                <option name="auth">
+                  <authState>
+                    <option name="bearer">
+                      <jU>
+                        <option name="token" value="{{admin_auth_token}}" />
+                      </jU>
+                    </option>
+                    <option name="type" value="BEARER" />
+                  </authState>
+                </option>
+                <option name="body">
+                  <bodyState>
+                    <option name="type" value="JSON" />
+                  </bodyState>
+                </option>
+                <option name="description" value="Record downloads" />
+                <option name="headers">
+                  <list>
+                    <headerState>
+                      <option name="key" value="Content-Type" />
+                      <option name="value" value="application/json" />
+                    </headerState>
+                  </list>
+                </option>
+                <option name="id" value="3d6c6763-0c66-4ac6-a7ee-671d62d272f3" />
+                <option name="method" value="GET" />
+                <option name="name" value="/file/download/request/:fileId" />
+                <option name="url" value="{{base_url}}/admin/emails/recent" />
+              </requestState>
+              <requestState>
+                <option name="auth">
+                  <authState>
+                    <option name="bearer">
+                      <jU>
+                        <option name="token" value="{{admin_auth_token}}" />
+                      </jU>
+                    </option>
+                    <option name="type" value="BEARER" />
+                  </authState>
+                </option>
+                <option name="body">
+                  <bodyState>
+                    <option name="type" value="JSON" />
+                  </bodyState>
+                </option>
+                <option name="description" value="Send file via email" />
+                <option name="headers">
+                  <list>
+                    <headerState>
+                      <option name="key" value="Content-Type" />
+                      <option name="value" value="application/json" />
+                    </headerState>
+                  </list>
+                </option>
+                <option name="id" value="ea20212c-f52c-401b-8b22-049d11519efc" />
+                <option name="method" value="GET" />
+                <option name="name" value="/user/send-email" />
+                <option name="url" value="{{base_url}}/admin/files/email/count/66689ff241e23c3cc7044ed7" />
+              </requestState>
+              <requestState>
+                <option name="auth">
+                  <authState>
+                    <option name="bearer">
+                      <jU>
+                        <option name="token" value="{{admin_auth_token}}" />
+                      </jU>
+                    </option>
+                    <option name="type" value="BEARER" />
+                  </authState>
+                </option>
+                <option name="body">
+                  <bodyState>
+                    <option name="raw" value="{&#10;  &quot;title&quot;: &quot;Wedding Program Book for Joshua&quot;,&#10;  &quot;description&quot;: &quot;Joe's wedding program book with has the program outline etc...&quot;&#10;}" />
+                    <option name="type" value="JSON" />
+                  </bodyState>
+                </option>
+                <option name="description" value="Send file via email" />
+                <option name="headers">
+                  <list>
+                    <headerState>
+                      <option name="key" value="Content-Type" />
+                      <option name="value" value="application/json" />
+                    </headerState>
+                  </list>
+                </option>
+                <option name="id" value="13c25252-44d0-4686-a239-e580786595e2" />
+                <option name="method" value="PATCH" />
+                <option name="name" value="/user/send-email 1" />
+                <option name="url" value="{{base_url}}/admin/file/update/6649156925c056b49ab4b8c0" />
+              </requestState>
+            </list>
+          </option>
+          <option name="sortWeight" value="1000000" />
+          <option name="syncProperties">
+            <synchronizationPropertiesState>
+              <option name="folderPath" value="C:\Users\aaron\Documents\Node.js\file-server\.jetclient" />
+            </synchronizationPropertiesState>
+          </option>
+        </folderState>
+      </list>
+    </option>
+    <option name="id" value="f9837d94-0ac8-43e9-8f8a-d2cc068e52c8" />
+  </component>
+</project>
